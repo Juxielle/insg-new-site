@@ -1,0 +1,449 @@
+
+/*  remplacer par variable bandeau (de site) usine à sites */
+#bandeau {
+}
+
+
+
+
+	
+		#bandeau{
+			background-color: #1f234b;
+		}
+	
+
+        :root {
+            --uas-couleur-principale: #1f234b;
+            --uas-couleur-principale-rgb: 31 35 75;
+        }
+
+		::-webkit-selection {
+		  background: #1f234b;
+		}
+
+		::-moz-selection {
+		  background: #1f234b;
+		}
+
+		::selection {
+		  background: #1f234b;
+		}
+
+		h2, h5 {
+		  color: #1f234b;
+		}
+
+		a, .a {
+		  border-color: #1f234b;
+		}
+
+		cite::before, blockquote::before, q::before {
+		  color: #1f234b;
+		}
+
+		.highlight,
+        mark{
+		  background-color: #1f234b;
+		}
+
+		.select_style,
+		textarea,
+		input[type="text"],
+		input[type="password"],
+		input[type="file"],
+		input[type="number"],
+		input[type="email"] {
+		  border-color: #1f234b;
+		}
+
+		button, .button {
+		  border-color: #1f234b;
+		}
+
+		[type="submit"],
+		[type="reset"],
+		[type="button"],
+		.submit,
+		.reset {
+		  background-color: #1f234b;
+		}
+		[type="submit"]:hover, [type="submit"]:active, [type="submit"]:focus,
+		[type="reset"]:hover,
+		[type="reset"]:active,
+		[type="reset"]:focus,
+		[type="button"]:hover,
+		[type="button"]:active,
+		[type="button"]:focus,
+		.submit:hover,
+		.submit:active,
+		.submit:focus,
+		.reset:hover,
+		.reset:active,
+		.reset:focus {
+		  background-color: #151834;
+		}
+
+		header #profil {
+		  background: #1f234b;
+		}
+
+		.header_lien:hover, .header_lien:active, .header_lien:focus, .header_lien.active, .header_toogle__libelle-texte:hover, .header_toogle__libelle-texte:active, .header_toogle__libelle-texte:focus, .header_toogle__libelle-texte.active, .header_toogle__libelle:hover, .header_toogle__libelle:active, .header_toogle__libelle:focus, .header_toogle__libelle.active {
+		  background: #1f234b;
+		}
+
+		#retour_haut_page a {
+		  background: #1f234b;
+		}
+
+		#acces_directs .header_toogle__libelle:active::before, #acces_directs .header_toogle__libelle:focus::before, #acces_directs .header_toogle__libelle:hover::before, #acces_directs .header_toogle__libelle a:visited::before, #acces_directs .header_toogle__libelle.active::before {
+		  color: #1f234b;
+		}
+
+		#recherche-simple button::before {
+		  background: #1f234b;
+		}
+
+		#baseline {
+		  background: #1f234b;
+		}
+
+		#actions-fiche a:hover, #actions-fiche a:active, #actions-fiche a:focus, #actions-fiche a[aria-expanded="true"], #actions-fiche button:hover, #actions-fiche button:active, #actions-fiche button:focus, #actions-fiche button[aria-expanded="true"] {
+		  color: #1f234b;
+		}
+
+		#menu_principal > li > button:hover, #menu_principal > li > button:active, #menu_principal > li > button:focus, #menu_principal > li > button.active,
+		#menu_principal > li > a:hover,
+		#menu_principal > li > a:active,
+		#menu_principal > li > a:focus,
+		#menu_principal > li > a.active,
+		#menu_principal > li > span:hover,
+		#menu_principal > li > span:active,
+		#menu_principal > li > span:focus,
+		#menu_principal > li > span.active {
+		  background: #1f234b;
+		}
+
+		#menu_principal > li.menu__level__item--actif > button:hover, #menu_principal > li.menu__level__item--actif > button:active, #menu_principal > li.menu__level__item--actif > button:focus, #menu_principal > li.menu__level__item--actif > button.active,
+		#menu_principal > li.menu__level__item--actif > a:hover,
+		#menu_principal > li.menu__level__item--actif > a:active,
+		#menu_principal > li.menu__level__item--actif > a:focus,
+		#menu_principal > li.menu__level__item--actif > a.active,
+		#menu_principal > li.menu__level__item--actif > span:hover,
+		#menu_principal > li.menu__level__item--actif > span:active,
+		#menu_principal > li.menu__level__item--actif > span:focus,
+		#menu_principal > li.menu__level__item--actif > span.active {
+		  background: #1f234b;
+		}
+
+		#menu_principal > li .menu__level__items li > button:hover::before, #menu_principal > li .menu__level__items li > button:active::before, #menu_principal > li .menu__level__items li > button:focus::before,
+		#menu_principal > li .menu__level__items li > a:hover::before,
+		#menu_principal > li .menu__level__items li > a:active::before,
+		#menu_principal > li .menu__level__items li > a:focus::before,
+		#menu_principal > li .menu__level__items li > span:hover::before,
+		#menu_principal > li .menu__level__items li > span:active::before,
+		#menu_principal > li .menu__level__items li > span:focus::before {
+		  background: #1f234b;
+		}
+
+		@media screen and (min-width: 50em) {
+			#menu_principal > li.menu__level__item--actif > button,
+			#menu_principal > li.menu__level__item--actif > a,
+			#menu_principal > li.menu__level__item--actif > span{
+				background: #1f234b;
+			}
+		}
+
+
+		#menu_principal > li .menu__level__item--actif > button::before,
+		#menu_principal > li .menu__level__item--actif > a::before,
+		#menu_principal > li .menu__level__item--actif > span::before {
+		  background: #1f234b;
+		}
+
+		@media screen and (max-width: 49.99em) {
+		  #menu_principal .menu__level__item--actif > button,
+		  #menu_principal .menu__level__item--actif > a,
+		  #menu_principal .menu__level__item--actif > span,
+		  #menu_principal .menu__level ul li > .toggler,
+		  #menu_principal .menu__level ul li > .toggler:hover,
+		  #menu_principal .menu__level ul li > .toggler:active,
+		  #menu_principal .menu__level ul li > .toggler:focus,
+		  #menu_principal .menu__level--1  .menu__level__item--actif {
+		    background: #1f234b;
+		  }
+		}
+		.menu__toggle, #menu_principal .toggler, .menu__toggle:focus,  .menu__toggle:active {
+		  background: #1f234b;
+		}
+
+		#menu_secondaire ul a:hover::before, #menu_secondaire ul a:active::before, #menu_secondaire ul a:focus::before, #menu_secondaire ul span:hover::before, #menu_secondaire ul span:active::before, #menu_secondaire ul span:focus::before {
+		  background: #1f234b;
+		}
+
+		#menu_pied_page a::before, #menu_pied_page span::before {
+		  color: #1f234b;
+		}
+
+		#abonnement_newsletter input {
+		  border-color: #1f234b;
+		}
+
+		.toolbox address::before {
+		  color: #1f234b;
+		}
+
+		span.select_style, button, .button {
+		  border-color: #1f234b;
+		}
+
+		span.select_style::before, button::before, .button::before {
+		  background-color: #1f234b;
+		}
+
+		span.select_style:hover::before, span.select_style:focus::before, span.select_style:active::before, button:hover::before, button:focus::before, button:active::before, .button:hover::before, .button:focus::before, .button:active::before {
+		  color: #1f234b;
+		}
+
+		.paragraphe--1, .paragraphe--3,
+        .paragraphe--5, .paragraphe--7{
+		  border-color: #1f234b;
+		}
+
+		.paragraphe--2,
+        .paragraphe--6{
+		  background: #1f234b;
+		}
+
+		.paragraphe__titre--4,
+        .paragraphe__titre--8
+        {
+		  border-color: #1f234b;
+		}
+
+		ul.objets strong > a, ul.objets strong > span {
+		  border-color: #1f234b;
+		}
+
+		.temoignage-specifique .temoignage-entete {
+		  background: #1f234b;
+		}
+
+		.carousellyon3Card::before {
+		  background: #1f234b;
+		}
+
+		.carousellyon3Card [class^="tabs_tab"]::before {
+		  border-color: #1f234b;
+		}
+
+		.carousellyon3Card [class^="tabs_tab"] h2::after {
+		  background-color: #1f234b;
+		}
+
+		.carousellyon3Card .en_savoir_plus::after {
+		  background-color: #1f234b;
+		}
+
+		.carousellyon3Card .nav_containter .owl-dot.active {
+		  background-color: #1f234b;
+		}
+
+        .zoomSurCard .owl-dot.active{
+            background-color: #1f234b;
+        }
+
+		.actualiteLyon3Card .intitule {
+		  background: #1f234b;
+		}
+
+		#liste_resultats li > a {
+		  color: #1f234b;
+		}
+
+		.couleur_couleur3 {
+		  background-color: #1f234b;
+		}
+
+		.row2_link .button::before {
+		  color: #1f234b;
+		}
+
+		input[type="radio"]:checked + label::before,
+		input[type="checkbox"]:checked + label::before {
+		  background-color: #1f234b;
+		}
+
+        @media screen and (max-width: 640px) {
+            .search-aggregation {
+                background: #1f234b;
+            }
+        }
+
+        .search-aggregation .submit,
+        .search-filter__filter-selected{
+            background-color: #1f234b;
+        }
+
+		.fiche.formation .onglets__item:hover, .fiche.formation .onglets__item:active, .fiche.formation .onglets__item:focus, .fiche.formation .onglets__item.onglets__item--actif {
+		  background-color: #1f234b;
+		}
+
+		.fiche.formation .informations-mentions .liste-definitions__terme {
+		  color: #1f234b;
+		}
+
+        .fiche.laboratoire .onglets__item:hover, .fiche.laboratoire .onglets__item:active, .fiche.laboratoire .onglets__item:focus, .fiche.laboratoire .onglets__item.onglets__item--actif {
+            background-color: #1f234b;
+        }
+
+        .fiche.defaultstructureksup .onglets__item:hover, .fiche.defaultstructureksup .onglets__item:active, .fiche.defaultstructureksup .onglets__item:focus, .fiche.defaultstructureksup .onglets__item.onglets__item--actif {
+            background-color: #1f234b;
+        }
+		.encadre__infos-actu .icon {
+		  color: #1f234b;
+		}
+
+		.filtre_nb:hover::before, .filtre_nb:focus::before, .filtre_nb:active::before,
+        .actualiteLyon3Card .photo:hover::before, .actualiteLyon3Card .photo:focus::before, .actualiteLyon3Card .photo:active::before,
+        .zoomSurCard__vignette:hover::before, .zoomSurCard__vignette:focus::before, .zoomSurCard__vignette:active::before,
+        .vignette_deco:hover::before, .vignette_deco:focus::before, .vignette_deco:active::before {
+		  background-color: #1f234b;
+		}
+
+		div.commentaires__saisie.plier-deplier .plier-deplier__bouton, div.fiches__ajout {
+		  background: #1f234b;
+		}
+
+		#body .mfp-arrow {
+		  background: #1f234b;
+		}
+
+		.banner_cookie__button--accept, .banner_cookie__close {
+		  background: #1f234b;
+		}
+
+		.banner_cookie__button--accept:hover, .banner_cookie__button--accept:active, .banner_cookie__button--accept:focus, .banner_cookie__close:hover, .banner_cookie__close:active, .banner_cookie__close:focus {
+		  background-color: #151834;
+		}
+
+		.banner_cookie__button--en_savoir_plus::after {
+		  background: #1f234b;
+		}
+
+		.banner_cookie__button--en_savoir_plus:hover::after, .banner_cookie__button--en_savoir_plus:focus::after, .banner_cookie__button--en_savoir_plus:active::after {
+		  background-color: #151834;
+		}
+
+		/* Newsletter*/
+		.style1 {
+		  border-bottom-color: #1f234b;
+		}
+		.style1 h3 {
+		  color: #1f234b;
+		}
+
+		.style2 {
+		  background-color: #1f234b;
+		  border-bottom-color: #1f234b;
+		}
+		.style2 h3 {
+		  background-color: #1f234b;
+		}
+
+		.style3 {
+		  border-bottom-color: #1f234b;
+		}
+		#body .extension-agenda th{
+			background-color: #1f234b;
+		}
+
+        .taglink__item:before{
+            background-color: #1f234b;
+        }
+
+        .taglink__item:hover{
+            border-color: #1f234b;
+        }
+
+        .tabs_toggler.tabs_toggler.active::before {
+            background-color: #1f234b;
+        }
+
+        .accordion_toggler {
+            background-color: rgba(31,35,75,0.1);
+        }
+
+        .documents_hal.documents_hal .mapViewModel_hal_groupement details:not(.details_hal--summary) > summary {
+            background-color: rgba(31,35,75,0.1);
+        }
+
+        .accordion_toggler::after,
+        .documents_hal.documents_hal .mapViewModel_hal_groupement details:not(.details_hal--summary) > summary::after {
+            background-color: #1f234b;
+        }
+
+        button.orejime-Button--save,
+        button.orejime-Button--save:focus,
+        button.orejime-Button--save:active,
+        button.orejime-AppToggles-enableAll,
+        button.orejime-AppToggles-enableAll:focus,
+        button.orejime-AppToggles-enableAll:active,
+        button.orejime-Button--info {
+            background-color: #1f234b;
+            border: solid 1px#1f234b;
+        }
+
+        button.orejime-Button--info:focus {
+            color: #1f234b;
+        }
+
+        button.orejime-Button:hover,
+        button.orejime-Button--save:hover {
+            background-color: #141630;
+        }
+
+        button.orejime-Button--decline,
+        button.orejime-Notice-learnMoreButton {
+            background-color: #1f234b;
+            border-color: #1f234b;
+        }
+
+        .orejime-AppItem-slider {
+            background-color: #1f234b;
+        }
+
+        .orejime-AppItem-input:checked + .orejime-AppItem-label .orejime-AppItem-slider {
+            background-color: #141630;
+        }
+
+        .orejime-content__context-notice .orejime .context-notice .cm-btn.cm-btn-success-var {
+            background-color: #1f234b;
+        }
+
+        .orejime-content__context-notice .orejime .context-notice .cm-btn.cm-btn-success-var:hover {
+            background-color: #141630;
+        }
+
+        body.formation h3 a[data-toggle]:hover::after,
+        body.formation h3 a[data-toggle]:focus-visible::after,
+        body.formation .formation__parcours h3:hover::after,
+        body.formation .formation__parcours h3:focus-visible::after,
+        body.recherche .formation__parcours h3:hover::after,
+        body.recherche .formation__parcours h3:focus-visible::after {
+            background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12.9167C9.89036 12.9174 9.78164 12.8964 9.68011 12.8549C9.57858 12.8134 9.48623 12.7523 9.40837 12.6751L6.07503 9.34174C5.99733 9.26404 5.9357 9.1718 5.89365 9.07028C5.8516 8.96876 5.82996 8.85996 5.82996 8.75007C5.82996 8.64019 5.8516 8.53138 5.89365 8.42986C5.9357 8.32835 5.99733 8.2361 6.07503 8.15841C6.15273 8.08071 6.24497 8.01907 6.34649 7.97702C6.44801 7.93497 6.55682 7.91333 6.6667 7.91333C6.77658 7.91333 6.88539 7.93497 6.98691 7.97702C7.08843 8.01907 7.18067 8.08071 7.25837 8.15841L10 10.9167L12.75 8.26674C12.8267 8.1815 12.9201 8.11299 13.0245 8.0655C13.1288 8.01801 13.2418 7.99257 13.3565 7.99075C13.4711 7.98893 13.5848 8.01079 13.6906 8.05495C13.7964 8.09911 13.892 8.16462 13.9713 8.24739C14.0506 8.33016 14.112 8.42841 14.1516 8.53599C14.1913 8.64356 14.2083 8.75816 14.2016 8.87261C14.1949 8.98705 14.1646 9.09889 14.1128 9.20112C14.0609 9.30335 13.9885 9.39377 13.9 9.46674L10.5667 12.6834C10.4143 12.8303 10.2117 12.9138 10 12.9167Z" fill="%231f234b"/></svg>');
+        }
+        .accordion_toggler__btn:focus{
+            border-color: #1f234b;
+        }
+        .documents_hal{
+--hal-tag-background-color: #1f234b;
+--hal-accent-color: #1f234b;
+--hal-tag-color: #ffffff;
+}
+.documents_hal .url_hal a:hover,
+.documents_hal .all-results_hal a:hover {
+--hal-tag-background-color: #ffffff;
+--hal-accent-color: #ffffff;
+color: #1f234b;
+}
+

@@ -1,0 +1,2899 @@
+/**
+ * ==========================================================================
+ * INSG GABON - CUSTOM TEMPLATE FIXES & ENHANCEMENTS
+ * Preserves authentic Lyon 3 design, proportions, grid, and responsiveness.
+ * ==========================================================================
+ */
+
+:root {
+    --uas-couleur-principale: #1f234b;
+    --uas-couleur-principale-rgb: 31, 35, 75;
+    --uas-couleur-hover: #151834;
+    --uas-couleur-accent: #0091B5;
+    --uas-couleur-topbar: #1a1e40;
+    --uas-couleur-logo-bg: #1f234b;
+    --uas-bg-light: #f7f8fa;
+    --uas-border-color: #e2e4e8;
+}
+
+/* ==========================================================================
+   1. HEADER & LOGO
+   ========================================================================== */
+
+/* Prevent horizontal scroll across the entire site */
+html {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    position: relative !important;
+}
+
+/* Header base styles matching authentic Lyon 3 architecture */
+body > header {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 50em) {
+    /* Homepage and pages without bandeau: compact 134px header */
+    body.ficheaccueil > header,
+    body > header:not(.has_bandeau) {
+        min-height: 134px !important;
+        height: 134px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        z-index: 1000 !important;
+    }
+
+    /* Subpages with bandeau: authentic Lyon 3 banner header (expands to showcase hero image) */
+    body:not(.ficheaccueil) > header.has_bandeau {
+        position: relative !important;
+        min-height: 15em !important;
+        height: auto !important;
+        padding: 0 0 14.45% 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        z-index: auto !important;
+        max-width: 1292px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Hero photo banner fills behind Row 2 down to the bottom of the header */
+    body:not(.ficheaccueil) > header.has_bandeau #bandeau {
+        display: block !important;
+        position: absolute !important;
+        top: 49px !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background-size: cover !important;
+        background-position: center !important;
+        z-index: -1 !important;
+    }
+
+    body > header .header_cols {
+        display: flex !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 1292px !important;
+        min-height: 134px !important;
+        height: 134px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        position: relative !important;
+        z-index: 40 !important;
+        background: transparent !important;
+    }
+
+    /* Logo Column (Left): 20% width matching Lyon 3 layout */
+    /* Logo Column (Left): Authentic Lyon 3 layout with INSG Gabon identity */
+    body > header .header_col1 {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        min-width: 285px !important;
+        max-width: 350px !important;
+        height: 134px !important;
+        min-height: 134px !important;
+        background: var(--uas-couleur-principale, #1f234b) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 0 1.25rem 0 1rem !important;
+        margin: 0 !important;
+        float: none !important;
+        position: relative !important;
+        z-index: 1005 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Left bleed background for wide viewports (> 1292px) */
+    body > header .header_col1::before {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        right: 100% !important;
+        width: 100vw !important;
+        background: var(--uas-couleur-principale, #1f234b) !important;
+        z-index: -1 !important;
+    }
+
+    body > header .header_col1 .banniere {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body > header .banniere__logo {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 0.95rem !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+        transform: none !important;
+        border: none !important;
+        text-decoration: none !important;
+    }
+
+    body > header .banniere__embleme,
+    body > header .banniere__logo > span:first-child {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    /* Enlarged logo image with transparent background (NO white box, NO shadow) */
+    body > header .banniere__logo img,
+    body > header .banniere__logo .insg_logo_img {
+        width: auto !important;
+        height: 84px !important;
+        max-width: 95px !important;
+        max-height: 92px !important;
+        object-fit: contain !important;
+        display: block !important;
+        background: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35)) !important;
+        transition: transform 0.25s ease !important;
+    }
+
+    body > header .banniere__logo:hover img {
+        transform: scale(1.04) !important;
+    }
+
+    /* Institute Name typography to the right of the logo */
+    body > header .banniere__texte {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: left !important;
+        border-left: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+        padding-left: 0.85rem !important;
+        line-height: 1.15 !important;
+        user-select: none !important;
+    }
+
+    body > header .banniere__sigle {
+        font-family: "gotham", sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 1.45rem !important;
+        color: #ffffff !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        line-height: 1 !important;
+        margin: 0 0 3px 0 !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    body > header .banniere__nom {
+        font-family: "gotham", sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 0.72rem !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.35px !important;
+        line-height: 1.25 !important;
+        margin: 0 0 3px 0 !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    body > header .banniere__pays {
+        font-family: "gotham", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 0.65rem !important;
+        color: #f8d12d !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    body > header .banniere .spacer_logo {
+        display: none !important;
+    }
+
+    /* Col 2 (Right): Row 1 (topbar 49px) + Row 2 (main menu 85px) */
+    body > header .header_col2 {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 134px !important;
+        min-height: 134px !important;
+        float: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-width: 0 !important;
+        position: relative !important;
+    }
+
+    /* Row 1: Top Bar (49px, #292727) */
+    body > header .header_col2__ligne1 {
+        background: #292727 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        min-height: 49px !important;
+        height: 49px !important;
+        max-height: 49px !important;
+        padding: 0 0 0 1.25rem !important;
+        margin: 0 !important;
+        position: relative !important;
+        z-index: 1010 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Right bleed for Row 1 */
+    body > header .header_col2__ligne1::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 100% !important;
+        width: 100vw !important;
+        background: #292727 !important;
+        z-index: -1 !important;
+    }
+
+    body > header .col2__ligne1__left_side {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        float: none !important;
+    }
+
+    body > header #acces_directs {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    body > header #acces_directs > li.header_toogle {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+    }
+
+    body > header .col2__ligne1__right_side {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        gap: 0 !important;
+        margin: 0 0 0 auto !important;
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    /* Top bar buttons/links: chevron MUST be on the left */
+    body > header .header_toogle__libelle,
+    body > header .header_lien {
+        background: transparent !important;
+        color: #ffffff !important;
+        font-family: "gothambook", sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 500 !important;
+        padding: 0 0.85rem !important;
+        border-radius: 0 !important;
+        display: inline-flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 0.45rem !important;
+        transition: background 0.15s ease, color 0.15s ease !important;
+        border: none !important;
+        height: 49px !important;
+        line-height: 49px !important;
+        max-width: none !important;
+        cursor: pointer !important;
+        text-decoration: none !important;
+    }
+
+    body > header #acces_directs .header_toogle__libelle:hover,
+    body > header #acces_directs .header_toogle__libelle.active {
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+    }
+
+    /* Chevron badge ::before placed on left */
+    body > header .acces-directs .header_toogle__libelle::before {
+        content: "\e5cc" !important;
+        font-family: "icomoon" !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 22px !important;
+        height: 22px !important;
+        line-height: 22px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        color: #ffffff !important;
+        font-size: 12px !important;
+        position: static !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-shrink: 0 !important;
+        transition: transform 0.2s ease, background 0.2s ease !important;
+    }
+
+    body > header .acces-directs .header_toogle__libelle:hover::before,
+    body > header .acces-directs .header_toogle__libelle.active::before {
+        background: #ffffff !important;
+        color: var(--uas-couleur-principale) !important;
+    }
+
+    body > header .acces-directs .header_toogle__libelle.active::before {
+        transform: rotate(90deg) !important;
+    }
+
+    /* Versions (FR) */
+    body > header #versions {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        position: relative !important;
+    }
+
+    body > header #versions .header_toogle__libelle {
+        height: 49px !important;
+        padding: 0 1.2rem !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+    }
+
+    body > header #versions .header_toogle__libelle:hover,
+    body > header #versions .header_toogle__libelle.active {
+        background: #474747 !important;
+    }
+
+    /* Profil (VOUS ÊTES) */
+    body > header #profil {
+        display: flex !important;
+        align-items: center !important;
+        height: 49px !important;
+        position: relative !important;
+    }
+
+    body > header #profil .header_toogle__libelle {
+        height: 49px !important;
+        padding: 0 1.4rem !important;
+        background: var(--uas-couleur-principale) !important;
+        color: #ffffff !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        border-radius: 0 !important;
+    }
+
+    body > header #profil .header_toogle__libelle:hover,
+    body > header #profil .header_toogle__libelle.active {
+        background: #141630 !important;
+    }
+
+    /* Intranet Lock Link */
+    body > header .header_lien.header_menu_intranet {
+        height: 49px !important;
+        width: 49px !important;
+        padding: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    body > header .header_lien.header_menu_intranet::before {
+        font-family: "icomoon" !important;
+        content: "\e90b" !important;
+        font-size: 16px !important;
+        color: #ffffff !important;
+    }
+
+    body > header .header_lien.header_menu_intranet:hover {
+        background: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    /* Row 2: Main Menu & Search (85px) */
+    body > header .header_col2__ligne2 {
+        background: rgba(255, 255, 255, 0.85) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+        display: flex !important;
+        align-items: stretch !important;
+        justify-content: space-between !important;
+        height: 85px !important;
+        min-height: 85px !important;
+        max-height: 85px !important;
+        padding: 0 1rem 0 0 !important;
+        margin: 0 !important;
+        position: relative !important;
+        z-index: 1005 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Right bleed for Row 2 */
+    body > header .header_col2__ligne2::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 100% !important;
+        width: 100vw !important;
+        background: rgba(255, 255, 255, 0.85) !important;
+        z-index: -1 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+    }
+
+    body > header #menu {
+        display: flex !important;
+        align-items: stretch !important;
+        height: 85px !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body > header .menu__toggle {
+        display: none !important;
+    }
+
+    body > header #menu_principal {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        height: 85px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        background: transparent !important;
+        position: static !important;
+        transform: none !important;
+        width: auto !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+    }
+
+    body > header #menu_principal > li {
+        display: flex !important;
+        align-items: stretch !important;
+        height: 85px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+    }
+
+    body > header #menu_principal .toggler,
+    body > header #menu_principal .menu__level_1-intitule,
+    body > header #menu_principal > li.menu__level__item--acces-directs,
+    body > header #menu_principal > li.menu__level__item--profil {
+        display: none !important;
+    }
+
+    body > header #menu_principal > li > a,
+    body > header #menu_principal > li > button,
+    body > header #menu_principal > li > span {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 85px !important;
+        min-height: 85px !important;
+        padding: 0 1.35rem !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.02em !important;
+        color: #1e1213 !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        white-space: nowrap !important;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        cursor: pointer !important;
+        transition: background 0.15s ease, color 0.15s ease !important;
+    }
+
+    @media screen and (max-width: 1291.99px) {
+        body > header #menu_principal > li > a,
+        body > header #menu_principal > li > button,
+        body > header #menu_principal > li > span {
+            padding: 0 0.85rem !important;
+            font-size: 13px !important;
+        }
+    }
+
+    /* Active and Hover items in Row 2: full 85px navy block matching Lyon 3 */
+    body > header #menu_principal > li:hover > a,
+    body > header #menu_principal > li.open > a,
+    body > header #menu_principal > li.active > a,
+    body > header #menu_principal > li.menu__level__item--actif > a,
+    body > header #menu_principal > li:hover > button,
+    body > header #menu_principal > li.open > button,
+    body > header #menu_principal > li.active > button,
+    body > header #menu_principal > li.menu__level__item--actif > button,
+    body > header #menu_principal > li.menu__level__item--actif > span {
+        background: var(--uas-couleur-principale) !important;
+        color: #ffffff !important;
+        height: 85px !important;
+    }
+
+    /* Dropdowns in Topbar: Accès directs */
+    body > header .acces-directs .header_toogle__menu {
+        display: none !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 100% !important;
+        background: #ffffff !important;
+        z-index: 1020 !important;
+        padding: 2.5rem 3rem !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+        border-top: 2px solid var(--uas-couleur-principale) !important;
+    }
+
+    body > header .acces-directs .header_toogle__menu.active {
+        display: block !important;
+    }
+
+    body > header .acces-directs .menu_level1_list {
+        display: inline-block !important;
+        vertical-align: top !important;
+        width: 33.333% !important;
+        box-sizing: border-box !important;
+        padding-right: 2rem !important;
+        margin: 0 !important;
+        list-style: none !important;
+    }
+
+    body > header .acces-directs .item_level1 {
+        font-family: "gothambold", sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        color: #1e1213 !important;
+        display: block !important;
+        margin-bottom: 0.9rem !important;
+        text-transform: none !important;
+    }
+
+    body > header .acces-directs .menu_level2_list {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body > header .acces-directs .menu_level2_item {
+        margin-bottom: 0.45rem !important;
+        list-style: none !important;
+    }
+
+    body > header .acces-directs .item_level2 {
+        font-family: "gothambook", sans-serif !important;
+        font-size: 13.5px !important;
+        color: #444444 !important;
+        text-decoration: none !important;
+        display: block !important;
+        padding: 0.2rem 0 !important;
+        border-bottom: 1px solid transparent !important;
+        line-height: 1.4 !important;
+        transition: color 0.15s ease, border-color 0.15s ease !important;
+    }
+
+    body > header .acces-directs .item_level2:hover {
+        color: var(--uas-couleur-principale) !important;
+        border-bottom-color: var(--uas-couleur-principale) !important;
+    }
+
+    /* Dropdowns in Main Menu: Mega-Menus */
+    body > header #menu_principal > li > .menu__level {
+        display: none !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 100% !important;
+        background: #292727 !important;
+        color: #ffffff !important;
+        z-index: 1020 !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+        border-top: 2px solid var(--uas-couleur-principale) !important;
+    }
+
+    body > header #menu_principal > li.open > .menu__level,
+    body > header #menu_principal > li > .menu__level.active {
+        display: block !important;
+    }
+
+    body > header #menu_principal > li > .menu__level .menu__level__items {
+        box-sizing: border-box !important;
+        display: inline-block !important;
+        width: 68.18% !important;
+        padding: 2.5rem 2.5rem !important;
+        vertical-align: top !important;
+    }
+
+    body > header #menu_principal > li > .menu__level .menu__level__accroche {
+        box-sizing: border-box !important;
+        display: inline-block !important;
+        width: 31.82% !important;
+        padding: 2.5rem 2rem !important;
+        background: #3c3838 !important;
+        color: #ffffff !important;
+        vertical-align: top !important;
+    }
+
+    /* Submenu level 1 items in Desktop Mega-Menu */
+    #menu_principal > li > .menu__level .menu__level__items > ul > li,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li {
+        margin-bottom: 0.85rem !important;
+        position: relative !important;
+    }
+
+    /* Ensure toggler buttons are completely hidden on desktop */
+    #menu_principal .toggler {
+        display: none !important;
+    }
+
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > a,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > button:not(.toggler),
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > span:not(.toggler),
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > a,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > button:not(.toggler),
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > span:not(.toggler) {
+        display: inline-block !important;
+        padding: 0 0 0 28px !important;
+        position: relative !important;
+        color: #ffffff !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        text-decoration: none !important;
+        outline: none !important;
+        border: none !important;
+        background: transparent !important;
+        transition: color 0.15s ease !important;
+    }
+
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > a:hover,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > button:not(.toggler):hover,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > span:not(.toggler):hover,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > a:hover,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > button:not(.toggler):hover,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > span:not(.toggler):hover {
+        color: #c3b8b8 !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    /* Submenu hover / active circular plus badge icon matching Lyon 3 */
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > a:hover::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > a:active::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > a:focus::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > button:not(.toggler):hover::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > button:not(.toggler):active::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li > button:not(.toggler):focus::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li.menu__level__item--actif > a::before,
+    #menu_principal > li > .menu__level .menu__level__items > ul > li.menu__level__item--actif > button:not(.toggler)::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > a:hover::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > a:active::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > a:focus::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > button:not(.toggler):hover::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > button:not(.toggler):active::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li > button:not(.toggler):focus::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li.menu__level__item--actif > a::before,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li.menu__level__item--actif > button:not(.toggler)::before {
+        content: "\e906" !important;
+        font-family: "icomoon" !important;
+        font-size: 10px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #ffffff !important;
+        background: var(--uas-couleur-principale, #1f234b) !important;
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 50% !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Sub-sub menu items (third level links, e.g. Équipe présidentielle, Conseils) */
+    #menu_principal > li > .menu__level .menu__level__items > ul > li ul li,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li ul li {
+        margin-bottom: 0.5em !important;
+        padding: 0 !important;
+        height: auto !important;
+    }
+
+    #menu_principal > li > .menu__level .menu__level__items > ul > li ul li > a,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li ul li > a {
+        padding: 0 !important;
+        font-family: "gothambook", sans-serif !important;
+        font-size: 13.5px !important;
+        color: #e0e0e0 !important;
+        text-decoration: none !important;
+        display: block !important;
+    }
+
+    #menu_principal > li > .menu__level .menu__level__items > ul > li ul li > a:hover,
+    #menu_principal > li > .menu__level .menu__level__accroche > ul > li ul li > a:hover {
+        color: #ffffff !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    /* Desktop Search Box in Row 2 - Authentic Lyon 3 Architecture */
+    body > header .header_col2__ligne1 #recherche-simple {
+        display: none !important;
+    }
+
+    body > header .header_col2__ligne2 #recherche-simple {
+        display: inline-flex !important;
+        align-items: center !important;
+        position: relative !important;
+        width: auto !important;
+        margin: 0 0 0 auto !important;
+        padding: 0 0.75rem 0 0.5rem !important;
+        float: none !important;
+        height: 85px !important;
+        z-index: 50 !important;
+    }
+
+    body > header #recherche-simple form {
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 38px !important;
+        border-radius: 22px !important;
+        background: #ffffff !important;
+        border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease !important;
+    }
+
+    body > header #recherche-simple form:hover,
+    body > header #recherche-simple form:focus-within {
+        border-color: #151834 !important;
+        box-shadow: 0 2px 8px rgba(31, 35, 75, 0.2) !important;
+    }
+
+    body > header #recherche-simple input[type="text"] {
+        height: 36px !important;
+        width: 175px !important;
+        max-width: 220px !important;
+        padding: 0 44px 0 16px !important;
+        border: none !important;
+        outline: none !important;
+        font-family: "gotham", sans-serif !important;
+        font-style: italic !important;
+        font-size: 13px !important;
+        background: transparent !important;
+        color: #1f234b !important;
+        border-radius: 22px !important;
+        margin: 0 !important;
+        float: none !important;
+        box-sizing: border-box !important;
+        transition: width 0.25s ease !important;
+    }
+
+    body > header #recherche-simple input[type="text"]:focus {
+        width: 215px !important;
+    }
+
+    body > header #recherche-simple input[type="text"]::-webkit-input-placeholder {
+        font-style: italic !important;
+        color: #868585 !important;
+    }
+
+    body > header #recherche-simple input[type="text"]::-moz-placeholder {
+        font-style: italic !important;
+        color: #868585 !important;
+        opacity: 1 !important;
+    }
+
+    @media screen and (max-width: 1291.99px) {
+        body > header #recherche-simple input[type="text"] {
+            width: 135px !important;
+        }
+        body > header #recherche-simple input[type="text"]:focus {
+            width: 170px !important;
+        }
+    }
+
+    body > header #recherche-simple button {
+        position: absolute !important;
+        right: 3px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        height: 30px !important;
+        width: 30px !important;
+        background: var(--uas-couleur-principale, #1f234b) !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        cursor: pointer !important;
+        box-sizing: border-box !important;
+        transition: background-color 0.2s ease, transform 0.2s ease !important;
+        background-image: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    body > header #recherche-simple button:hover,
+    body > header #recherche-simple button:focus {
+        background-color: #141630 !important;
+        transform: translateY(-50%) scale(1.08) !important;
+    }
+
+    body > header #recherche-simple button::before {
+        font-family: "icomoon" !important;
+        content: "\e90c" !important;
+        font-size: 13px !important;
+        color: #ffffff !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: static !important;
+        background: transparent !important;
+    }
+
+    body > header #recherche-simple .recherche-simple__label {
+        display: none !important;
+    }
+
+    body > header #recherche-simple-mobile {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   1B. HEADER & NAVIGATION (MOBILE & TABLET: < 50em / < 800px)
+   ========================================================================== */
+@media screen and (max-width: 49.99em) {
+    body > header {
+        position: relative !important;
+        z-index: 1000 !important;
+        height: 56px !important;
+        min-height: 56px !important;
+        max-height: 56px !important;
+        background: var(--uas-couleur-topbar, #1a1e40) !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+    }
+
+    body:not(.ficheaccueil):not(.site_secondaire) > header.has_bandeau {
+        min-height: 56px !important;
+        max-height: 56px !important;
+        height: 56px !important;
+        padding: 0 !important;
+    }
+
+    body > header #bandeau {
+        display: none !important;
+    }
+
+    body > header .header_cols {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        height: 56px !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative !important;
+        background: transparent !important;
+    }
+
+    /* Logo column sits as a compact flex block on mobile */
+    body > header .header_col1 {
+        display: flex !important;
+        align-items: center !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        height: 56px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    body > header .header_col1 .banniere {
+        display: flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hamburger Toggle fixed at top-left corner */
+    body > header .menu__toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 56px !important;
+        height: 56px !important;
+        background: var(--uas-couleur-principale, #1f234b) !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        cursor: pointer !important;
+        z-index: 1002 !important;
+        transform: none !important;
+        transition: background 0.2s ease !important;
+    }
+
+    body > header .menu__toggle::before {
+        content: "\e5d2" !important; /* icomoon hamburger */
+        font-family: "icomoon" !important;
+        font-size: 24px !important;
+        color: #ffffff !important;
+        display: block !important;
+        line-height: 1 !important;
+    }
+
+    body > header .menu__toggle span {
+        display: none !important;
+    }
+
+    body > header .menu__toggle::after {
+        display: none !important;
+    }
+
+    body.show-menu > header .menu__toggle {
+        background: #ded4b8 !important;
+    }
+
+    body.show-menu > header .menu__toggle::before {
+        content: "\e5cd" !important; /* close cross */
+        color: #1e1213 !important;
+    }
+
+    /* Logo sits right next to the 56px hamburger */
+    body > header .banniere__logo {
+        display: flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 0 0 56px !important;
+        padding: 0 8px !important;
+        width: auto !important;
+        position: static !important;
+        border: none !important;
+        gap: 0.6rem !important;
+        text-decoration: none !important;
+    }
+
+    body > header .banniere__embleme,
+    body > header .banniere__logo > span:first-child {
+        display: flex !important;
+        align-items: center !important;
+        height: 100% !important;
+    }
+
+    body > header .banniere__logo img,
+    body > header .banniere__logo .insg_logo_img {
+        height: 44px !important;
+        max-height: 48px !important;
+        width: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        background: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.35)) !important;
+    }
+
+    body > header .banniere__texte {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.25) !important;
+        padding-left: 0.5rem !important;
+        line-height: 1.1 !important;
+    }
+
+    body > header .banniere__sigle {
+        font-family: "gotham", sans-serif !important;
+        font-size: 1.15rem !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        letter-spacing: 1px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    body > header .banniere__nom {
+        display: none !important;
+    }
+
+    body > header .banniere__pays {
+        font-family: "gotham", sans-serif !important;
+        font-size: 0.58rem !important;
+        color: #f8d12d !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    body > header .banniere .spacer_logo {
+        display: none !important;
+    }
+
+    /* Right side tools on mobile */
+    body > header .header_col2 {
+        display: flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        float: none !important;
+    }
+
+    body > header .header_col2__ligne1 {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        height: 56px !important;
+        min-height: 56px !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 0.5rem 0 0 !important;
+        margin: 0 !important;
+    }
+
+    body > header .col2__ligne1__left_side {
+        display: none !important; /* Accès directs hidden in mobile topbar */
+    }
+
+    body > header .col2__ligne1__right_side {
+        display: flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        gap: 0.25rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body > header #profil {
+        display: none !important; /* VOUS ÊTES hidden in mobile header */
+    }
+
+    body > header #versions {
+        display: inline-flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 !important;
+    }
+
+    body > header #versions .header_toogle__libelle {
+        color: #ffffff !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 0.95rem !important;
+        padding: 0.5rem 0.6rem !important;
+        background: transparent !important;
+        border: none !important;
+        text-transform: uppercase !important;
+    }
+
+    body > header #recherche-simple-mobile {
+        display: inline-flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 !important;
+    }
+
+    body > header #recherche-simple-mobile .header_toogle__libelle {
+        color: #ffffff !important;
+        padding: 0.5rem 0.6rem !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    body > header .header_lien.header_menu_intranet-connecte,
+    body > header .header_lien.header_menu_intranet {
+        display: inline-flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        color: #ffffff !important;
+        padding: 0.5rem 0.6rem !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    body > header .header_col2__ligne1 #recherche-simple {
+        display: none !important;
+    }
+
+    /* Completely neutralize Row 2 on mobile so no white strip appears */
+    body > header .header_col2__ligne2 {
+        display: block !important;
+        position: static !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        min-height: 0 !important;
+        width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        overflow: visible !important;
+    }
+
+    body > header .header_col2__ligne2 #recherche-simple {
+        display: none !important;
+    }
+
+    body > header #menu {
+        display: block !important;
+        position: static !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Mobile Off-Canvas Drawer (#menu_principal) */
+    #menu_principal {
+        display: block !important;
+        position: fixed !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 280px !important;
+        max-width: 85vw !important;
+        height: 100vh !important;
+        background: #292727 !important;
+        z-index: 99999 !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 4.5rem 0 2rem 0 !important;
+        list-style: none !important;
+    }
+
+    body.show-menu #menu_principal {
+        transform: translateX(0) !important;
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.55) !important;
+    }
+
+    /* Drawer Items */
+    #menu_principal > li {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    #menu_principal > li > a,
+    #menu_principal > li > button:not(.toggler),
+    #menu_principal > li > span:not(.toggler) {
+        display: inline-flex !important;
+        align-items: center !important;
+        flex: 1 1 auto !important;
+        width: auto !important;
+        box-sizing: border-box !important;
+        padding: 0.95rem 1.25rem !important;
+        color: #ffffff !important;
+        font-family: "gothambold", sans-serif !important;
+        font-size: 0.92rem !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        text-align: left !important;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        min-height: 0 !important;
+        white-space: normal !important;
+        line-height: 1.4 !important;
+        transition: background 0.15s ease !important;
+    }
+
+    #menu_principal .toggler {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        color: #ffffff !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Top-level togglers */
+    #menu_principal > li > .toggler {
+        flex: 0 0 48px !important;
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 16px !important;
+    }
+
+    /* Submenu level togglers (e.g. Gouvernance, Grands projets, Nos campus, Actualités) */
+    #menu_principal .menu__level .toggler {
+        position: absolute !important;
+        right: 4px !important;
+        top: 0 !important;
+        height: 44px !important;
+        width: 44px !important;
+        font-size: 16px !important;
+        z-index: 10 !important;
+    }
+
+    /* Chevron icons inside togglers */
+    #menu_principal .toggler .more,
+    #menu_principal .toggler .less {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-family: "icomoon" !important;
+        font-size: 16px !important;
+        color: #ffffff !important;
+        line-height: 1 !important;
+    }
+
+    #menu_principal .toggler .more::before {
+        content: "\e5cf" !important; /* chevron down */
+        font-family: "icomoon" !important;
+    }
+
+    #menu_principal .toggler .less::before {
+        content: "\e5ce" !important; /* chevron up */
+        font-family: "icomoon" !important;
+    }
+
+    #menu_principal .toggler .more {
+        display: inline-flex !important;
+    }
+
+    #menu_principal .toggler .less {
+        display: none !important;
+    }
+
+    #menu_principal .toggler.active .more,
+    #menu_principal li.open > .toggler .more {
+        display: none !important;
+    }
+
+    #menu_principal .toggler.active .less,
+    #menu_principal li.open > .toggler .less {
+        display: inline-flex !important;
+    }
+
+    #menu_principal > li > .menu__level {
+        display: none !important;
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    #menu_principal > li.open > .menu__level,
+    #menu_principal > li > .menu__level.active {
+        display: block !important;
+    }
+
+    #menu_principal > li > a:hover,
+    #menu_principal > li.open > a,
+    #menu_principal > li.active > a,
+    #menu_principal > li.menu__level__item--actif > a {
+        background: rgba(255, 255, 255, 0.12) !important;
+        color: #ffffff !important;
+    }
+
+    /* Submenu items list styling on mobile */
+    #menu_principal .menu__level__items {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    #menu_principal .menu__level__items > ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #menu_principal .menu__level__items > ul > li {
+        position: relative !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        background: #201e1e !important;
+    }
+
+    #menu_principal .menu__level__items > ul > li > a {
+        display: block !important;
+        flex: 1 1 auto !important;
+        padding: 0.8rem 1.25rem !important;
+        padding-right: 48px !important;
+        color: #ffffff !important;
+        font-family: "gothambook", sans-serif !important;
+        font-size: 13.5px !important;
+        text-decoration: none !important;
+        border: none !important;
+        background: transparent !important;
+    }
+
+    #menu_principal .menu__level__items > ul > li > a:hover {
+        background: rgba(255, 255, 255, 0.08) !important;
+        color: #ffffff !important;
+    }
+
+    /* Sub-sub menu (.menu__level--2) on mobile */
+    #menu_principal .menu__level--2 {
+        display: none !important;
+        width: 100% !important;
+        background: #181717 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #menu_principal .menu__level--2.active,
+    #menu_principal .menu__level__items > ul > li.open > .menu__level--2 {
+        display: block !important;
+    }
+
+    #menu_principal .menu__level--2 ul {
+        list-style: none !important;
+        padding: 0.25rem 0 0.5rem 0 !important;
+        margin: 0 !important;
+    }
+
+    #menu_principal .menu__level--2 ul li {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #menu_principal .menu__level--2 ul li a {
+        display: block !important;
+        padding: 0.6rem 1.25rem 0.6rem 2.25rem !important;
+        color: #d0d0d0 !important;
+        font-size: 12.5px !important;
+        text-decoration: none !important;
+    }
+
+    #menu_principal .menu__level--2 ul li a:hover {
+        color: #ffffff !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    /* Mobile Drawer Overlay */
+    .menu__overlay {
+        display: none !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: rgba(0, 0, 0, 0.6) !important;
+        z-index: 99990 !important;
+        backdrop-filter: blur(2px) !important;
+        -webkit-backdrop-filter: blur(2px) !important;
+    }
+
+    body.show-menu .menu__overlay {
+        display: block !important;
+    }
+
+    body.show-menu {
+        overflow: hidden !important;
+    }
+}
+
+
+/* ==========================================================================
+   2. TOP-BAR & PROFILE DROPDOWNS
+   ========================================================================== */
+
+#profil .header_toogle__menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    z-index: 9999 !important;
+    min-width: 220px !important;
+    padding: 0.5rem 0 !important;
+}
+
+#profil .header_toogle__menu.active,
+#profil.open .header_toogle__menu {
+    display: block !important;
+}
+
+#profil .header_toogle__menu ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#profil .header_toogle__menu li.menu__level__item {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#profil .header_toogle__menu li.menu__level__item a {
+    display: block !important;
+    padding: 0.65rem 1.25rem !important;
+    color: #333333 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+}
+
+#profil .header_toogle__menu li.menu__level__item a:hover {
+    background-color: #f0f3f8 !important;
+    color: var(--uas-couleur-principale) !important;
+}
+
+#versions .header_toogle__menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    z-index: 9999 !important;
+    min-width: 140px !important;
+    padding: 0.5rem 0 !important;
+}
+
+#versions .header_toogle__menu.active,
+#versions.open .header_toogle__menu {
+    display: block !important;
+}
+
+/* ==========================================================================
+   3. SECONDARY MENU & NAVIGATION ZONE IN SUBPAGE BANNER
+   ========================================================================== */
+
+/* Authentic Lyon 3 zone_navigation & actions-fiche */
+#zone_navigation {
+    background: #ffffff !important;
+}
+
+/* Subpages with banner: position zone_navigation over bottom edge of hero image */
+@media screen and (min-width: 50em) {
+    header.has_bandeau ~ #page #zone_navigation,
+    header.has_bandeau ~ main #zone_navigation,
+    body:not(.ficheaccueil) header.has_bandeau ~ #page #zone_navigation,
+    body:not(.ficheaccueil) header.has_bandeau ~ main #zone_navigation {
+        display: block !important;
+        background: #ffffff !important;
+        margin-top: -4.429rem !important;
+        position: relative !important;
+        z-index: 25 !important;
+        height: 4.429rem !important;
+        min-height: 4.429rem !important;
+        box-sizing: content-box !important;
+    }
+
+    header.has_bandeau ~ #page #zone_navigation::after,
+    header.has_bandeau ~ main #zone_navigation::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        left: 50% !important;
+        top: 0 !important;
+        right: 0 !important;
+        z-index: -1 !important;
+        height: 4.429rem !important;
+        background: #ffffff !important;
+    }
+}
+
+@media screen and (min-width: 1292px) {
+    header.has_bandeau ~ #page #zone_navigation,
+    header.has_bandeau ~ main #zone_navigation {
+        margin-left: -6.7em !important;
+    }
+}
+
+/* Ensure pages without banner have margin-top 0 so zone_navigation is never hidden behind header */
+body > header:not(.has_bandeau) ~ main #zone_navigation,
+body.site_secondaire #zone_navigation,
+body:not(:has(header.has_bandeau)) #zone_navigation,
+header:not(.has_bandeau) + main #zone_navigation {
+    margin-top: 0 !important;
+}
+
+/* Secondary menu toggle button matching Lyon 3 dark square */
+#menu_secondaire {
+    position: relative !important;
+    z-index: 51 !important;
+    display: inline-block !important;
+    vertical-align: top !important;
+    height: 4.429rem !important;
+    width: 4.429rem !important;
+    float: left !important;
+}
+
+#menu_secondaire .toggle__menu_secondaire {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 4.429rem !important;
+    width: 4.429rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #292727 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+}
+
+#menu_secondaire .toggle__menu_secondaire:hover {
+    background: #1e1213 !important;
+    color: #ffffff !important;
+}
+
+#menu_secondaire .toggle__menu_secondaire::before {
+    content: "\e5d2" !important;
+    font-family: "icomoon" !important;
+    font-size: 36px !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    display: block !important;
+}
+
+#menu_secondaire .toggle__menu_secondaire.active::before {
+    content: "\e5cd" !important;
+}
+
+#menu_secondaire .menu_toggle__menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: #2e2a2a !important;
+    color: #ffffff !important;
+    z-index: 1000 !important;
+    width: 28em !important;
+    box-sizing: border-box !important;
+    padding: 1.5em 1em 1em 2em !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+#menu_secondaire .menu_toggle__menu.active {
+    display: block !important;
+}
+
+#menu_secondaire .menu_toggle__menu a,
+#menu_secondaire .menu_toggle__menu span {
+    position: relative !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease !important;
+}
+
+#menu_secondaire .menu_toggle__menu a:hover,
+#menu_secondaire .menu_toggle__menu span:hover {
+    color: #c3b8b8 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+#menu_secondaire .menu_toggle__menu a:hover::before,
+#menu_secondaire .menu_toggle__menu a:active::before,
+#menu_secondaire .menu_toggle__menu a:focus::before,
+#menu_secondaire .menu_toggle__menu span:hover::before,
+#menu_secondaire .menu_toggle__menu span:active::before,
+#menu_secondaire .menu_toggle__menu span:focus::before,
+#menu_secondaire .menu_toggle__menu .menu_secondaire-actif > a::before,
+#menu_secondaire .menu_toggle__menu .menu_secondaire-actif > span::before,
+#menu_secondaire .menu_toggle__menu .sousmenu_secondaire-actif > a::before,
+#menu_secondaire .menu_toggle__menu .sousmenu_secondaire-actif > span::before {
+    content: "\e906" !important;
+    font-family: "icomoon" !important;
+    font-size: 10px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    background: var(--uas-couleur-principale, #1f234b) !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    left: -28px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    box-sizing: border-box !important;
+}
+
+/* Remove all underline text-decoration and bottom-borders on all submenu items */
+#menu_principal .menu__level a,
+#menu_principal .menu__level a:hover,
+#menu_principal .menu__level a:focus,
+#menu_principal .menu__level a:active,
+#menu_secondaire .menu_toggle__menu a,
+#menu_secondaire .menu_toggle__menu a:hover,
+#menu_secondaire .menu_toggle__menu a:focus,
+#menu_secondaire .menu_toggle__menu a:active,
+.acces-directs .menu_level1_list a,
+.acces-directs .menu_level2_list a,
+.acces-directs .menu_level1_list a:hover,
+.acces-directs .menu_level2_list a:hover {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* Breadcrumbs (fil d'ariane) matching Lyon 3 typography and chevron alignment */
+#fil_ariane {
+    display: inline-flex !important;
+    align-items: center !important;
+    vertical-align: top !important;
+    height: 4.429rem !important;
+    line-height: 4.429rem !important;
+    margin: 0 0 0 2rem !important;
+    padding: 0 !important;
+    font-family: "gothambook", sans-serif !important;
+    font-size: 13.5px !important;
+    color: #1e1213 !important;
+    max-width: 65% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+#fil_ariane a {
+    color: #1e1213 !important;
+    text-decoration: none !important;
+    font-size: 13.5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+#fil_ariane a:hover {
+    text-decoration: underline !important;
+    color: var(--uas-couleur-principale) !important;
+}
+
+#fil_ariane span {
+    color: #666666 !important;
+    font-size: 13.5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+#fil_ariane a::before,
+#fil_ariane span::before {
+    content: "\e5cc" !important;
+    font-family: "icomoon" !important;
+    font-size: 16px !important;
+    color: #888888 !important;
+    margin: 0 0.5rem !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+#fil_ariane a:first-child::before,
+#fil_ariane span:first-child::before {
+    display: none !important;
+}
+
+/* Actions fiche (print, share) matching Lyon 3 positioning and styling */
+#actions-fiche {
+    display: inline-flex !important;
+    align-items: center !important;
+    float: right !important;
+    margin: 0 !important;
+    padding: 0 1rem 0 0 !important;
+    height: 4.429rem !important;
+    list-style: none !important;
+    position: relative !important;
+    z-index: 52 !important;
+}
+
+#actions-fiche .actions-fiche__item {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin-left: 0.4rem !important;
+    position: relative !important;
+}
+
+#actions-fiche button,
+#actions-fiche a {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    color: #1e1213 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    padding: 0 !important;
+    font-size: 1.25rem !important;
+    border-radius: 4px !important;
+    transition: color 0.15s ease, background 0.15s ease !important;
+}
+
+#actions-fiche button:hover,
+#actions-fiche a:hover {
+    color: var(--uas-couleur-principale) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+
+#actions-fiche .actions-fiche__libelle {
+    display: none !important;
+}
+
+/* Share accordion dropdown */
+.plier-deplier__contenu--clos,
+#actions-fiche .plier-deplier__contenu--clos {
+    display: none !important;
+}
+
+#actions-fiche .plier-deplier__contenu--ouvert {
+    display: block !important;
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18) !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 4px !important;
+    z-index: 1000 !important;
+    min-width: 180px !important;
+}
+
+/* ==========================================================================
+   4. HOMEPAGE & SECONDARY PORTAL HERO CAROUSEL & GRID
+   ========================================================================== */
+
+/* Secondary Site Header Accents */
+body.site_secondaire #profil .header_toogle__libelle,
+body.site_secondaire .header_col2__ligne1 #profil button {
+    background-color: var(--uas-couleur-principale) !important;
+    color: #ffffff !important;
+}
+
+body.site_secondaire #recherche-simple button,
+body.site_secondaire .recherche-simple__bouton {
+    background-color: var(--uas-couleur-principale) !important;
+    color: #ffffff !important;
+}
+
+body.site_secondaire .banniere__site_secondaire,
+body.site_secondaire .banniere__titre_site {
+    background-color: var(--uas-couleur-principale) !important;
+    color: #ffffff !important;
+    font-family: "gothambold", sans-serif !important;
+    font-size: 0.95rem !important;
+    padding: 0.35rem 0.8rem !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Full Width Carousel Container */
+.ficheaccueil .layout__simple-grid__row-0,
+.ficheaccueil .layout__simple-grid__row-0 .layout__simple-grid__row_wrapper,
+.ficheaccueil .layout__slot--0x0,
+.ficheaccueil .carousellyon3Card,
+.ficheaccueil .carousellyon3Card_wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.ficheaccueil .carousellyon3Card {
+    margin-top: 0 !important;
+    margin-bottom: 2.5em !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background: #111428 !important;
+    border-bottom: 0.5em solid var(--uas-couleur-principale) !important;
+}
+
+.ficheaccueil #page_deco {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ficheaccueil .carousellyon3Card .carousellyon3Card_wrapper {
+    position: relative !important;
+    width: 100% !important;
+    background: #111428 !important;
+}
+
+.ficheaccueil .carousellyon3Card .owl-carrousel-carousellyon3 {
+    position: relative !important;
+    width: 100% !important;
+    height: 600px !important;
+    min-height: 520px !important;
+    max-height: 75vh !important;
+    padding-bottom: 0 !important;
+    overflow: hidden !important;
+    background: #111428 !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .ficheaccueil .carousellyon3Card .owl-carrousel-carousellyon3 {
+        height: 520px !important;
+        min-height: 460px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ficheaccueil .carousellyon3Card .owl-carrousel-carousellyon3 {
+        height: 480px !important;
+        min-height: 400px !important;
+        max-height: none !important;
+    }
+}
+
+.ficheaccueil .carousellyon3Card .carousellyon3__item__wrapper,
+.ficheaccueil .carousellyon3Card .carousellyon3__item__wrapper + .carousellyon3__item__wrapper {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out !important;
+    z-index: 1 !important;
+    background-color: #111428 !important;
+}
+
+.ficheaccueil .carousellyon3Card .carousellyon3__item__wrapper.active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 2 !important;
+}
+
+.ficheaccueil .carousellyon3Card .carousellyon3__item {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #111428 !important;
+}
+
+.ficheaccueil .carousellyon3Card .carousellyon3__item::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(90deg, rgba(17, 20, 40, 0.45) 0%, rgba(17, 20, 40, 0.15) 50%, rgba(17, 20, 40, 0.3) 100%) !important;
+    pointer-events: none !important;
+}
+
+.ficheaccueil .carousellyon3Card .item_content {
+    display: block !important;
+    position: absolute !important;
+    bottom: 4rem !important;
+    left: max(2rem, calc((100% - 1240px) / 2 + 1.5rem)) !important;
+    z-index: 3 !important;
+    width: 44% !important;
+    max-width: 540px !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    padding: 2.2em !important;
+    margin: 0 !important;
+    border-radius: 2em 0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+    box-sizing: border-box !important;
+    border-left: none !important;
+}
+
+@media screen and (max-width: 1300px) {
+    .ficheaccueil .carousellyon3Card .item_content {
+        left: 2rem !important;
+        width: 48% !important;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .ficheaccueil .carousellyon3Card .item_content {
+        left: 1.5rem !important;
+        right: 1.5rem !important;
+        width: auto !important;
+        max-width: none !important;
+        bottom: 2rem !important;
+        padding: 1.5em !important;
+    }
+}
+
+.ficheaccueil .carousellyon3Card .item_content h2 {
+    font-family: "gothambold", sans-serif !important;
+    font-size: 1.85rem !important;
+    color: var(--uas-couleur-principale) !important;
+    margin: 0 0 0.8rem 0 !important;
+    line-height: 1.2 !important;
+}
+
+.ficheaccueil .carousellyon3Card .item_content p {
+    font-family: "gothambook", sans-serif !important;
+    font-size: 1rem !important;
+    color: #2c3038 !important;
+    line-height: 1.5 !important;
+    margin: 0 0 1.2rem 0 !important;
+    display: block !important;
+}
+
+.ficheaccueil .carousellyon3Card .en_savoir_plus {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    font-family: "gothambold", sans-serif !important;
+    font-size: 0.92rem !important;
+    color: #ffffff !important;
+    background-color: var(--uas-couleur-principale) !important;
+    padding: 0.65rem 1.4rem !important;
+    border-radius: 3px !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.ficheaccueil .carousellyon3Card .en_savoir_plus:hover {
+    background-color: var(--uas-couleur-hover, #151834) !important;
+}
+
+.ficheaccueil .carousellyon3Card .owl-controls,
+.ficheaccueil .carousellyon3Card .owl-prev,
+.ficheaccueil .carousellyon3Card .owl-next,
+.ficheaccueil .carousellyon3Card .nav_containter {
+    display: none !important;
+}
+
+.carousel-nav-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel-btn-prev,
+.carousel-btn-next {
+    pointer-events: auto !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: #ffffff !important;
+    border: 2px solid rgba(31, 35, 75, 0.12) !important;
+    color: var(--uas-couleur-principale) !important;
+    font-size: 1.8rem !important;
+    line-height: 1 !important;
+    font-weight: bold !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease !important;
+}
+
+.carousel-btn-prev:hover,
+.carousel-btn-next:hover {
+    background: var(--uas-couleur-principale) !important;
+    color: #ffffff !important;
+    transform: scale(1.08) !important;
+}
+
+.carousel-dots-container {
+    position: absolute !important;
+    bottom: 1.5rem !important;
+    left: max(2.5rem, calc((100% - 1240px) / 2 + 1.5rem)) !important;
+    transform: none !important;
+    right: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    z-index: 10 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-dots-container {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        bottom: 0.8rem !important;
+    }
+}
+
+.carousel-dot {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    min-height: 12px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    border: 2px solid #ffffff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.carousel-dot.active {
+    background: var(--uas-couleur-principale) !important;
+    border-color: #ffffff !important;
+    transform: scale(1.25);
+}
+
+/* Authentic Lyon 3 Homepage Navigation & Alignment Rules */
+.ficheaccueil #zone_navigation {
+    display: none !important;
+}
+
+/* Authentic Lyon 3 Testimonials Card (General Component) */
+.temoignagelyon3Card {
+    background: #ffffff;
+    border-top: 4px solid var(--uas-couleur-principale, #1f234b);
+    padding: 2.2rem 2.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    margin: 2rem 0 1.5rem 0;
+}
+
+.temoignagelyon3Card .temoignage_entete {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.8rem;
+}
+
+.temoignagelyon3Card .temoignage_entete h2 {
+    font-family: "gothambold", sans-serif !important;
+    font-size: 1.5rem !important;
+    color: var(--uas-couleur-principale, #1f234b) !important;
+    margin: 0 0 0.5rem 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.temoignagelyon3Card .temoignage_entete p {
+    font-family: "gothambook", sans-serif;
+    color: #666666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.temoignages_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.temoignage_item {
+    background: #f8f9fa;
+    border-left: 3px solid var(--uas-couleur-principale, #1f234b);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.temoignage_quote p {
+    font-family: "gothambook", sans-serif;
+    font-style: italic;
+    color: #2c3038;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.2rem 0;
+}
+
+.temoignage_author {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e4e8;
+}
+
+.temoignage_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    flex-shrink: 0;
+}
+
+.temoignage_info .temoignage_name {
+    display: block;
+    font-family: "gothambold", sans-serif;
+    font-size: 0.95rem;
+    color: #1e1213;
+}
+
+.temoignage_info .temoignage_role {
+    display: block;
+    font-family: "gothambook", sans-serif;
+    font-size: 0.82rem;
+    color: #666666;
+}
+
+.temoignage_info .temoignage_promo {
+    display: block;
+    font-family: "gothambold", sans-serif;
+    font-size: 0.78rem;
+    color: var(--uas-couleur-accent, #0091B5);
+    font-weight: 600;
+}
+
+
+
+/* ==========================================================================
+
+
+
+/* ==========================================================================
+   6. COMUE HERO BANNER & LOGO AUTOSLIDER SUPPORT
+   ========================================================================== */
+
+body#body main#page section.banniere__accroche__rubrique {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body#body main#page section.banniere__accroche__rubrique > div {
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    max-width: 950px;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 1rem auto;
+}
+
+body#body main#page section.banniere__accroche__rubrique > div p {
+    color: #ffffff !important;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+section.scroller {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+}
+
+section.scroller ul.autoslider {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    animation: autoslider_scroll 80s linear infinite;
+}
+
+section.scroller ul.autoslider:hover {
+    animation-play-state: paused;
+}
+
+section.scroller ul.autoslider li {
+    flex: 0 0 130px;
+    width: 130px;
+    height: 90px;
+    background: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+section.scroller ul.autoslider li::before {
+    display: none !important;
+}
+
+section.scroller ul.autoslider li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.scroller ul.autoslider li a img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes autoslider_scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.scroll-trigger {
+    color: #ffffff;
+    background: rgba(0, 150, 214, 0.9);
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.scroll-trigger:hover {
+    background: #007bb0;
+}
+
+.scroll-trigger .icon-arrow {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* ==========================================================================
+   CKEDITOR ACCORDION (Lyon 3 standard)
+   ========================================================================== */
+.ckeditor-accordion {
+    background-color: transparent !important;
+    margin: 1.5em 0 !important;
+}
+
+.accordion_toggler {
+    background-color: rgba(31, 35, 75, 0.08) !important;
+    position: relative !important;
+    border-top: 1em solid #ffffff !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.accordion_toggler:first-child {
+    border-top: none !important;
+}
+
+.accordion_toggler button.accordion_toggler__btn,
+.accordion_toggler .accordion_toggler__btn {
+    background-color: transparent !important;
+    color: #1e1213 !important;
+    font-family: "gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1.1em !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: block !important;
+    padding: 0.85em 3.5em 0.85em 1.2em !important;
+    width: 100% !important;
+    text-align: left !important;
+    cursor: pointer !important;
+}
+
+.accordion_toggler button.accordion_toggler__btn:hover,
+.accordion_toggler button.accordion_toggler__btn:focus {
+    background-color: transparent !important;
+    color: #1f234b !important;
+    box-shadow: none !important;
+}
+
+.accordion_toggler::after {
+    content: "" !important;
+    background-color: #1f234b !important;
+    border-radius: 50% !important;
+    width: 28px !important;
+    height: 28px !important;
+    position: absolute !important;
+    right: 1em !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    pointer-events: none !important;
+    background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: transform 0.2s ease !important;
+}
+
+.accordion_toggler.active::after {
+    transform: translateY(-50%) rotate(180deg) !important;
+}
+
+.accordion_wrapper {
+    display: none;
+    background-color: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-top: none !important;
+    padding: 1.25em !important;
+    line-height: 1.6 !important;
+}
+
+.accordion_wrapper.active {
+    display: block !important;
+}
+
+/* ==========================================================================
+   7. FOOTER PARTENAIRES BAR
+   ========================================================================== */
+.footer_ligne2 {
+    background: #ffffff !important;
+    padding: 1.5em 1.5em 0.8em 1.5em !important;
+    text-align: center !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+#footer_partenaires {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem 3rem !important;
+}
+
+#footer_partenaires li {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#footer_partenaires li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 4px 6px !important;
+    transition: transform 0.2s ease, opacity 0.2s ease !important;
+    opacity: 0.92 !important;
+}
+
+#footer_partenaires li a:hover,
+#footer_partenaires li a:focus {
+    transform: translateY(-2px) !important;
+    opacity: 1 !important;
+}
+
+#footer_partenaires li img {
+    filter: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    vertical-align: middle !important;
+    display: inline-block !important;
+}
+
+
+
+
+/* ==========================================================================
+   8. AUTHENTIC LYON 3 / INSG GABON COLUMN & GRID RULES
+   ========================================================================== */
+.ligne_1, .ligne_2, .ligne_3, .ligne_4, .ligne_5, .ligne_6, .ligne_7, .ligne_8 {
+    width: 100% !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+}
+.ligne_1::after, .ligne_2::after, .ligne_3::after, .ligne_4::after,
+.ligne_5::after, .ligne_6::after, .ligne_7::after, .ligne_8::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 50em) {
+    .ligne_1 > .colonne_1,
+    .ligne_2 > .colonne_1,
+    .ligne_3 > .colonne_1,
+    .ligne_4 > .colonne_1,
+    .ligne_5 > .colonne_1,
+    .ligne_6 > .colonne_1,
+    .ligne_7 > .colonne_1,
+    .ligne_8 > .colonne_1 {
+        width: 100% !important;
+        float: none !important;
+        box-sizing: border-box !important;
+    }
+    .colonne_1:only-child {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+
+/* Ensure #avec_nav_sans_encadres and #avec_nav_avec_encadres are properly bounded */
+#avec_nav_sans_encadres,
+#avec_nav_avec_encadres,
+#sans_nav_sans_encadres {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Submenu links styling: NO underlines on submenus */
+.menu_level1_list a,
+.menu_level2_list a,
+.menu__lvl2 a,
+.menu_toggle__menu a,
+#menu_principal a {
+    text-decoration: none !important;
+}
+
+.menu_level1_list a:hover,
+.menu_level2_list a:hover,
+.menu__lvl2 a:hover,
+.menu_toggle__menu a:hover,
+#menu_principal a:hover {
+    text-decoration: none !important;
+}
+
+/* ==========================================================================
+   9. AUTHENTIC LYON 3 DROPDOWN MENUS (.select_style & SELECT)
+   ========================================================================== */
+.select_style,
+span.select_style {
+    display: inline-flex !important;
+    align-items: center !important;
+    position: relative !important;
+    background: #ffffff !important;
+    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+    border-radius: 22px !important;
+    height: 3.1em !important;
+    min-height: 42px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    vertical-align: middle !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.select_style:hover,
+.select_style:focus-within,
+span.select_style:hover,
+span.select_style:focus-within {
+    border-color: #151834 !important;
+    box-shadow: 0 2px 6px rgba(31, 35, 75, 0.15) !important;
+}
+
+.select_style select,
+span.select_style select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    font-family: "gotham", sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    color: #1f234b !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 46px 0 1.25rem !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    z-index: 2 !important;
+}
+
+/* Authentic circular down-arrow button on right */
+.select_style::before,
+span.select_style::before {
+    content: "" !important;
+    position: absolute !important;
+    right: 0.35em !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 33px !important;
+    height: 33px !important;
+    border-radius: 50% !important;
+    background-color: var(--uas-couleur-principale, #1f234b) !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.select_style:hover::before,
+span.select_style:hover::before {
+    background-color: #151834 !important;
+}
+
+/* Fallback for any standalone select element */
+select:not([multiple]) {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    font-family: "gotham", sans-serif !important;
+    font-size: 0.95rem !important;
+    color: #1f234b !important;
+    background-color: #ffffff !important;
+    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+    border-radius: 22px !important;
+    height: 3.1em !important;
+    min-height: 42px !important;
+    padding: 0 44px 0 1.25rem !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="%231f234b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% - 14px) center !important;
+    outline: none !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+select:not([multiple]):hover,
+select:not([multiple]):focus {
+    border-color: #151834 !important;
+    box-shadow: 0 2px 6px rgba(31, 35, 75, 0.15) !important;
+}
+
+/* ==========================================================================
+   10. SEARCH & FILTER BARS (ACTUALITES / FORMATIONS)
+   ========================================================================== */
+.recherche-actualites-bar,
+.recherche-formations-bar {
+    background: #f7f8fa !important;
+    border: 1px solid #e2e4e8 !important;
+    border-radius: 12px !important;
+    padding: 1.25rem 1.5rem !important;
+    margin: 1.5rem 0 2.5rem 0 !important;
+    box-sizing: border-box !important;
+}
+
+.recherche-bar-form {
+    display: flex !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+}
+
+.recherche-bar-form__input {
+    flex: 1 1 220px !important;
+    min-width: 180px !important;
+}
+
+.recherche-bar-form__input input[type="text"] {
+    width: 100% !important;
+    height: 3.1em !important;
+    min-height: 42px !important;
+    padding: 0 1.25rem !important;
+    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+    border-radius: 22px !important;
+    font-family: "gotham", sans-serif !important;
+    font-size: 0.95rem !important;
+    background: #ffffff !important;
+    color: #1f234b !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.recherche-bar-form__input input[type="text"]:focus {
+    border-color: #151834 !important;
+    box-shadow: 0 2px 6px rgba(31, 35, 75, 0.15) !important;
+}
+
+.recherche-bar-form__select {
+    flex: 0 1 auto !important;
+    min-width: 190px !important;
+}
+
+.recherche-bar-form__select .select_style {
+    width: 100% !important;
+}
+
+.recherche-bar-form__actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+}
+
+.recherche-bar-form__reset {
+    font-family: "gotham", sans-serif !important;
+    font-size: 0.9rem !important;
+    color: #666666 !important;
+    text-decoration: underline !important;
+    padding: 0.25rem 0.5rem !important;
+    transition: color 0.2s ease !important;
+}
+
+.recherche-bar-form__reset:hover {
+    color: var(--uas-couleur-principale, #1f234b) !important;
+}
+
+/* ==========================================================================
+   11. AUTHENTIC LYON 3 PAGINATION & DROPDOWN MENU
+   ========================================================================== */
+.pagination-wrapper {
+    margin: 2.5rem 0 1.5rem 0 !important;
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+}
+
+.search-result__pagination {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem 1.5rem !important;
+    padding: 1.5rem 0 !important;
+    border-top: 1px solid #e8eaed !important;
+    border-bottom: 1px solid #e8eaed !important;
+    font-family: "gotham", sans-serif !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+}
+
+.search-pagination__nav-group {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.75rem 1rem !important;
+}
+
+.search-pagination__current-page {
+    font-weight: 500 !important;
+    color: #555555 !important;
+    padding: 0 0.25rem !important;
+}
+
+.search-pagination__current-page strong {
+    font-weight: 700 !important;
+    color: var(--uas-couleur-principale, #1f234b) !important;
+}
+
+.search-pagination__btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.45rem 1rem !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+    background: #ffffff !important;
+    color: var(--uas-couleur-principale, #1f234b) !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease !important;
+}
+
+.search-pagination__btn:hover:not(.disabled) {
+    background: var(--uas-couleur-principale, #1f234b) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+.search-pagination__btn.disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    border-color: #cccccc !important;
+    color: #888888 !important;
+}
+
+.search-pagination__list {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.search-pagination__item {
+    display: inline-flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.search-pagination__item a,
+.search-pagination__item span {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    border: 1px solid #e0e2e6 !important;
+    background: #ffffff !important;
+    color: var(--uas-couleur-principale, #1f234b) !important;
+    transition: all 0.2s ease !important;
+}
+
+.search-pagination__item a:hover {
+    background: var(--uas-couleur-principale, #1f234b) !important;
+    border-color: var(--uas-couleur-principale, #1f234b) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+.search-pagination__item.active span {
+    background: var(--uas-couleur-principale, #1f234b) !important;
+    border-color: var(--uas-couleur-principale, #1f234b) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(31, 35, 75, 0.25) !important;
+}
+
+.search-pagination__item.disabled span {
+    border-color: transparent !important;
+    color: #999999 !important;
+    background: transparent !important;
+}
+
+/* Pagination Dropdown Menu - Sleek direct page selector */
+.search-pagination__dropdown-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    margin-left: auto !important;
+}
+
+.search-pagination__dropdown-label {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    color: #555555 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+}
+
+.select_style--pagination {
+    height: 36px !important;
+    min-height: 36px !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
+    background: #ffffff !important;
+}
+
+.select_style--pagination select {
+    height: 34px !important;
+    padding: 0 38px 0 0.9rem !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+}
+
+.select_style--pagination::before {
+    width: 26px !important;
+    height: 26px !important;
+    right: 0.25em !important;
+    background-size: 10px !important;
+}
