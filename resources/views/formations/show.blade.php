@@ -12,124 +12,105 @@
         ]])
 
         <div id="contenu-encadres">
-            <div id="avec_nav_sans_encadres" class="contenu" role="main">
-                
-                {{-- Badges Header --}}
-                <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap;">
-                    <span style="background: var(--uas-couleur-accent, #0091B5); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 3px; text-transform: uppercase;">
-                        {{ $formation->level }}
-                    </span>
-                    <span style="background: #eef0f4; color: #333; font-size: 0.8rem; font-weight: 600; padding: 4px 10px; border-radius: 3px; text-transform: uppercase;">
-                        {{ $formation->department }}
-                    </span>
-                    @if($formation->duration)
-                        <span style="color: #666; font-size: 0.85rem; margin-left: 0.5rem;">
-                            <strong>Durée :</strong> {{ $formation->duration }}
-                        </span>
-                    @endif
-                </div>
+            <div id="avec_nav_avec_encadres" class="contenu" role="main">
+                <h1>{{ $formation->title }}</h1>
 
-                <h1 style="margin-top: 0; line-height: 1.25;">{{ $formation->title }}</h1>
+                <div class="ligne_1"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
+                        <p class="chapo">
+                            <strong>{{ $formation->level }}</strong> &ndash; {{ $formation->department }}
+                            @if($formation->duration) &bull; Durée : {{ $formation->duration }} @endif
+                        </p>
 
-                <div class="ligne_1">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            
-                            {{-- Image and Hero --}}
-                            <div style="margin: 1.5rem 0 2rem 0; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-                                <img src="{{ $formation->image_url }}" alt="{{ $formation->title }}" style="width: 100%; max-height: 420px; object-fit: cover; display: block;" />
-                            </div>
+                        @if($formation->image_url)
+                            <figure class="photo" style="margin: 1.5em 0;">
+                                <img src="{{ $formation->image_url }}" alt="{{ $formation->title }}" style="width: 100%; max-height: 400px; object-fit: cover;" />
+                                <figcaption class="legende">{{ $formation->title }} &ndash; INSG Gabon</figcaption>
+                            </figure>
+                        @endif
 
-                            <div class="paragraphe--0">
-                                <div class="paragraphe__contenu--0 toolbox">
-                                    <div style="display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap;">
-                                        
-                                        {{-- Main Details --}}
-                                        <div style="flex: 1 1 540px;">
-                                            <h2>Présentation de la filière</h2>
-                                            <p class="chapo" style="font-size: 1.05rem; line-height: 1.7; color: #333;">
-                                                {!! nl2br(e($formation->description)) !!}
-                                            </p>
+                        <h2>Présentation de la filière</h2>
+                        <p>{!! nl2br(e($formation->description)) !!}</p>
 
-                                            @if($formation->objectives)
-                                                <h2 style="margin-top: 2rem;">Objectifs de la formation</h2>
-                                                <div style="line-height: 1.7; color: #444;">
-                                                    {!! nl2br(e($formation->objectives)) !!}
-                                                </div>
-                                            @endif
+                        @if($formation->objectives)
+                            <h2>Objectifs de la formation</h2>
+                            <div>{!! nl2br(e($formation->objectives)) !!}</div>
+                        @endif
 
-                                            @if($formation->careers)
-                                                <h2 style="margin-top: 2rem;">Débouchés professionnels &amp; Métiers</h2>
-                                                <div style="line-height: 1.7; color: #444; background: #fbfbfc; border-left: 4px solid var(--uas-couleur-principale, #1f234b); padding: 1rem 1.25rem; border-radius: 0 4px 4px 0;">
-                                                    {!! nl2br(e($formation->careers)) !!}
-                                                </div>
-                                            @endif
+                        @if($formation->prerequisites)
+                            <h2>Conditions d'admission &amp; Prérequis</h2>
+                            <div>{!! nl2br(e($formation->prerequisites)) !!}</div>
+                        @endif
 
-                                            @if($formation->prerequisites)
-                                                <h2 style="margin-top: 2rem;">Conditions d'admission &amp; Prérequis</h2>
-                                                <div style="line-height: 1.7; color: #444;">
-                                                    {!! nl2br(e($formation->prerequisites)) !!}
-                                                </div>
-                                            @endif
-                                        </div>
+                        <p style="margin-top: 2.5em;">
+                            <a href="{{ route('formations.index') }}" class="lien_interne"><strong>&laquo; Retour à l'ensemble des formations</strong></a>
+                        </p>
+                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+                    </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
-                                        {{-- Sidebar Factsheet --}}
-                                        <div style="flex: 0 0 300px; max-width: 100%;">
-                                            <div style="background: #f7f8fa; border: 1px solid #e2e4e8; border-radius: 6px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
-                                                <h3 style="margin-top: 0; color: var(--uas-couleur-principale, #1f234b); border-bottom: 2px solid var(--uas-couleur-principale, #1f234b); padding-bottom: 0.5rem; font-size: 1.1rem;">
-                                                    Fiche Synthétique
-                                                </h3>
-                                                <ul style="list-style: none; padding: 0; margin: 1rem 0 1.5rem 0; font-size: 0.9rem; line-height: 1.8;">
-                                                    <li><strong>Niveau de sortie :</strong> {{ $formation->level }}</li>
-                                                    <li><strong>Département :</strong> {{ $formation->department }}</li>
-                                                    <li><strong>Durée :</strong> {{ $formation->duration ?? '3 ans' }}</li>
-                                                    <li><strong>Régime :</strong> Formation Initiale / Continue</li>
-                                                    <li><strong>Lieu :</strong> Campus Libreville</li>
-                                                    <li><strong>Validation :</strong> Diplôme National d'État</li>
-                                                </ul>
-
-                                                <a href="{{ route('admissions') }}" class="button" style="display: block; text-align: center; background: var(--uas-couleur-principale, #1f234b); color: #fff; padding: 0.75rem 1rem; border-radius: 4px; text-decoration: none; font-weight: 700; margin-bottom: 0.75rem;">
-                                                    Candidater à cette filière &rarr;
-                                                </a>
-                                                <a href="{{ route('contact') }}" style="display: block; text-align: center; font-size: 0.85rem; color: #555; text-decoration: underline;">
-                                                    Poser une question
+                @if(isset($relatedFormations) && $relatedFormations->count() > 0)
+                    <div class="ligne_2"><div class="colonne_1">
+                        <div class="colonne_deco"><div class="paragraphe--4">
+                            <h2 class="paragraphe__titre--4">Formations similaires</h2>
+                            <div class="paragraphe__contenu--4 toolbox">
+                                <ul class="objets actualites">
+                                    @foreach($relatedFormations as $rf)
+                                        <li class="avec_vignette">
+                                            <div class="vignette_deco">
+                                                <a href="{{ route('formations.show', $rf->slug) }}">
+                                                    <img class="vignette" src="{{ $rf->image_url }}" alt="{{ $rf->title }}">
                                                 </a>
                                             </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                            <div class="vignette_deco2">
+                                                <strong><a href="{{ route('formations.show', $rf->slug) }}" class="lien_interne">{{ $rf->title }}</a></strong>
+                                                <div class="date"><span class="date--debut">{{ $rf->level }} &bull; {{ $rf->department }}</span></div>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Back button --}}
-                <div style="border-top: 1px solid #e2e4e8; padding-top: 1.5rem; margin: 2.5rem 0 1rem 0;">
-                    <a href="{{ route('formations.index') }}" class="button" style="display: inline-block;">
-                        &larr; Retour à l'offre de formations
-                    </a>
-                </div>
-
-                {{-- Related formations --}}
-                @if(isset($relatedFormations) && $relatedFormations->count() > 0)
-                    <div style="margin-top: 3.5rem; border-top: 2px solid var(--uas-couleur-principale, #1f234b); padding-top: 2rem;">
-                        <h2 style="font-size: 1.4rem; color: var(--uas-couleur-principale, #1f234b); margin-bottom: 1.5rem;">Formations similaires</h2>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
-                            @foreach($relatedFormations as $rf)
-                                <x-card-formation :formation="$rf" />
-                            @endforeach
-                        </div>
-                    </div>
+                        </div></div>
+                    </div></div>
                 @endif
 
-            </div>
-        </div>
+            </div><!-- #avec_nav_avec_encadres .contenu -->
+
+            <aside id="encadres" role="complementary">
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Fiche Synthétique</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <ul>
+                            <li><strong>Niveau :</strong> {{ $formation->level }}</li>
+                            <li><strong>Département :</strong> {{ $formation->department }}</li>
+                            <li><strong>Durée :</strong> {{ $formation->duration ?? '3 ans' }}</li>
+                            <li><strong>Régime :</strong> Formation Initiale / Continue</li>
+                            <li><strong>Campus :</strong> Libreville</li>
+                            <li><strong>Validation :</strong> Diplôme National d'État (CAMES)</li>
+                        </ul>
+                        <p>
+                            <a href="{{ route('admissions') }}" class="button"><span>Candidater à cette filière</span></a>
+                        </p>
+                        <p>
+                            ► <a href="{{ route('contact') }}" class="lien_interne">Poser une question</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Admissions &amp; Concours</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        ► <a href="{{ route('admissions') }}" class="lien_interne">Modalités de candidature</a><br>
+                        ► <a href="/calendrier-orientation-et-insertion-professionnelle" class="lien_interne">Calendrier des épreuves</a><br>
+                        ► <a href="/alternance" class="lien_interne">Formation continue</a>
+                    </div>
+                </div>
+            </aside>
+        </div><!-- #contenu-encadres -->
 
         <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
         <div id="redacteur-date-impression"></div>
-    </div>
+    </div><!-- #page_deco -->
     <div class="separateur"></div>
 </main>
 @endsection
-

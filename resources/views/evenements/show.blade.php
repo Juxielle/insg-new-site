@@ -12,68 +12,68 @@
         ]])
 
         <div id="contenu-encadres">
-            <div id="avec_nav_sans_encadres" class="contenu" role="main">
-                
-                <div style="margin-bottom: 1rem;">
-                    @if($evenement->formatted_period)
-                        <span style="display: inline-block; background-color: var(--uas-couleur-principale, #1f234b); color: #fff; font-size: 0.85rem; text-transform: uppercase; font-weight: 700; padding: 4px 12px; border-radius: 3px; margin-bottom: 0.75rem;">
-                            {{ $evenement->formatted_period }}
-                        </span>
-                    @endif
-                    @if($evenement->location)
-                        <span style="color: #555; font-size: 0.95rem; margin-left: 0.75rem;">
-                            <span class="icon icon-location" aria-hidden="true"></span> {{ $evenement->location }}
-                        </span>
-                    @endif
+            <div id="avec_nav_avec_encadres" class="contenu" role="main">
+                <div class="date-publication-maj">
+                    <span class="date-publication">Date : {{ $evenement->formatted_period ?? ($evenement->start_date ? $evenement->start_date->translatedFormat('d F Y') : '') }}</span>
+                    @if($evenement->location) &ndash; <span>Lieu : {{ $evenement->location }}</span> @endif
                 </div>
 
-                <h1 style="margin-top: 0; line-height: 1.25;">{{ $evenement->title }}</h1>
+                <h1>{{ $evenement->title }}</h1>
 
-                <div class="ligne_1">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            @if($evenement->image)
-                                <div style="margin: 1.5rem 0 2rem 0; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                                    <img src="{{ $evenement->image_url }}" alt="{{ $evenement->title }}" style="width: 100%; max-height: 480px; object-fit: cover; display: block;" />
-                                </div>
-                            @endif
+                <div class="ligne_1"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
+                        @if($evenement->image)
+                            <figure class="photo" style="margin: 1.5em 0;">
+                                <img src="{{ $evenement->image_url }}" alt="{{ $evenement->title }}" style="width: 100%; max-height: 440px; object-fit: cover;" />
+                                <figcaption class="legende">{{ $evenement->title }}</figcaption>
+                            </figure>
+                        @endif
 
-                            <div class="paragraphe--0">
-                                <div class="paragraphe__contenu--0 toolbox">
-                                    @if($evenement->summary)
-                                        <p class="chapo" style="font-size: 1.15rem; font-weight: 500; line-height: 1.6; color: #222; border-left: 4px solid var(--uas-couleur-accent, #0091B5); padding-left: 1rem; margin: 1.5rem 0;">
-                                            {{ $evenement->summary }}
-                                        </p>
-                                    @endif
+                        @if($evenement->summary)
+                            <p class="chapo">
+                                {{ $evenement->summary }}
+                            </p>
+                        @endif
 
-                                    @if($evenement->organizer)
-                                        <p style="font-size: 0.95rem; color: #666; margin-bottom: 1.5rem;">
-                                            <strong>Organisateur :</strong> {{ $evenement->organizer }}
-                                        </p>
-                                    @endif
-
-                                    <div class="evenement-body-content" style="font-size: 1.05rem; line-height: 1.8; color: #333; margin: 2rem 0;">
-                                        {!! nl2br(e($evenement->description)) !!}
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="description" class="toolbox">
+                            {!! nl2br(e($evenement->description)) !!}
                         </div>
-                    </div>
-                </div>
 
-                {{-- Back button & share --}}
-                <div style="border-top: 1px solid #e2e4e8; padding-top: 1.5rem; margin: 2.5rem 0 1rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <a href="{{ route('evenements.index') }}" class="button" style="display: inline-block;">
-                        &larr; Retour à l'agenda
-                    </a>
-                </div>
+                        <p style="margin-top: 2.5em;">
+                            <a href="{{ route('evenements.index') }}" class="lien_interne"><strong>&laquo; Retour à l'agenda</strong></a>
+                        </p>
+                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+                    </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
-                <div class="date-miseajour">Mise à jour : {{ date('d F Y') }}</div>
-            </div>
-        </div>
+            </div><!-- #avec_nav_avec_encadres .contenu -->
 
-        <div class="separateur"></div>
-    </div>
+            <aside id="encadres" role="complementary">
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Agenda</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        ► <a href="{{ route('evenements.index') }}" class="lien_interne">Consulter tout l'agenda</a><br>
+                        ► <a href="{{ route('actualites.index') }}" class="lien_interne">Toutes les actualités</a>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Informations</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        @if($evenement->location)
+                            <p><strong>Lieu :</strong> {{ $evenement->location }}</p>
+                        @endif
+                        @if($evenement->organizer)
+                            <p><strong>Organisateur :</strong> {{ $evenement->organizer }}</p>
+                        @endif
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+            </aside>
+        </div><!-- #contenu-encadres -->
+
+        <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
+        <div id="redacteur-date-impression"></div>
+    </div><!-- #page_deco -->
+    <div class="separateur"></div>
 </main>
 @endsection
-

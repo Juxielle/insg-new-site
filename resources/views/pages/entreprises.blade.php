@@ -1,109 +1,81 @@
 @extends('layouts.app')
 
 @section('title', 'Relations Entreprises & Partenariats - INSG Gabon')
-@section('meta_description', 'Partenariats stratégiques de l\'INSG Gabon avec les leaders industriels et financiers : BGFI Bank, CNSS, UGB, TotalEnergies, Airtel. Stages et recrutement.')
+@section('meta_description', 'L\'INSG Gabon développe des partenariats stratégiques avec les entreprises : stages, recrutement, formation continue sur-mesure et taxe d\'apprentissage.')
 
 @section('content')
 <main id="page">
     <div id="page_deco">
-        @include('partials.banner', ['breadcrumbs' => ['Entreprises' => '']])
+        @include('partials.banner', ['breadcrumbs' => ['Entreprises & Partenaires' => '']])
 
         <div id="contenu-encadres">
-            <div id="avec_nav_sans_encadres" class="contenu" role="main">
+            <div id="avec_nav_avec_encadres" class="contenu" role="main">
                 <h1>Relations Entreprises &amp; Partenariats</h1>
 
-                <div class="ligne_1">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--0">
-                                <div class="paragraphe__contenu--0 toolbox">
-                                    <p class="chapo">Depuis plus de cinquante ans, l'Institut National des Sciences de Gestion bâtit des ponts solides entre le monde académique et le tissu économique gabonais. Plus de 42 entreprises et institutions partenaires soutiennent nos formations, accueillent nos stagiaires et recrutent nos diplômés.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="ligne_1"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
+                        <p class="chapo">Partenaire privilégié des acteurs économiques gabonais et internationaux, l'Institut National des Sciences de Gestion développe des liens étroits avec les entreprises pour favoriser l'insertion professionnelle et co-construire les compétences managériales de demain.</p>
 
-                {{-- Key Pillars --}}
-                <div class="ligne_2" id="incubateur">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--4">
-                                <h2 class="paragraphe__titre--4">L'Incubateur des Métiers BGFI-INSG</h2>
-                                <div class="paragraphe__contenu--4 toolbox">
-                                    <div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap; margin:1.5rem 0;">
-                                        <div style="flex:0 0 200px; text-align:center;">
-                                            <img src="{{ asset('assets/images/partners/bgfi.png') }}" alt="Partenaire BGFI Bank" style="width:100%; max-width:180px; object-fit:contain;" />
-                                        </div>
-                                        <div style="flex:1; min-width:280px;">
-                                            <p style="margin-top:0; font-size:1rem; line-height:1.6; color:#333;">Fruit d'une convention majeure avec le groupe bancaire BGFI, l'Incubateur des Métiers accompagne les étudiants porteurs de projets d'entreprises innovantes et soutient les filières d'excellence dans le domaine bancaire, financier et managérial.</p>
-                                            <ul style="color:#555; font-size:0.9rem; line-height:1.6;">
-                                                <li>Mentorat par des directeurs et experts financiers en exercice</li>
-                                                <li>Bourses d'excellence et immersion dans les filiales du groupe</li>
-                                                <li>Accompagnement à la création d'entreprises à fort potentiel</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <h2>Nos partenariats stratégiques de référence</h2>
+                        <p>L'INSG collabore activement avec les fleurons du secteur bancaire, pétrolier, minier, logistique et des services au Gabon et dans la sous-région CEMAC :</p>
+                        <ul>
+                            @forelse($partenaires as $p)
+                                <li><strong>{{ $p->name }} :</strong> {{ $p->description ?? 'Partenaire institutionnel de l\'INSG Gabon' }}</li>
+                            @empty
+                                <li><strong>BGFI Bank :</strong> Partenaire historique de l'institut, soutien à l'insertion professionnelle et aux bourses d'excellence.</li>
+                                <li><strong>TotalEnergies Gabon :</strong> Accueil de stagiaires en gestion de projets et contrôle financier.</li>
+                                <li><strong>Comilog (Groupe Eramet) :</strong> Coopération en formation des cadres et gestion des approvisionnements.</li>
+                                <li><strong>Gabon Telecom :</strong> Stages et insertion dans les filières Informatique de Gestion &amp; SI.</li>
+                            @endforelse
+                        </ul>
+                        <p>Parmi nos partenaires historiques majeurs, <strong>BGFI Bank</strong> et les grandes institutions financières de la sous-région jouent un rôle central dans l'accueil en stage et l'embauche de nos diplômés.</p>
+                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+                    </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
-                {{-- Internships & Careers --}}
-                <div class="ligne_3" id="stages">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--4">
-                                <h2 class="paragraphe__titre--4">Stages professionnels &amp; Forum annuel de recrutement</h2>
-                                <div class="paragraphe__contenu--4 toolbox">
-                                    <p>Chaque année en novembre, le <strong>Forum de l'Emploi et des Stages</strong> réunit sur le campus plus de 30 entreprises leaders et recruteurs du Gabon. C'est l'occasion pour nos étudiants de Licence et Master de passer des entretiens d'embauche et de décrocher leurs stages de fin d'études.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="ligne_2"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">Nos offres pour les entreprises</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <ul>
+                                <li><strong>Formation continue sur-mesure :</strong> Montée en compétences de vos managers, cadres comptables et auditeurs internes.</li>
+                                <li><strong>Recrutement &amp; Stages :</strong> Diffusion prioritaire de vos offres de stages, d'alternance et d'emplois auprès de nos promotions.</li>
+                                <li><strong>Taxe d'apprentissage :</strong> Versement de la taxe pour moderniser nos laboratoires informatiques et soutenir l'innovation pédagogique.</li>
+                            </ul>
+                            <p>► <a href="/former-ses-collaborateurs" class="lien_interne"><strong>Former vos collaborateurs avec l'INSG</strong></a><br>
+                               ► <a href="/recruter-ses-collaborateurs" class="lien_interne"><strong>Déposer une offre de stage ou d'emploi</strong></a><br>
+                               ► <a href="/verser-la-taxe-dapprentissage" class="lien_interne"><strong>Verser la taxe d'apprentissage</strong></a></p>
+                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_2 -->
 
-                {{-- Partners Logos Grid --}}
-                <div class="ligne_4">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--4">
-                                <h2 class="paragraphe__titre--4">Nos Partenaires Privilégiés</h2>
-                                <div class="paragraphe__contenu--4 toolbox">
-                                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1.5rem; margin:2rem 0; align-items:center;">
-                                        @foreach($partenaires as $partenaire)
-                                            <div style="background:#ffffff; border:1px solid #e2e4e8; border-radius:6px; padding:1.5rem; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.03); min-height:100px; display:flex; align-items:center; justify-content:center;">
-                                                <img src="{{ $partenaire->image_url }}" alt="{{ $partenaire->name }}" style="max-height:55px; max-width:140px; object-fit:contain; vertical-align:middle;" />
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div><!-- #avec_nav_avec_encadres .contenu -->
 
-                {{-- Contact CTA --}}
-                <div style="background: linear-gradient(135deg, var(--uas-couleur-principale, #1f234b) 0%, #151834 100%); color: #fff; padding: 2rem; border-radius: 8px; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
-                    <div>
-                        <h2 style="color: #fff; margin: 0 0 0.5rem 0; font-size: 1.35rem;">Vous représentez une entreprise ?</h2>
-                        <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem;">Proposez vos offres de stage, soutenez nos programmes ou développez un partenariat sur-mesure avec l'INSG.</p>
-                    </div>
-                    <div>
-                        <a href="{{ route('contact') }}" class="button" style="background: #fff; color: var(--uas-couleur-principale, #1f234b); font-weight: 700; border: none; padding: 0.75rem 1.5rem;">
-                            Proposer un partenariat &rarr;
-                        </a>
-                    </div>
-                </div>
+            <aside id="encadres" role="complementary">
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Contact Entreprises</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <p><strong>Pôle Insertion &amp; Relations Entreprises</strong><br>
+                        Email : entreprises@insg-gabon.ga<br>
+                        Tél : +241 011 76 25 20</p>
+                        <p><a href="{{ route('contact') }}" class="button"><span>Nous contacter</span></a></p>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
 
-            </div>
-        </div>
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Services Entreprises</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        ► <a href="/former-ses-collaborateurs" class="lien_interne">Formation sur-mesure</a><br>
+                        ► <a href="/recruter-ses-collaborateurs" class="lien_interne">Recruter un diplômé</a><br>
+                        ► <a href="/marches-publics" class="lien_interne">Marchés Publics</a>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+            </aside>
+        </div><!-- #contenu-encadres -->
 
         <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
         <div id="redacteur-date-impression"></div>
-    </div>
+    </div><!-- #page_deco -->
     <div class="separateur"></div>
 </main>
 @endsection
-

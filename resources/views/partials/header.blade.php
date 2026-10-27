@@ -40,217 +40,63 @@
 				                 
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<span class="item_level1">Facultés et Instituts</span>
-													
-													
-														<ul class="menu_level2_list">
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/faculte-de-droit" class="type_rubrique_0004 item_level2"  >Département Finance & Comptabilité</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/faculte-de-philosophie" class="type_rubrique_0004 item_level2"  >Département Marketing & Commerce</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/faculte-des-humanites-lettres-et-societes-1" class="type_rubrique_0004 item_level2"  >Département Management & RH</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/faculte-des-langues" class="type_rubrique_0004 item_level2"  >Département Informatique de Gestion</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/iaelyon-school-of-management" class="type_rubrique_0004 item_level2"  >Cycle Master Professionnel & MBA</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/iut-jean-moulin" class="type_rubrique_0004 item_level2"  >Cycle BTS Professionnalisant</a>
-																	
-																</li>
-															
-														</ul>
-													
+													<span class="item_level1">Départements & Cycles</span>
+													<ul class="menu_level2_list">
+														<li class="menu_level2_item">
+															<a href="/faculte-de-droit" class="type_rubrique_0004 item_level2">Département Finance & Comptabilité</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/faculte-de-philosophie" class="type_rubrique_0004 item_level2">Département Marketing & Commerce</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/faculte-des-humanites-lettres-et-societes-1" class="type_rubrique_0004 item_level2">Département Management & RH</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/faculte-des-langues" class="type_rubrique_0004 item_level2">Département Informatique de Gestion</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/iaelyon-school-of-management" class="type_rubrique_0004 item_level2">Cycle Master Professionnel & MBA</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/iut-jean-moulin" class="type_rubrique_0004 item_level2">Cycle BTS Professionnalisant</a>
+														</li>
+													</ul>
 												</li>
 											</ul><!--
 											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<span class="item_level1">Unités de recherche</span>
-													
-													
-														<ul class="menu_level2_list">
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/centre-d-etudes-linguistiques" class="type_rubrique_0004 item_level2"  ><strong>CEL</strong> - Centre d'Études Linguistiques</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/centre-interuniversitaire-histoire-archeologie-litteratures-des-mondes-chretiens-et-musulmans-medievaux" class="type_rubrique_0004 item_level2"  ><strong>CIHAM</strong> - Histoire, Archéologie, Littératures des mondes chrétiens et musulmans médiévaux</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique" class="type_rubrique_0004 item_level2"  ><strong>CRDG</strong> - Centre de Recherche en Droit et Gouvernance d'Entreprise (INSG)</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/graphos-ifross-recherche" class="type_rubrique_0004 item_level2"  ><strong>CRDMS</strong> (IFROSS Recherche) - Centre de recherche en droit et management de santé</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/equipe-de-droit-international-europeen-et-compare" class="type_rubrique_0004 item_level2"  ><strong>EDIEC</strong> - Équipe de Droit International, Européen et Comparé</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/equipe-de-droit-public" class="type_rubrique_0004 item_level2"  ><strong>EDPL</strong> - Équipe de droit public</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/equipe-lyonnaise-en-information-et-communication" class="type_rubrique_0004 item_level2"  ><strong>CERGIC</strong> - Centre d'Études et de Recherche en Gestion de l'Information et de la Communication</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/equipe-louis-josserand" class="type_rubrique_0004 item_level2"  ><strong>ELJ</strong> - Équipe Louis Josserand</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/environnement-ville-societe" class="type_rubrique_0004 item_level2"  ><strong>EVS</strong> - Environnement, Ville, Société</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/histoire-et-sources-des-mondes-antiques" class="type_rubrique_0004 item_level2"  ><strong>HISOMA</strong> - Histoire et Sources des Mondes Antiques</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/institut-d-etudes-transtextuelles-et-transculturelles" class="type_rubrique_0004 item_level2"  ><strong>IETT</strong> - Institut d'Etudes Transtextuelles et Transculturelles</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/institut-d-histoire-des-representations-et-des-idees-dans-les-modernites" class="type_rubrique_0004 item_level2"  ><strong>IHRIM</strong> - Institut d'Histoire des Représentations et des Idées dans les Modernités</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/institut-de-recherches-philosophiques-de-Libreville" class="type_rubrique_0004 item_level2"  ><strong>IRPhiL</strong> - Institut de Recherches Philosophiques de l'INSG</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/laboratoire-de-recherche-historique-rhone-alpes" class="type_rubrique_0004 item_level2"  ><strong>CERME</strong> - Centre d'Études et de Recherche en Management et Économie (INSG)</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/laboratoire-de-recherche-magellan" class="type_rubrique_0004 item_level2"  ><strong>MAGELLAN</strong> - Management des organisations</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/equipe-marge" class="type_rubrique_0004 item_level2"  ><strong>MARGE</strong> - Écritures de la marge, marges de l'écriture</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/maison-des-sciences-de-l-homme" class="type_rubrique_0004 item_level2"  ><strong>MSH</strong> - Centre de Recherche en Management et Économie (CERME Gabon)</a>
-																	
-																</li>
-															
-														</ul>
-													
+													<span class="item_level1">Centres de recherche INSG</span>
+													<ul class="menu_level2_list">
+														<li class="menu_level2_item">
+															<a href="/laboratoire-de-recherche-historique-rhone-alpes" class="type_rubrique_0004 item_level2"><strong>CERME</strong> - Centre d'Études et de Recherche en Management et Économie (INSG)</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique" class="type_rubrique_0004 item_level2"><strong>CRDG</strong> - Centre de Recherche en Droit et Gouvernance d'Entreprise (INSG)</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/equipe-lyonnaise-en-information-et-communication" class="type_rubrique_0004 item_level2"><strong>CERGIC</strong> - Gestion de l'Information et de la Communication (INSG)</a>
+														</li>
+													</ul>
 												</li>
 											</ul><!--
 											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<span class="item_level1">Autres sites</span>
-													
-													
-														<ul class="menu_level2_list">
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/campus-de-bourg-en-bresse" class="type_rubrique_0004 item_level2"  >Incubateur des Métiers & Pôle Entrepreneuriat</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/clinique-juridique" class="type_rubrique_0004 item_level2"  >Clinique Juridique</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/college-de-droit" class="type_rubrique_0004 item_level2"  >Collège de droit</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/ecole-académique-de-la-transition-ecologique-1" class="type_rubrique_0004 item_level2"  >École académique de la transition écologique</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/pole-reussite-3" class="type_rubrique_0004 item_level2"  >Pôle Réussite</a>
-																	
-																</li>
-															
-																<li class="menu_level2_item">
-																	
-																		<a href="/prix-cameleon" class="type_rubrique_0004 item_level2"  >Prix Caméléon</a>
-																	
-																</li>
-															
-														</ul>
-													
+													<span class="item_level1">Pôles & Entités d'excellence</span>
+													<ul class="menu_level2_list">
+														<li class="menu_level2_item">
+															<a href="/campus-de-bourg-en-bresse" class="type_rubrique_0004 item_level2">Incubateur des Métiers & Pôle Entrepreneuriat</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/pole-reussite-3" class="type_rubrique_0004 item_level2">Pôle Insertion & Réussite Étudiante</a>
+														</li>
+														<li class="menu_level2_item">
+															<a href="/bibliotheques-universitaires-3" class="type_rubrique_0004 item_level2">Bibliothèque Universitaire & Documentation</a>
+														</li>
+													</ul>
 												</li>
 											</ul><!--
-											
 			                   
 			              --></div>
 		                
@@ -259,175 +105,49 @@
 				                 
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/achat-management-industriel-qualite" class="type_rubrique_0001 item_level1">Achat - Management industriel - Qualité</a>
-													
-													
+													<a href="/finance-controle-audit-comptabilite" class="type_rubrique_0001 item_level1">Finance - Contrôle - Audit - Comptabilité</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/arts-lettres-culture" class="type_rubrique_0001 item_level1">Arts - Lettres - Culture</a>
-													
-													
+													<a href="/marketing-vente" class="type_rubrique_0001 item_level1">Marketing - Vente - Communication</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/assurance-banque" class="type_rubrique_0001 item_level1">Assurance - Banque</a>
-													
-													
+													<a href="/management-ressources-humaines" class="type_rubrique_0001 item_level1">Management - Ressources humaines</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/construction-eclairage-immobilier" class="type_rubrique_0001 item_level1">Construction - Éclairage - Immobilier</a>
-													
-													
+													<a href="/numerique-systemes-d-information" class="type_rubrique_0001 item_level1">Numérique - Systèmes d'information</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/droit-science-politique" class="type_rubrique_0001 item_level1">Droit - Science Politique</a>
-													
-													
+													<a href="/assurance-banque" class="type_rubrique_0001 item_level1">Assurance - Banque - Finance</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/geographie-amenagement-du-territoire-environnement" class="type_rubrique_0001 item_level1">Géographie - Aménagement du territoire - Environnement</a>
-													
-													
+													<a href="/achat-management-industriel-qualite" class="type_rubrique_0001 item_level1">Achat - Logistique - Qualité</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/information-communication-documentation" class="type_rubrique_0001 item_level1">Information - Communication - Documentation</a>
-													
-													
+													<a href="/entrepreneuriat-innovation" class="type_rubrique_0001 item_level1">Entrepreneuriat - Innovation</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/entrepreneuriat-innovation" class="type_rubrique_0001 item_level1">Entrepreneuriat - Innovation</a>
-													
-													
+													<a href="/gestion" class="type_rubrique_0001 item_level1">Gestion &amp; Stratégie d'Entreprise</a>
 												</li>
 											</ul><!--
-											
 				               	  		--><ul class="menu_level1_list">
 												<li class="menu_level1_item">
-													
-														<a href="/ethique-philosophie-esthetique" class="type_rubrique_0001 item_level1">Éthique - Philosophie - Esthétique</a>
-													
-													
+													<a href="/international-interculturel-langues" class="type_rubrique_0001 item_level1">Commerce International &amp; Douanes</a>
 												</li>
 											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/enseignement" class="type_rubrique_0001 item_level1">Enseignement</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/finance-controle-audit-comptabilite" class="type_rubrique_0001 item_level1">Finance - Contrôle - Audit - Comptabilité</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/gestion" class="type_rubrique_0001 item_level1">Gestion</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/histoire-patrimoine" class="type_rubrique_0001 item_level1">Histoire - Patrimoine</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/international-interculturel-langues" class="type_rubrique_0001 item_level1">International - Interculturel - Langues</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/management-ressources-humaines" class="type_rubrique_0001 item_level1">Management - Ressources humaines</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/marketing-vente" class="type_rubrique_0001 item_level1">Marketing - Vente</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/numerique-systemes-d-information" class="type_rubrique_0001 item_level1">Numérique - Systèmes d'information</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/sante-social" class="type_rubrique_0001 item_level1">Santé - Social</a>
-													
-													
-												</li>
-											</ul><!--
-											
-				               	  		--><ul class="menu_level1_list">
-												<li class="menu_level1_item">
-													
-														<a href="/sciences-du-religieux-laicite" class="type_rubrique_0001 item_level1">Sciences du Religieux - Laïcité</a>
-													
-													
-												</li>
-											</ul><!--
-											
 			                   
 			              --></div>
 		                
@@ -1677,7 +1397,7 @@
             --></div><!--
             
                 --><div class="menu__level__accroche">
-                                    <img alt="Projet d'établissement 2021-2026" src="{{ asset('assets/images/logos/projet-eta-21-26-web-180_1639057980033-png') }}">    <br>
+                                    <img alt="Projet d'établissement 2021-2026" src="{{ asset('assets/images/insg-image-2.jpeg') }}">    <br>
 <a class="lien_interne" href="/projet-detablissement-2021-2026">Projet d'établissement 2021-2026</a>
 
                 </div><!--
@@ -2436,7 +2156,7 @@
             
                 --><div class="menu__level__accroche">
                     <h5>Nourrissez votre curiosité avec l'Institut Culture &amp; Savoirs</h5>
-<a class="lien_interne" href="/universite-culture-savoirs" style="text-decoration: none; border: none;" title="Institut Culture &amp; Savoirs">                <img src="{{ asset('assets/images/logos/ucs2_1784559040056-png') }}" alt="Institut Culture &amp; Savoirs" style="width: 240px; height: 126px; margin: 0px; float: none;">    </a><br>
+<a class="lien_interne" href="/universite-culture-savoirs" style="text-decoration: none; border: none;" title="Institut Culture &amp; Savoirs">                <img src="{{ asset('assets/images/cs.jpeg') }}" alt="Institut Culture &amp; Savoirs" style="width: 240px; height: 126px; margin: 0px; float: none;">    </a><br>
 <br>
 Ouverte à tout public sans condition d'âge ni de diplôme
 
@@ -4496,7 +4216,7 @@ Ouverte à tout public sans condition d'âge ni de diplôme
             --></div><!--
             
                 --><div class="menu__level__accroche">
-                                    <img src="{{ asset('assets/images/logos/logo-aime-encadre-rubrique_1762186612281-jpg') }}" alt="Alliance Internationale des Instituts Méditerranéennes - AIME" style="margin: 4px 5px; float: none;">    <br>
+                                    <img src="{{ asset('assets/images/logo-aime.jpeg') }}" alt="Alliance Internationale des Instituts Méditerranéennes - AIME" style="margin: 4px 5px; float: none;">    <br>
 <a class="lien_interne" href="/alliance-aime">AIME - Alliance Internationale des instituts MEditerranéennes</a>
 
                 </div><!--
@@ -5376,7 +5096,7 @@ Ouverte à tout public sans condition d'âge ni de diplôme
             --></div><!--
             
                 --><div class="menu__level__accroche">
-                                    <img src="{{ asset('assets/images/logos/logo-podcast-encadre-rub_1687168308195-png') }}" alt="Commun Campus - Institut National des Sciences de Gestion" style="margin: 0px; float: none;">    <br>
+                                    <img src="{{ asset('assets/images/logo-podcast.jpeg') }}" alt="Commun Campus - Institut National des Sciences de Gestion" style="margin: 0px; float: none;">    <br>
 <a class="lien_interne" href="/commun-campus">Commun Campus,<br>
 le podcast de l'Institut</a>
 
@@ -5509,94 +5229,21 @@ le podcast de l'Institut</a>
         
             <div class="menu__level  menu__level--2 " data-toggle-id="1507110067981" >
                 <div>
-                    
                     <ul><!--
-
-
-        
-    
-
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_" href="#" aria-expanded="false">Facultés et Instituts</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_" href="#" aria-expanded="false">Unités de recherche</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_" href="#" aria-expanded="false">Autres sites</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-
-    --></ul><!--
-
-    
-    
-        
-
-            --></div>
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-de-droit">Département Finance & Comptabilité</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-de-philosophie">Département Marketing & Commerce</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-humanites-lettres-et-societes-1">Département Management & RH</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-langues">Département Informatique de Gestion</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/iaelyon-school-of-management">Cycle Master Professionnel & MBA</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/iut-jean-moulin">Cycle BTS Professionnalisant</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/laboratoire-de-recherche-historique-rhone-alpes"><strong>CERME</strong> - Management & Économie</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique"><strong>CRDG</strong> - Droit & Gouvernance</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/equipe-lyonnaise-en-information-et-communication"><strong>CERGIC</strong> - Gestion de l'Information</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/campus-de-bourg-en-bresse">Incubateur des Métiers & Entrepreneuriat</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/pole-reussite-3">Pôle Insertion & Réussite Étudiante</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--last-column"><a class="libelle link type_rubrique_0004" href="/bibliotheques-universitaires-3">Bibliothèque Universitaire & Documentation</a></li><!--
+    --></ul>
+            </div>
         </div><!--
     
 	-->
@@ -5657,478 +5304,18 @@ le podcast de l'Institut</a>
         
             <div class="menu__level  menu__level--2 " data-toggle-id="1507110105419" >
                 <div>
-                    
                     <ul><!--
-
-
-        
-    
-
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/achat-management-industriel-qualite" aria-expanded="false">Achat - Management industriel - Qualité</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/arts-lettres-culture" aria-expanded="false">Arts - Lettres - Culture</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/assurance-banque" aria-expanded="false">Assurance - Banque</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/construction-eclairage-immobilier" aria-expanded="false">Construction - Éclairage - Immobilier</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/droit-science-politique" aria-expanded="false">Droit - Science Politique</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/geographie-amenagement-du-territoire-environnement" aria-expanded="false">Géographie - Aménagement du territoire - Environnement</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/information-communication-documentation" aria-expanded="false">Information - Communication - Documentation</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/entrepreneuriat-innovation" aria-expanded="false">Entrepreneuriat - Innovation</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/ethique-philosophie-esthetique" aria-expanded="false">Éthique - Philosophie - Esthétique</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--first-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/enseignement" aria-expanded="false">Enseignement</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/finance-controle-audit-comptabilite" aria-expanded="false">Finance - Contrôle - Audit - Comptabilité</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/gestion" aria-expanded="false">Gestion</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/histoire-patrimoine" aria-expanded="false">Histoire - Patrimoine</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/international-interculturel-langues" aria-expanded="false">International - Interculturel - Langues</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/management-ressources-humaines" aria-expanded="false">Management - Ressources humaines</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/marketing-vente" aria-expanded="false">Marketing - Vente</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/numerique-systemes-d-information" aria-expanded="false">Numérique - Systèmes d'information</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/sante-social" aria-expanded="false">Santé - Social</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-        
-        
-        
-        
-
-        --><li class="menu__level__item item__level--2    menu__level__item--last-column"><!--
-
-        
-            
-             
-                --><a class="libelle link type_rubrique_0001" href="/sciences-du-religieux-laicite" aria-expanded="false">Sciences du Religieux - Laïcité</a><!--
-            
-            
-            
-        
-
-        
-        
-
-        
-        
-
-        --></li><!--
-    
-
-    --></ul><!--
-
-    
-    
-        
-
-            --></div>
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/finance-controle-audit-comptabilite">Finance - Contrôle - Audit - Comptabilité</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/marketing-vente">Marketing - Vente - Communication</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/management-ressources-humaines">Management - Ressources humaines</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/numerique-systemes-d-information">Numérique - Systèmes d'information</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/assurance-banque">Assurance - Banque - Finance</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/achat-management-industriel-qualite">Achat - Logistique - Qualité</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/entrepreneuriat-innovation">Entrepreneuriat - Innovation</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0001" href="/gestion">Gestion &amp; Stratégie d'Entreprise</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--last-column"><a class="libelle link type_rubrique_0001" href="/international-interculturel-langues">Commerce International &amp; Douanes</a></li><!--
+    --></ul>
+            </div>
         </div><!--
     
 	-->

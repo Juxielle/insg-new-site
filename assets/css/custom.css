@@ -60,8 +60,9 @@ body > header {
         background: transparent !important;
         box-shadow: none !important;
         z-index: auto !important;
-        max-width: 1292px !important;
-        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
     }
 
     /* Hero photo banner fills behind Row 2 down to the bottom of the header */
@@ -2500,35 +2501,134 @@ section.scroller ul.autoslider li a img {
 /* ==========================================================================
    8. AUTHENTIC LYON 3 / INSG GABON COLUMN & GRID RULES
    ========================================================================== */
-.ligne_1, .ligne_2, .ligne_3, .ligne_4, .ligne_5, .ligne_6, .ligne_7, .ligne_8 {
+.ligne_1, .ligne_2, .ligne_3, .ligne_4, .ligne_5, .ligne_6, .ligne_7, .ligne_8, [class^="ligne_"] {
     width: 100% !important;
     clear: both !important;
     box-sizing: border-box !important;
 }
 .ligne_1::after, .ligne_2::after, .ligne_3::after, .ligne_4::after,
-.ligne_5::after, .ligne_6::after, .ligne_7::after, .ligne_8::after {
+.ligne_5::after, .ligne_6::after, .ligne_7::after, .ligne_8::after, [class^="ligne_"]::after {
     content: "";
     display: table;
     clear: both;
 }
 
+[class*="colonne_"] {
+    box-sizing: border-box !important;
+}
+
 @media screen and (min-width: 50em) {
-    .ligne_1 > .colonne_1,
-    .ligne_2 > .colonne_1,
-    .ligne_3 > .colonne_1,
-    .ligne_4 > .colonne_1,
-    .ligne_5 > .colonne_1,
-    .ligne_6 > .colonne_1,
-    .ligne_7 > .colonne_1,
-    .ligne_8 > .colonne_1 {
-        width: 100% !important;
-        float: none !important;
-        box-sizing: border-box !important;
-    }
+    /* Single column rows: full width */
+    [class*="colonne_"]:only-child,
     .colonne_1:only-child {
         width: 100% !important;
         float: none !important;
     }
+
+    /* 2 columns per row: exactly 50% each */
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(2),
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(2) ~ [class*="colonne_"],
+    [class*="ligne_"] > .colonne_1:not(:only-child),
+    [class*="ligne_"] > .colonne_2 {
+        width: 50% !important;
+        float: left !important;
+    }
+
+    /* 3 columns per row: exactly 33.333% each */
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(3),
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(3) ~ [class*="colonne_"],
+    [class*="ligne_"] > .colonne_3 {
+        width: 33.333% !important;
+        float: left !important;
+    }
+
+    /* 4 columns per row: exactly 25% each */
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(4),
+    [class*="ligne_"] > [class*="colonne_"]:first-child:nth-last-child(4) ~ [class*="colonne_"],
+    [class*="ligne_"] > .colonne_4 {
+        width: 25% !important;
+        float: left !important;
+    }
+}
+
+@media screen and (max-width: 49.99em) {
+    [class*="colonne_"] {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+
+/* Ensure #contenu-encadres properly encloses floated children */
+#contenu-encadres::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Authentic objects vignettes (.vignette_deco) - prevents aspect-ratio box blowup */
+ul.objets .vignette_deco {
+    position: relative !important;
+    overflow: hidden !important;
+    display: block !important;
+    width: 100% !important;
+    height: 0 !important;
+    line-height: 0 !important;
+    padding-bottom: 56.25% !important;
+    margin-bottom: 1rem !important;
+    background-color: #f0f2f5 !important;
+}
+
+ul.objets .vignette_deco a {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+ul.objets .vignette_deco img,
+ul.objets .vignette_deco a img,
+.vignette_deco img.vignette {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+ul.objets .avec_vignette:hover .vignette_deco img {
+    transform: scale(1.03) !important;
+}
+
+/* Director / Annuaire photo caption styling */
+figure.vignette_gauche {
+    float: left !important;
+    margin: 0 1.5em 1em 0 !important;
+    text-align: center !important;
+    max-width: 200px !important;
+}
+
+figure.vignette_gauche img {
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+figure.vignette_gauche .legende {
+    position: static !important;
+    background: transparent !important;
+    color: #333333 !important;
+    padding: 0.5em 0 !important;
+    font-size: 0.85em !important;
+    line-height: 1.3 !important;
 }
 
 /* Ensure #avec_nav_sans_encadres and #avec_nav_avec_encadres are properly bounded */
@@ -2671,7 +2771,7 @@ select:not([multiple]):focus {
 .recherche-formations-bar {
     background: #f7f8fa !important;
     border: 1px solid #e2e4e8 !important;
-    border-radius: 12px !important;
+    border-radius: 0 !important;
     padding: 1.25rem 1.5rem !important;
     margin: 1.5rem 0 2.5rem 0 !important;
     box-sizing: border-box !important;

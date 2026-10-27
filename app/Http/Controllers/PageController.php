@@ -109,30 +109,39 @@ class PageController extends Controller
                     }
                 }
 
-                // Extract #contenu-encadres
+                // Extract authentic Univ Lyon 3 <main id="page">...</main> structure
                 $bodyContent = '';
-                $posStart = strpos($rawHtml, 'id="contenu-encadres"');
-                if ($posStart !== false) {
-                    $divStart = strrpos(substr($rawHtml, 0, $posStart), '<div');
-                    $posDate = strpos($rawHtml, 'class="date-miseajour"', $posStart);
-                    if ($posDate !== false) {
-                        $divEnd = strrpos(substr($rawHtml, 0, $posDate), '</div>');
-                        $bodyContent = substr($rawHtml, $divStart, $divEnd - $divStart);
-                    } else {
-                        $posMainEnd = strpos($rawHtml, '</main>', $posStart);
-                        $bodyContent = substr($rawHtml, $divStart, ($posMainEnd !== false ? $posMainEnd : strlen($rawHtml)) - $divStart);
-                    }
+                if (preg_match('/<main\b[^>]*id=["\']page["\'][^>]*>(.*?)<\/main>/is', $rawHtml, $mm)) {
+                    $bodyContent = '<main id="page">' . $mm[1] . '</main>';
+                } elseif (preg_match('/<main\b[^>]*>(.*?)<\/main>/is', $rawHtml, $mm)) {
+                    $bodyContent = '<main id="page">' . $mm[1] . '</main>';
+                } elseif (preg_match('/<div\b[^>]*id=["\']page["\'][^>]*>(.*?)<\/div>\s*<\/body>/is', $rawHtml, $mm)) {
+                    $bodyContent = '<main id="page"><div id="page_deco">' . $mm[1] . '</div><div class="separateur"></div></main>';
                 } else {
-                    if (preg_match('/<main\b[^>]*>(.*?)<\/main>/is', $rawHtml, $mm)) {
-                        $bodyContent = $mm[1];
-                    } else {
-                        $bodyContent = $rawHtml;
-                    }
+                    $bodyContent = '<main id="page"><div id="page_deco">' . $rawHtml . '</div><div class="separateur"></div></main>';
                 }
 
-                // Clean .html links to clean URLs
+                // Ensure separateur is present before </main>
+                if (!str_contains($bodyContent, 'class="separateur"')) {
+                    $bodyContent = str_replace('</main>', '<div class="separateur"></div></main>', $bodyContent);
+                }
+
+                // Clean .html links to clean Laravel routes
+                $bodyContent = preg_replace('/href=[\'"](?:\/)?index\.html([\'"])/i', 'href="/$1', $bodyContent);
                 $bodyContent = preg_replace('/href=[\'"](?:\/)?([a-zA-Z0-9_\-]+)\.html([\'"])/i', 'href="/$1$2', $bodyContent);
                 $bodyContent = preg_replace('/href=[\'"](?:\/)?2\.html[\'"]/i', 'href="#"', $bodyContent);
+
+                // Map absolute Univ Lyon 3 URLs to local routes
+                $bodyContent = preg_replace('/href=[\'"]https?:\/\/(?:www\.)?univ-lyon3\.fr\/([a-zA-Z0-9_\-]+)(?:\.html)?[\'"]/i', 'href="/$1"', $bodyContent);
+                $bodyContent = preg_replace('/href=[\'"]https?:\/\/facdedroit\.univ-lyon3\.fr(?:\/)?[\'"]/i', 'href="/faculte-de-droit"', $bodyContent);
+                $bodyContent = preg_replace('/href=[\'"]https?:\/\/iae\.univ-lyon3\.fr(?:\/)?[\'"]/i', 'href="/iaelyon-school-of-management"', $bodyContent);
+                $bodyContent = preg_replace('/href=[\'"]https?:\/\/bu\.univ-lyon3\.fr(?:\/)?[\'"]/i', 'href="/bibliotheques-universitaires-3"', $bodyContent);
+
+                // Replace legacy Lyon 3 images with INSG images
+                $bodyContent = str_replace('projet-eta-21-26-web-180_1639057980033-png', 'insg-image-2.jpeg', $bodyContent);
+                $bodyContent = str_replace('ucs2_1784559040056-png', 'cs.jpeg', $bodyContent);
+                $bodyContent = str_replace('logo-aime-encadre-rubrique_1762186612281-jpg', 'logo-aime.jpeg', $bodyContent);
+                $bodyContent = str_replace('logo-podcast-encadre-rub_1687168308195-png', 'logo-podcast.jpeg', $bodyContent);
 
                 // Clean relative asset paths to absolute
                 $bodyContent = preg_replace('/(src|href)=[\'"]assets\//i', '$1="/assets/', $bodyContent);

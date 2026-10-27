@@ -9,120 +9,177 @@
         @include('partials.banner', ['breadcrumbs' => ['Formations' => '']])
 
         <div id="contenu-encadres">
-            <div id="avec_nav_sans_encadres" class="contenu" role="main">
+            <div id="avec_nav_avec_encadres" class="contenu" role="main">
                 <h1>Nos Formations d'Excellence</h1>
 
-                <div class="ligne_1">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--0">
-                                <div class="paragraphe__contenu--0 toolbox">
-                                    <p class="chapo">L'Institut National des Sciences de Gestion propose un éventail complet de diplômes d'État et de titres professionnels homologués, orientés vers l'employabilité immédiate, l'éthique managériale et la performance en entreprise.</p>
-                                </div>
+                <div class="ligne_1"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
+                        <p class="chapo">L'<strong>Institut National des Sciences de Gestion</strong> propose un éventail complet de diplômes d'État et de titres professionnels homologués, orientés vers l'employabilité immédiate, l'éthique managériale et la performance en entreprise.</p>
+                        <h2><strong>L'offre de formation de l'INSG Gabon</strong></h2>
+                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+                    </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
+
+                <div class="ligne_2"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">1. Cycle BTS (Bac+2)</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <p>Une formation professionnalisante en 2 ans associant enseignements théoriques rigoureux et stages d'immersion :</p>
+                            <ul>
+                                <li><strong>Comptabilité et Gestion des Organisations (CGO)</strong></li>
+                                <li><strong>Action Commerciale &amp; Force de Vente (AC)</strong></li>
+                                <li><strong>Commerce International &amp; Douanes (CI)</strong></li>
+                            </ul>
+                            <p>► <a href="{{ route('formations.index', ['level' => 'BTS']) }}" class="lien_interne">Voir les BTS</a></p>
+                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --><div class="colonne_2">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">2. Cycle Licence Professionnelle (Bac+3)</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <p>Nos filières spécialisées en Sciences de Gestion homologuées CAMES :</p>
+                            <ul>
+                                <li><strong>Finance &amp; Comptabilité</strong></li>
+                                <li><strong>Marketing &amp; Commerce</strong></li>
+                                <li><strong>Management des Ressources Humaines</strong></li>
+                                <li><strong>Informatique de Gestion &amp; SI</strong></li>
+                            </ul>
+                            <p>► <a href="{{ route('formations.index', ['level' => 'Licence']) }}" class="lien_interne">Voir les Licences</a></p>
+                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_2 --></div><!-- .ligne_2 -->
+
+                <div class="ligne_3"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">3. Cycle Master Professionnel &amp; MBA (Bac+5)</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <p>Formations de haut niveau pour futurs cadres dirigeants, experts-comptables et consultants :</p>
+                            <ul>
+                                <li><strong>Audit &amp; Contrôle de Gestion</strong></li>
+                                <li><strong>Banque &amp; Ingénierie Financière</strong></li>
+                                <li><strong>Stratégie d'Entreprise &amp; Entrepreneuriat</strong></li>
+                            </ul>
+                            <p>► <a href="{{ route('formations.index', ['level' => 'Master']) }}" class="lien_interne">Voir les Masters</a></p>
+                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_3 -->
+
+                {{-- Dynamic Formations Results --}}
+                <div class="ligne_4"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0">
+                        <h2 class="paragraphe__titre--4" style="margin-top: 1.5em;">Catalogue des filières @if(request('level') || request('department') || request('q')) &ndash; Résultats filtrés @endif</h2>
+
+                        @if($formations->count() > 0)
+                            <ul class="objets actualites" id="liste_resultats">
+                                @foreach($formations as $formation)
+                                    <li class="avec_vignette">
+                                        <div class="vignette_deco">
+                                            <a href="{{ route('formations.show', $formation->slug) }}">
+                                                <img class="vignette" src="{{ $formation->image_url }}" alt="{{ $formation->title }}">
+                                            </a>
+                                        </div>
+                                        <div class="vignette_deco2">
+                                            <strong>
+                                                <a href="{{ route('formations.show', $formation->slug) }}" class="lien_interne">
+                                                    {{ $formation->title }}
+                                                </a>
+                                            </strong>
+                                            <div class="date">
+                                                <span class="date--debut">{{ $formation->level }} &bull; {{ $formation->department }} @if($formation->duration) &bull; {{ $formation->duration }} @endif</span>
+                                            </div>
+                                            <p>{{ Str::limit(strip_tags($formation->description), 140) }}</p>
+                                        </div>
+                                    </li>
+                                @endforeach
+                            </ul>
+
+                            <p class="pagination" style="margin-top: 1.5em;">
+                                {{ $formations->links() }}
+                            </p>
+                        @else
+                            <div class="toolbox">
+                                <p><em>Aucune formation ne correspond aux critères sélectionnés.</em></p>
+                                <p>► <a href="{{ route('formations.index') }}" class="lien_interne"><strong>Voir l'ensemble du catalogue</strong></a></p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        @endif
+                    </div><!-- .paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_4 -->
 
-                {{-- Filter & Search Form --}}
-                <div class="recherche-formations-bar">
-                    <form action="{{ route('formations.index') }}" method="get" class="recherche-bar-form">
-                        <div class="recherche-bar-form__input">
-                            <input type="text" name="q" value="{{ request('q') ?? request('search') }}" placeholder="Rechercher une formation..." aria-label="Rechercher une formation" />
-                        </div>
+            </div><!-- #avec_nav_avec_encadres .contenu -->
 
-                        <div class="recherche-bar-form__select">
-                            <span class="select_style">
-                                <select name="niveau" id="niveau" aria-label="Filtrer par niveau">
-                                    <option value="">Tous les niveaux</option>
-                                    @foreach($niveaux as $niv)
-                                        @if($niv)
-                                            <option value="{{ $niv }}" {{ (request('niveau') == $niv || request('level') == $niv) ? 'selected' : '' }}>{{ $niv }}</option>
-                                        @endif
-                                    @endforeach
-                                </select>
-                            </span>
-                        </div>
+            {{-- Authentic Univ Lyon 3 Encadrés --}}
+            <aside id="encadres" role="complementary">
+                <div class="encadre encadre_recherche encadre--2">
+                    <h2 class="encadre__titre--2">Rechercher une formation</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <form action="{{ route('formations.index') }}" method="get">
+                            <p>
+                                <label for="f-q">Mot-clé :</label><br>
+                                <input type="text" name="q" id="f-q" value="{{ request('q') ?? request('search') }}" style="width:100%; box-sizing:border-box;">
+                            </p>
+                            <p>
+                                <label for="f-niv">Niveau :</label><br>
+                                <span class="select_style" style="width:100%;">
+                                    <select name="level" id="f-niv" style="width:100%;">
+                                        <option value="">Tous les niveaux</option>
+                                        @foreach($niveaux as $niv)
+                                            @if($niv)
+                                                <option value="{{ $niv }}" {{ (request('level') == $niv || request('niveau') == $niv) ? 'selected' : '' }}>{{ $niv }}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
+                                </span>
+                            </p>
+                            <p>
+                                <label for="f-dept">Département :</label><br>
+                                <span class="select_style" style="width:100%;">
+                                    <select name="department" id="f-dept" style="width:100%;">
+                                        <option value="">Tous les départements</option>
+                                        @foreach($departements as $dept)
+                                            @if($dept)
+                                                <option value="{{ $dept }}" {{ (request('department') == $dept || request('departement') == $dept) ? 'selected' : '' }}>{{ $dept }}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
+                                </span>
+                            </p>
+                            <p>
+                                <button type="submit" class="button"><span>Filtrer</span></button>
+                                @if(request('q') || request('level') || request('department') || request('niveau') || request('departement'))
+                                    <a href="{{ route('formations.index') }}" class="lien_interne" style="margin-left: 8px;">Réinitialiser</a>
+                                @endif
+                            </p>
+                        </form>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
 
-                        <div class="recherche-bar-form__select">
-                            <span class="select_style">
-                                <select name="departement" id="departement" aria-label="Filtrer par département">
-                                    <option value="">Tous les départements</option>
-                                    @foreach($departements as $dept)
-                                        @if($dept)
-                                            <option value="{{ $dept }}" {{ (request('departement') == $dept || request('department') == $dept) ? 'selected' : '' }}>{{ $dept }}</option>
-                                        @endif
-                                    @endforeach
-                                </select>
-                            </span>
-                        </div>
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Chiffres clés</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <ul>
+                            <li><strong>3</strong> filières de BTS</li>
+                            <li><strong>8</strong> parcours de Licence professionnelle</li>
+                            <li><strong>8</strong> spécialités de Master &amp; MBA</li>
+                            <li>Diplômes homologués et reconnus CAMES</li>
+                            <li>Partenariats actifs avec le secteur bancaire et pétrolier</li>
+                        </ul>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
 
-                        <div class="recherche-bar-form__actions">
-                            <button type="submit" class="button">
-                                <span>Rechercher</span>
-                            </button>
-                            @if(request('q') || request('niveau') || request('departement') || request('level') || request('search'))
-                                <a href="{{ route('formations.index') }}" class="recherche-bar-form__reset">Réinitialiser</a>
-                            @endif
-                        </div>
-                    </form>
-                </div>
-
-                {{-- Level quick tabs --}}
-                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                    <a href="{{ route('formations.index') }}" style="padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; {{ (!request('niveau') && !request('level')) ? 'background: var(--uas-couleur-principale, #1f234b); color: #fff;' : 'background: #eef0f4; color: #333;' }}">
-                        Toutes les formations
-                    </a>
-                    <a href="{{ route('formations.index', ['level' => 'Licence']) }}" style="padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; {{ (request('niveau') == 'Licence' || request('level') == 'Licence') ? 'background: var(--uas-couleur-principale, #1f234b); color: #fff;' : 'background: #eef0f4; color: #333;' }}">
-                        Licences Professionnelles (Bac+3)
-                    </a>
-                    <a href="{{ route('formations.index', ['level' => 'Master']) }}" style="padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; {{ (request('niveau') == 'Master' || request('level') == 'Master') ? 'background: var(--uas-couleur-principale, #1f234b); color: #fff;' : 'background: #eef0f4; color: #333;' }}">
-                        Masters Spécialisés (Bac+5)
-                    </a>
-                    <a href="{{ route('formations.index', ['level' => 'BTS']) }}" style="padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; {{ (request('niveau') == 'BTS' || request('level') == 'BTS') ? 'background: var(--uas-couleur-principale, #1f234b); color: #fff;' : 'background: #eef0f4; color: #333;' }}">
-                        BTS (Bac+2)
-                    </a>
-                </div>
-
-                {{-- Formations Grid --}}
-                @if($formations->count() > 0)
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 1.75rem;">
-                        @foreach($formations as $formation)
-                            <x-card-formation :formation="$formation" />
-                        @endforeach
-                    </div>
-
-                    {{-- Pagination --}}
-                    <div class="pagination-wrapper" style="margin-top: 2.5rem;">
-                        {{ $formations->links() }}
-                    </div>
-                @else
-                    <div style="background: #fff; border: 1px dashed #ccc; padding: 2rem; text-align: center; border-radius: 6px; margin: 2rem 0;">
-                        <p style="font-size: 1.1rem; color: #555; margin: 0 0 1rem 0;">Aucune formation ne correspond aux critères sélectionnés.</p>
-                        <a href="{{ route('formations.index') }}" class="button" style="display: inline-block;">Voir toutes les formations</a>
-                    </div>
-                @endif
-
-                {{-- Admission Callout --}}
-                <div style="background: linear-gradient(135deg, var(--uas-couleur-principale, #1f234b) 0%, #151834 100%); color: #fff; padding: 2rem; border-radius: 8px; margin-top: 3.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
-                    <div>
-                        <h2 style="color: #fff; margin: 0 0 0.5rem 0; font-size: 1.35rem;">Prêt à intégrer l'INSG Gabon ?</h2>
-                        <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem;">Consultez les dates des concours d'entrée, les conditions d'admission et le dossier de candidature.</p>
-                    </div>
-                    <div>
-                        <a href="{{ route('admissions') }}" class="button" style="background: #fff; color: var(--uas-couleur-principale, #1f234b); font-weight: 700; border: none; padding: 0.75rem 1.5rem;">
-                            Modalités d'admission &rarr;
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+                <div class="encadre encadre_fiche encadre--1">
+                    <h2 class="encadre__titre--1">&#192; télécharger</h2>
+                    <div class="encadre_contenu encadre__contenu--1 toolbox">
+                        ► <a class="lien_interne" href="{{ route('admissions') }}">Guide des admissions</a><br>
+                        ► <a class="lien_interne" href="/calendrier-orientation-et-insertion-professionnelle">Calendrier académique 2026-2027</a><br>
+                        ► <a class="lien_interne" href="/alternance">Guide de la formation continue</a>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+            </aside>
+        </div><!-- #contenu-encadres -->
 
         <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
         <div id="redacteur-date-impression"></div>
-    </div>
+    </div><!-- #page_deco -->
     <div class="separateur"></div>
 </main>
 @endsection
-

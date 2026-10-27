@@ -9,100 +9,85 @@
         @include('partials.banner', ['breadcrumbs' => ['Admissions' => '']])
 
         <div id="contenu-encadres">
-            <div id="avec_nav_sans_encadres" class="contenu" role="main">
+            <div id="avec_nav_avec_encadres" class="contenu" role="main">
                 <h1>Admissions &amp; Inscriptions 2026-2027</h1>
 
-                <div class="ligne_1">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--0">
-                                <div class="paragraphe__contenu--0 toolbox">
-                                    <p class="chapo">L'admission à l'Institut National des Sciences de Gestion est sélective afin de garantir l'excellence de nos promotions et l'adéquation avec les besoins des entreprises. Découvrez les conditions d'accès selon votre profil académique.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="ligne_1"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
+                        <p class="chapo">L'admission à l'Institut National des Sciences de Gestion est sélective afin de garantir l'excellence de nos promotions et l'adéquation avec les besoins des entreprises. Découvrez les conditions d'accès selon votre profil académique.</p>
 
-                {{-- Admission Paths Grid --}}
-                <div class="ligne_2">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--4">
-                                <h2 class="paragraphe__titre--4">Modalités d'accès par cycle d'études</h2>
-                                <div class="paragraphe__contenu--4 toolbox">
-                                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-                                        
-                                        <div style="background: #ffffff; border: 1px solid #e2e4e8; border-radius: 6px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
-                                            <span style="display: inline-block; background: var(--uas-couleur-accent, #0091B5); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.75rem;">
-                                                Bac + 2
-                                            </span>
-                                            <h3 style="margin: 0 0 0.5rem 0; color: var(--uas-couleur-principale, #1f234b);">Cycle BTS</h3>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Public visé :</strong> Titulaires du Baccalauréat (Séries B, C, D, CG, ACA ou équivalent homologué).</p>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Modalité :</strong> Concours national d'entrée comprenant des épreuves de culture générale, mathématiques financières et français.</p>
-                                        </div>
+                        <h2>Modalités d'accès par cycle d'études</h2>
 
-                                        <div style="background: #ffffff; border: 1px solid #e2e4e8; border-radius: 6px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
-                                            <span style="display: inline-block; background: var(--uas-couleur-principale, #1f234b); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.75rem;">
-                                                Bac + 3
-                                            </span>
-                                            <h3 style="margin: 0 0 0.5rem 0; color: var(--uas-couleur-principale, #1f234b);">Licence Professionnelle</h3>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Public visé :</strong> Titulaires d'un BTS, DUT ou DEUG (120 crédits ECTS validés) dans le domaine de la gestion ou de l'économie.</p>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Modalité :</strong> Examen rigoureux du dossier académique et test d'admissibilité écrit et oral devant un jury de professeurs.</p>
-                                        </div>
+                        <h3>Cycle BTS (Bac+2)</h3>
+                        <p><strong>Public visé :</strong> Titulaires du Baccalauréat (Séries B, C, D, CG, ACA ou équivalent homologué).<br>
+                        <strong>Modalité de recrutement :</strong> Concours national d'entrée comprenant des épreuves écrites de culture générale, de mathématiques financières et de français/anglais.</p>
 
-                                        <div style="background: #ffffff; border: 1px solid #e2e4e8; border-radius: 6px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
-                                            <span style="display: inline-block; background: #6c5ce7; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.75rem;">
-                                                Bac + 5
-                                            </span>
-                                            <h3 style="margin: 0 0 0.5rem 0; color: var(--uas-couleur-principale, #1f234b);">Master Spécialisé</h3>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Public visé :</strong> Titulaires d'une Licence Professionnelle ou d'un diplôme de niveau Bac+3 en sciences économiques, gestion, finance ou droit.</p>
-                                            <p style="font-size: 0.9rem; color: #555; line-height: 1.5;"><strong>Modalité :</strong> Sélection sur dossier d'excellence et entretien de motivation professionnelle.</p>
-                                        </div>
+                        <h3>Licence Professionnelle (Bac+3)</h3>
+                        <p><strong>Public visé :</strong> Titulaires d'un BTS, DUT ou DEUG (120 crédits ECTS validés) en sciences de gestion, économie ou finance.<br>
+                        <strong>Modalité de recrutement :</strong> Examen rigoureux du dossier académique par la commission pédagogique et test d'admissibilité oral.</p>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <h3>Master Professionnel &amp; MBA (Bac+5)</h3>
+                        <p><strong>Public visé :</strong> Titulaires d'une Licence Professionnelle ou d'un diplôme de niveau Bac+3 équivalent en gestion, finance ou économie.<br>
+                        <strong>Modalité de recrutement :</strong> Sélection sur dossier d'excellence et entretien de motivation professionnelle devant un jury d'enseignants-chercheurs et de dirigeants d'entreprises.</p>
+                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+                    </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
-                {{-- Application Files Checklist --}}
-                <div class="ligne_3">
-                    <div class="colonne_1">
-                        <div class="colonne_deco">
-                            <div class="paragraphe--4">
-                                <h2 class="paragraphe__titre--4">Composition du dossier de candidature</h2>
-                                <div class="paragraphe__contenu--4 toolbox">
-                                    <ul style="line-height: 1.8; color: #444; font-size: 0.95rem;">
-                                        <li>Une demande manuscrite adressée à Madame la Directrice Générale de l'INSG.</li>
-                                        <li>Une copie certifiée conforme de l'attestation du Baccalauréat et des diplômes antérieurs.</li>
-                                        <li>Les relevés de notes des deux dernières années d'études.</li>
-                                        <li>Une copie certifiée conforme de l'acte de naissance ou de la carte nationale d'identité.</li>
-                                        <li>Quatre (04) photos d'identité couleur récentes et conformes.</li>
-                                        <li>Un curriculum vitae actualisé et une lettre de motivation (pour les cycles Licence et Master).</li>
-                                        <li>Le reçu de paiement des frais de dossier de candidature (25 000 FCFA non remboursables).</li>
+                <div class="ligne_2"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">Les étapes de la candidature à l'INSG Gabon</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <dl aria-label="Accordéons" class="ckeditor-accordion">
+                                <dt>1. Dépôt du dossier de candidature</dt>
+                                <dd>
+                                    <p>Les candidats doivent constituer leur dossier comportant :</p>
+                                    <ul>
+                                        <li>Fiche de candidature dument remplie et signée</li>
+                                        <li>Copies légalisées des diplômes et relevés de notes du baccalauréat et des années universitaires antérieures</li>
+                                        <li>Copie d'acte de naissance ou pièce d'identité nationale certifiée</li>
+                                        <li>Curriculum Vitae et lettre de motivation pour les cycles Licence et Master</li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                </dd>
 
-                {{-- CTA Box --}}
-                <div style="background: #f7f8fa; border: 1px solid #e2e4e8; border-radius: 6px; padding: 2rem; margin-top: 2rem; text-align: center;">
-                    <h3 style="margin-top: 0; color: var(--uas-couleur-principale, #1f234b); font-size: 1.25rem;">Des questions sur votre inscription ?</h3>
-                    <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0.5rem auto 1.5rem auto;">Le service de la scolarité et de l'orientation est à votre disposition pour vous assister dans la constitution de votre dossier.</p>
-                    <a href="{{ route('contact') }}" class="button" style="display: inline-block;">Contacter le service des admissions</a>
-                </div>
+                                <dt>2. Épreuves de sélection &amp; Commission pédagogique</dt>
+                                <dd>
+                                    <p>Les candidats au cycle BTS sont convoqués aux épreuves écrites du concours. Pour les cycles Licence 3 et Master, les dossiers sont instruits par la commission pédagogique, suivis d'entretiens de sélection.</p>
+                                </dd>
 
-            </div>
-        </div>
+                                <dt>3. Inscription administrative définitive</dt>
+                                <dd>
+                                    <p>Dès publication officielle de la liste des admis, les étudiants disposent d'un délai de 15 jours pour procéder au règlement des droits d'inscription et retirer leur carte d'étudiant.</p>
+                                </dd>
+                            </dl>
+                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
+                </div><!-- .colonne_1 --></div><!-- .ligne_2 -->
+
+            </div><!-- #avec_nav_avec_encadres .contenu -->
+
+            <aside id="encadres" role="complementary">
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Candidatures 2026-2027</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <p>Les candidatures sont officiellement ouvertes pour la rentrée académique.</p>
+                        <p><a href="{{ route('contact') }}" class="button"><span>Nous contacter</span></a></p>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">À consulter</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        ► <a href="{{ route('formations.index') }}" class="lien_interne">Toutes les offres de formations</a><br>
+                        ► <a href="/calendrier-orientation-et-insertion-professionnelle" class="lien_interne">Calendrier des concours</a><br>
+                        ► <a href="/alternance" class="lien_interne">Formation continue &amp; Alternance</a>
+                    </div><!-- .encadre_contenu -->
+                </div><!-- .encadre -->
+            </aside>
+        </div><!-- #contenu-encadres -->
 
         <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
         <div id="redacteur-date-impression"></div>
-    </div>
+    </div><!-- #page_deco -->
     <div class="separateur"></div>
 </main>
 @endsection
-
