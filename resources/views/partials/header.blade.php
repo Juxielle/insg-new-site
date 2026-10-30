@@ -1,4 +1,4 @@
-<header class="{{ Route::is('home') ? '' : 'has_bandeau' }} scrollable-section" data-section-title="Haut de page">
+<header class="{{ Route::is('home') || !empty($isLandingPage) ? '' : 'has_bandeau' }} scrollable-section" data-section-title="Haut de page">
    <div class="header_cols clearfix"><!--
 	   --><div class="header_col1">
 	    	
@@ -55,10 +55,10 @@
 															<a href="/faculte-des-langues" class="type_rubrique_0004 item_level2">Département Informatique de Gestion</a>
 														</li>
 														<li class="menu_level2_item">
-															<a href="/iaelyon-school-of-management" class="type_rubrique_0004 item_level2">Cycle Master Professionnel & MBA</a>
+															<a href="/cycle-master" class="type_rubrique_0004 item_level2">Cycle Master Professionnel & MBA</a>
 														</li>
 														<li class="menu_level2_item">
-															<a href="/iut-jean-moulin" class="type_rubrique_0004 item_level2">Cycle BTS Professionnalisant</a>
+															<a href="/cycle-bts" class="type_rubrique_0004 item_level2">Cycle BTS Professionnalisant</a>
 														</li>
 													</ul>
 												</li>
@@ -69,13 +69,13 @@
 													<span class="item_level1">Centres de recherche INSG</span>
 													<ul class="menu_level2_list">
 														<li class="menu_level2_item">
-															<a href="/laboratoire-de-recherche-historique-rhone-alpes" class="type_rubrique_0004 item_level2"><strong>CERME</strong> - Centre d'Études et de Recherche en Management et Économie (INSG)</a>
+															<a href="/laboratoire-de-recherche-historique-rhone-alpes" class="type_rubrique_0004 item_level2"><strong>Finance et gouvernance</strong> — Performance financière, risques et gouvernance des organisations.</a>
 														</li>
 														<li class="menu_level2_item">
-															<a href="/centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique" class="type_rubrique_0004 item_level2"><strong>CRDG</strong> - Centre de Recherche en Droit et Gouvernance d'Entreprise (INSG)</a>
+															<a href="/recherche-management-gouvernance" class="type_rubrique_0004 item_level2"><strong>Management et RH</strong> — Leadership, compétences et transformation des organisations.</a>
 														</li>
 														<li class="menu_level2_item">
-															<a href="/equipe-lyonnaise-en-information-et-communication" class="type_rubrique_0004 item_level2"><strong>CERGIC</strong> - Gestion de l'Information et de la Communication (INSG)</a>
+															<a href="/recherche-information-communication" class="type_rubrique_0004 item_level2"><strong>Développement durable</strong> — Responsabilité sociale, territoires et transitions économiques.</a>
 														</li>
 													</ul>
 												</li>
@@ -2248,7 +2248,7 @@ Ouverte à tout public sans condition d'âge ni de diplôme
         
             
              
-                --><a class="libelle link type_rubrique_0001" href="/la-recherche-a-luniversite-jean-moulin-1" aria-expanded="false">Panorama de la recherche</a><!--
+                --><a class="libelle link type_rubrique_0001" href="/panorama-recherche" aria-expanded="false">Panorama de la recherche</a><!--
             
             
             
@@ -2331,7 +2331,7 @@ Ouverte à tout public sans condition d'âge ni de diplôme
         
             
              
-                --><a class="libelle link type_rubrique_0001" href="/focus-iuf" aria-expanded="false">Membres de l'Institut Académique de France</a><!--
+                --><a class="libelle link type_rubrique_0001" href="/focus-iuf" aria-expanded="false">Équipe de recherche de l’INSG</a><!--
             
             
             
@@ -5234,11 +5234,11 @@ le podcast de l'Institut</a>
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-de-philosophie">Département Marketing & Commerce</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-humanites-lettres-et-societes-1">Département Management & RH</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-langues">Département Informatique de Gestion</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/iaelyon-school-of-management">Cycle Master Professionnel & MBA</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/iut-jean-moulin">Cycle BTS Professionnalisant</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/cycle-master">Cycle Master Professionnel & MBA</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/cycle-bts">Cycle BTS Professionnalisant</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/laboratoire-de-recherche-historique-rhone-alpes"><strong>CERME</strong> - Management & Économie</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique"><strong>CRDG</strong> - Droit & Gouvernance</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/equipe-lyonnaise-en-information-et-communication"><strong>CERGIC</strong> - Gestion de l'Information</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/recherche-management-gouvernance"><strong>CRDG</strong> - Droit & Gouvernance</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/recherche-information-communication"><strong>CERGIC</strong> - Gestion de l'Information</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/campus-de-bourg-en-bresse">Incubateur des Métiers & Entrepreneuriat</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/pole-reussite-3">Pôle Insertion & Réussite Étudiante</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--last-column"><a class="libelle link type_rubrique_0004" href="/bibliotheques-universitaires-3">Bibliothèque Universitaire & Documentation</a></li><!--
@@ -6044,7 +6044,7 @@ le podcast de l'Institut</a>
 	    --></div><!--
 	 --></div><!--
  --></div>
-    @if(!Route::is('home'))
+    @if(!Route::is('home') && empty($isLandingPage))
         <div id="bandeau" style="@yield('bandeau_style', 'background-image: url(' . asset('assets/images/insg-back-2.jpeg') . '); background-color: #1f234b;')"></div>
     @endif
 </header>

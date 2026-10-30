@@ -37,9 +37,9 @@
                             <div>{!! nl2br(e($formation->objectives)) !!}</div>
                         @endif
 
-                        @if($formation->prerequisites)
+                        @if($formation->admission_requirements)
                             <h2>Conditions d'admission &amp; Prérequis</h2>
-                            <div>{!! nl2br(e($formation->prerequisites)) !!}</div>
+                            <div>{!! nl2br(e($formation->admission_requirements)) !!}</div>
                         @endif
 
                         <p style="margin-top: 2.5em;">

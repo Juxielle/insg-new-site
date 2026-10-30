@@ -133,7 +133,7 @@ class InsgSiteTest extends TestCase
 
         $response->assertOk();
         $response->assertSee('Vie Associative &amp; Engagement Étudiant', false);
-        $response->assertSee('Bureau Des Étudiants', false);
+        $response->assertSee('Finance et investissement', false);
     }
 
     public function test_admissions_page_loads(): void
@@ -142,8 +142,8 @@ class InsgSiteTest extends TestCase
 
         $response->assertOk();
         $response->assertSee('Admissions &amp; Inscriptions', false);
-        $response->assertSee('Cycle BTS', false);
-        $response->assertSee('Licence Professionnelle', false);
+        $response->assertSee('Premier cycle', false);
+        $response->assertSee('Candidature en Master', false);
     }
 
     public function test_entreprises_page_loads(): void
@@ -232,8 +232,8 @@ class InsgSiteTest extends TestCase
 
         $response->assertOk();
         // Dynamic Carousel Slide
-        $response->assertSee('Cérémonie de Remise des Diplômes', false);
-        $response->assertSee('Rentrée Académique 2026-2027', false);
+        $response->assertSee('Formez l’excellence, construisez votre avenir de manager', false);
+        $response->assertSee('Admissions à l&#039;INSG', false);
         // Dynamic Stats
         $response->assertSee('taux d\'insertion professionnelle', false);
     }
@@ -245,8 +245,8 @@ class InsgSiteTest extends TestCase
         $response->assertOk();
         // Dynamic Testimonials
         $response->assertSee('Paroles d\'Alumni &amp; Réussites', false);
-        $response->assertSee('Marc Ndong Mba', false);
-        $response->assertSee('Auditeur Financier Senior', false);
+        $response->assertSee('Sarah Mboumba', false);
+        $response->assertSee('Diplômée Finance, promotion 2024', false);
     }
 
     public function test_about_page_displays_dynamic_director_and_governance(): void
@@ -256,8 +256,8 @@ class InsgSiteTest extends TestCase
         $response->assertOk();
         $response->assertSee('Pr. Murielle Natacha');
         $response->assertSee('Directeur Général de l\'INSG');
-        $response->assertSee('Direction des Affaires Académiques');
-        $response->assertSee('Dr. Jean-Baptiste ELLA');
+        $response->assertSee('Une école nationale');
+        $response->assertSee('Une école universitaire');
     }
 
     public function test_campus_page_displays_dynamic_infrastructures(): void

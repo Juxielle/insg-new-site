@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Relations Entreprises & Partenariats - INSG Gabon')
-@section('meta_description', 'L\'INSG Gabon développe des partenariats stratégiques avec les entreprises : stages, recrutement, formation continue sur-mesure et taxe d\'apprentissage.')
-
+@section('title', 'Partenaires et entreprises | INSG')
+@section('meta_description', 'Découvrez les partenaires et opportunités professionnelles de l\'INSG.')
 @section('content')
 <main id="page">
     <div id="page_deco">
@@ -14,22 +13,8 @@
 
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
-                        <p class="chapo">Partenaire privilégié des acteurs économiques gabonais et internationaux, l'Institut National des Sciences de Gestion développe des liens étroits avec les entreprises pour favoriser l'insertion professionnelle et co-construire les compétences managériales de demain.</p>
-
-                        <h2>Nos partenariats stratégiques de référence</h2>
-                        <p>L'INSG collabore activement avec les fleurons du secteur bancaire, pétrolier, minier, logistique et des services au Gabon et dans la sous-région CEMAC :</p>
-                        <ul>
-                            @forelse($partenaires as $p)
-                                <li><strong>{{ $p->name }} :</strong> {{ $p->description ?? 'Partenaire institutionnel de l\'INSG Gabon' }}</li>
-                            @empty
-                                <li><strong>BGFI Bank :</strong> Partenaire historique de l'institut, soutien à l'insertion professionnelle et aux bourses d'excellence.</li>
-                                <li><strong>TotalEnergies Gabon :</strong> Accueil de stagiaires en gestion de projets et contrôle financier.</li>
-                                <li><strong>Comilog (Groupe Eramet) :</strong> Coopération en formation des cadres et gestion des approvisionnements.</li>
-                                <li><strong>Gabon Telecom :</strong> Stages et insertion dans les filières Informatique de Gestion &amp; SI.</li>
-                            @endforelse
-                        </ul>
-                        <p>Parmi nos partenaires historiques majeurs, <strong>BGFI Bank</strong> et les grandes institutions financières de la sous-région jouent un rôle central dans l'accueil en stage et l'embauche de nos diplômés.</p>
-                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+<p class="chapo">Entreprises, institutions et diplômés : construisons ensemble les compétences dont le Gabon a besoin.</p><h2>Un réseau engagé aux côtés de l’INSG</h2><ul><li><strong>Banque et finance :</strong> UGB, BGFI, FINAM, BICIG, La Régionale d’Épargne et de Crédit du Gabon, Olsen Courtage, Luxo Finance.</li><li><strong>Audit et conseil :</strong> KPMG, Deloitte, Ernst &amp; Young, IMPROM, AC Consulting, K.T.A., Cabinet Ramses, Salmane International Trade, Cabinet Fidicia, Metodik Audit &amp; Conseils, 2AD Consulting.</li><li><strong>Industrie et services :</strong> SOGAFRIC / SODIM TP / GESPARC, Bernabé Gabon, EDG SA, CAISTAB, SEEG, PERENCO, LABOREX, Vocal Centre.</li><li><strong>Transport et logistique :</strong> SETRAG, BM-Transit, DHL, ASECNA, OCT Owendo, Gabon Port Management, AVS International, Soma Trans International.</li><li><strong>Institutions publiques :</strong> Conseil Gabonais des Chargeurs, Ministère de la Santé, DGCPT, Ministère des Comptes publics.</li></ul>
+</div><!-- .paragraphe__contenu--0 .toolbox -->
                     </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
@@ -37,15 +22,8 @@
                     <div class="colonne_deco"><div class="paragraphe--4">
                         <h2 class="paragraphe__titre--4">Nos offres pour les entreprises</h2>
                         <div class="paragraphe__contenu--4 toolbox">
-                            <ul>
-                                <li><strong>Formation continue sur-mesure :</strong> Montée en compétences de vos managers, cadres comptables et auditeurs internes.</li>
-                                <li><strong>Recrutement &amp; Stages :</strong> Diffusion prioritaire de vos offres de stages, d'alternance et d'emplois auprès de nos promotions.</li>
-                                <li><strong>Taxe d'apprentissage :</strong> Versement de la taxe pour moderniser nos laboratoires informatiques et soutenir l'innovation pédagogique.</li>
-                            </ul>
-                            <p>► <a href="/former-ses-collaborateurs" class="lien_interne"><strong>Former vos collaborateurs avec l'INSG</strong></a><br>
-                               ► <a href="/recruter-ses-collaborateurs" class="lien_interne"><strong>Déposer une offre de stage ou d'emploi</strong></a><br>
-                               ► <a href="/verser-la-taxe-dapprentissage" class="lien_interne"><strong>Verser la taxe d'apprentissage</strong></a></p>
-                        </div><!-- .paragraphe__contenu--4 .toolbox -->
+<p>Les partenariats rapprochent la formation des besoins réels des organisations.</p><ul><li><strong>Recruter nos talents :</strong> Diffusez vos offres de stage, d’alternance et d’emploi auprès de profils formés à l’excellence.</li><li><strong>Projets &amp; Conférences :</strong> Animez des masterclasses, proposez des études de cas réels et participez aux jurys de soutenance.</li><li><strong>Taxe d’apprentissage &amp; Soutien :</strong> Investissez dans les équipements pédagogiques et soutenez les chaires de formation professionnelle.</li></ul><p>► <a href="/contact" class="lien_interne">Échanger sur un partenariat avec l’INSG</a></p>
+</div><!-- .paragraphe__contenu--4 .toolbox -->
                     </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_2 -->
 
@@ -56,8 +34,8 @@
                     <h2 class="encadre__titre--2">Contact Entreprises</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <p><strong>Pôle Insertion &amp; Relations Entreprises</strong><br>
-                        Email : entreprises@insg-gabon.ga<br>
-                        Tél : +241 011 76 25 20</p>
+                        Email : contact@insg-gabon.ga<br>
+                        Tél : +241 01 23 45 67</p>
                         <p><a href="{{ route('contact') }}" class="button"><span>Nous contacter</span></a></p>
                     </div><!-- .encadre_contenu -->
                 </div><!-- .encadre -->

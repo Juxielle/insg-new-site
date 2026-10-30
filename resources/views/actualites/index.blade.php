@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Actualités - Institut National des Sciences de Gestion (INSG Gabon)')
-@section('meta_description', 'Retrouvez toute l\'actualité de l\'INSG Gabon : rentrée académique, partenariats avec les entreprises, événements scientifiques et vie du campus.')
-
+@section('title', 'Actualités de l\'INSG')
+@section('meta_description', 'Suivez les actualités académiques, partenariats et événements de l\'INSG.')
 @section('content')
 <main id="page">
     <div id="page_deco">

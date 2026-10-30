@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contactez l\'Administration de l\'INSG Gabon - Libreville')
-@section('meta_description', 'Formulaire de contact et coordonnées de l\'Institut National des Sciences de Gestion : scolarité, inscriptions, relations entreprises, campus.')
-
+@section('title', 'Contactez l\'INSG')
+@section('meta_description', 'Coordonnées et formulaire de contact de l\'INSG Gabon.')
 @section('content')
 <main id="page">
     <div id="page_deco">
@@ -14,7 +13,7 @@
 
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
-                        <p class="chapo">Une question sur nos filières, les procédures de concours, les bourses d'études ou un partenariat d'entreprise ? Transmettez-nous votre message via le formulaire ci-dessous ou contactez directement nos services administratifs.</p>
+                        <p class="chapo">Une question sur nos formations, les admissions ou un partenariat ? Notre équipe vous répond.</p>
 
                         @if(session('success'))
                             <div class="message_confirmation" style="background:#e8f5e9; border-left:4px solid #2e7d32; padding:1em; margin-bottom:1.5em; color:#2e7d32;">
@@ -77,11 +76,11 @@
                     <h2 class="encadre__titre--2">Coordonnées</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <p><strong>Institut National des Sciences de Gestion</strong><br>
-                        Boulevard Triomphal Omar BONGO<br>
-                        BP 403 Libreville, Gabon</p>
+                        Boulevard Triomphal<br>
+                        Libreville, Gabon</p>
                         <p><strong>Téléphone :</strong><br>
-                        +241 011 76 25 20<br>
-                        +241 077 12 34 56</p>
+                        +241 01 23 45 67<br>
+                        +241 01 23 45 67</p>
                         <p><strong>Email officiel :</strong><br>
                         contact@insg-gabon.ga</p>
                     </div><!-- .encadre_contenu -->
@@ -91,7 +90,7 @@
                     <h2 class="encadre__titre--2">Horaires d'accueil</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <p>Du lundi au vendredi :<br>
-                        07h30 &ndash; 15h30</p>
+                        Horaires communiqués par l’Institut</p>
                         <p>Fermé les samedis, dimanches et jours fériés.</p>
                         <p>► <a href="{{ route('campus') }}" class="lien_interne">Plan d'accès au campus</a></p>
                     </div><!-- .encadre_contenu -->

@@ -1,3 +1,123 @@
+/* Imported submenu pages: preserve the original content/sidebar proportions. */
+.insg-static-page:not(.insg-portal-page) #contenu-encadres {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+}
+
+.insg-static-page:not(.insg-portal-page) #contenu-encadres::after {
+    display: none;
+}
+
+.insg-static-page:not(.insg-portal-page) #contenu-encadres > .contenu,
+.insg-static-page:not(.insg-portal-page) #contenu-encadres > #encadres {
+    float: none;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.insg-static-page #encadres .vignette_deco {
+    position: relative;
+    max-width: 100%;
+}
+
+.insg-static-page #encadres .vignette_deco img {
+    position: static !important;
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+.insg-static-page #page img,
+.insg-static-page #page iframe {
+    max-width: 100%;
+}
+
+.insg-legacy-content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.insg-legacy-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.insg-legacy-content .row > [class*="col-"] {
+    flex: 1 1 250px;
+    min-width: 0;
+}
+
+@media screen and (min-width: 50em) {
+    .insg-static-page:not(.insg-portal-page) #contenu-encadres:has(> #encadres) {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        column-gap: 3em;
+    }
+}
+
+@media screen and (max-width: 49.99em) {
+    .insg-static-page:not(.insg-portal-page) #contenu-encadres {
+        row-gap: 2rem;
+    }
+
+    .insg-static-page:not(.insg-portal-page) #encadres {
+        margin-top: 2rem;
+    }
+}
+
+/* Formations: two-column editorial blocks and sidebar panels. */
+#page.insg-formations-page .ligne_2,
+#page.insg-formations-page .ligne_3 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#page.insg-formations-page .ligne_2::after,
+#page.insg-formations-page .ligne_3::after {
+    display: none;
+    content: none;
+}
+
+#page.insg-formations-page .ligne_2 > [class*="colonne_"],
+#page.insg-formations-page .ligne_3 > [class*="colonne_"] {
+    width: auto !important;
+    float: none !important;
+    min-width: 0;
+}
+
+#page.insg-formations-page .ligne_2 .colonne_deco,
+#page.insg-formations-page .ligne_3 .colonne_deco {
+    padding: 0;
+}
+
+#page.insg-formations-page .paragraphe__titre--4 {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+#page.insg-formations-page .paragraphe__contenu--4 h3 {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+#page.insg-formations-page .paragraphe__contenu--4 li strong {
+    font-family: inherit;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 49.99em) {
+    #page.insg-formations-page .ligne_2,
+    #page.insg-formations-page .ligne_3 {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+    }
+}
+
 /**
  * ==========================================================================
  * INSG GABON - CUSTOM TEMPLATE FIXES & ENHANCEMENTS
@@ -2591,8 +2711,7 @@ ul.objets .vignette_deco a {
 }
 
 ul.objets .vignette_deco img,
-ul.objets .vignette_deco a img,
-.vignette_deco img.vignette {
+ul.objets .vignette_deco a img {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;

@@ -1,0 +1,190 @@
+[
+  {
+    "slug": "https://facdedroit.univ-lyon3.fr/",
+    "title": "Faculté de Droit - Université Jean Moulin Lyon 3",
+    "url": "https://facdedroit.univ-lyon3.fr/",
+    "viewport": 1440,
+    "height": 1000,
+    "areas": [],
+    "overflow": [],
+    "columns": []
+  },
+  {
+    "slug": "https://www.univ-lyon3.fr/faculte-de-philosophie",
+    "title": "",
+    "url": "chrome-error://chromewebdata/",
+    "viewport": 1440,
+    "height": 1000,
+    "areas": [],
+    "overflow": [],
+    "columns": []
+  },
+  {
+    "slug": "https://www.univ-lyon3.fr/finance-controle-audit-comptabilite",
+    "title": "Formations en Finance - Contrôle - Audit - Comptabilité - Université Jean Moulin Lyon 3",
+    "url": "https://www.univ-lyon3.fr/finance-controle-audit-comptabilite",
+    "viewport": 1440,
+    "height": 2632,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1421,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 429,
+        "w": 960,
+        "h": 0,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "sans_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 429,
+        "w": 960,
+        "h": 1389,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px -959px 0px 0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 495,
+        "w": 960,
+        "h": 1323,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ]
+  },
+  {
+    "slug": "https://www.univ-lyon3.fr/histoire",
+    "title": "Une histoire guidée par la production et la diffusion des savoirs - Université Jean Moulin Lyon 3",
+    "url": "https://www.univ-lyon3.fr/histoire",
+    "viewport": 1440,
+    "height": 3020,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1559,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 428,
+        "w": 960,
+        "h": 0,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 428,
+        "w": 960,
+        "h": 1529,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px -959px 0px 0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 536,
+        "w": 960,
+        "h": 194,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 730,
+        "w": 960,
+        "h": 299,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1029,
+        "w": 576,
+        "h": 563,
+        "display": "block",
+        "width": "576px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 809,
+        "y": 1029,
+        "w": 384,
+        "h": 560,
+        "display": "block",
+        "width": "384px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1593,
+        "w": 960,
+        "h": 364,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ]
+  }
+]

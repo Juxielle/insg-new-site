@@ -58,7 +58,7 @@
 
     <script type="text/javascript">var html = document.getElementsByTagName('html')[0]; html.className = html.className.replace('no-js', 'js');</script>
 </head>
-<body id="body" class="fiche {{ Route::is('home') ? 'ficheaccueil accueil' : 'pagelibre rubrique' }} site_principal" data-toggle="#menu_principal .active, .header_toogle .active, .menu_toggle .active, #call-to-actions .active" data-toggle-bubble>
+<body id="body" class="fiche {{ Route::is('home') || !empty($isLandingPage) ? 'ficheaccueil accueil' : 'pagelibre rubrique' }} {{ !empty($isStaticPage) ? 'insg-static-page' : '' }} {{ !empty($isLandingPage) ? 'insg-portal-page' : '' }} site_principal" data-toggle="#menu_principal .active, .header_toogle .active, .menu_toggle .active, #call-to-actions .active" data-toggle-bubble>
 
     @include('partials.header')
 

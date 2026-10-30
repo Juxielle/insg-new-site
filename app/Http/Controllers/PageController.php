@@ -6,6 +6,7 @@ use App\Models\Gouvernance;
 use App\Models\Infrastructure;
 use App\Models\Partenaire;
 use App\Models\Statistique;
+use App\Support\StaticPageLayout;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -56,6 +57,16 @@ class PageController extends Controller
 
         $cleanSlug = $slug;
 
+        $legacyUrls = config('legacy_page_urls', []);
+        if (isset($legacyUrls[$cleanSlug])) {
+            return redirect('/'.$legacyUrls[$cleanSlug], 301);
+        }
+        // Clean public addresses reuse the existing templates and layout.
+        $templateSlug = array_search($cleanSlug, $legacyUrls, true);
+        if ($templateSlug === false) {
+            $templateSlug = $cleanSlug;
+        }
+
         // 2. Check aliases for core dedicated routes
         if (in_array($cleanSlug, ['a-propos', 'about', 'l-universite-jean-moulin'])) {
             return redirect()->route('about', [], 301);
@@ -90,8 +101,7 @@ class PageController extends Controller
 
         // 3. Search in html_static/
         $candidates = [
-            base_path('html_static/' . $cleanSlug . '.html'),
-            base_path('html_static/' . $slug . '.html'),
+            base_path('html_static/' . $templateSlug . '.html'),
         ];
 
         foreach ($candidates as $filePath) {
@@ -109,17 +119,8 @@ class PageController extends Controller
                     }
                 }
 
-                // Extract authentic Univ Lyon 3 <main id="page">...</main> structure
-                $bodyContent = '';
-                if (preg_match('/<main\b[^>]*id=["\']page["\'][^>]*>(.*?)<\/main>/is', $rawHtml, $mm)) {
-                    $bodyContent = '<main id="page">' . $mm[1] . '</main>';
-                } elseif (preg_match('/<main\b[^>]*>(.*?)<\/main>/is', $rawHtml, $mm)) {
-                    $bodyContent = '<main id="page">' . $mm[1] . '</main>';
-                } elseif (preg_match('/<div\b[^>]*id=["\']page["\'][^>]*>(.*?)<\/div>\s*<\/body>/is', $rawHtml, $mm)) {
-                    $bodyContent = '<main id="page"><div id="page_deco">' . $mm[1] . '</div><div class="separateur"></div></main>';
-                } else {
-                    $bodyContent = '<main id="page"><div id="page_deco">' . $rawHtml . '</div><div class="separateur"></div></main>';
-                }
+                $layout = StaticPageLayout::extract($rawHtml);
+                $bodyContent = $layout['html'];
 
                 // Ensure separateur is present before </main>
                 if (!str_contains($bodyContent, 'class="separateur"')) {
@@ -150,6 +151,9 @@ class PageController extends Controller
                 return view('pages.static-page', [
                     'title' => $title,
                     'bodyContent' => $bodyContent,
+                    'isLandingPage' => $layout['landing'],
+                    'staticLayoutCss' => $layout['css'],
+                    'isStaticPage' => true,
                 ]);
             }
         }

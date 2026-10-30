@@ -1,0 +1,1340 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "slug": "home",
+      "meta_title": "INSG Gabon — Institut National des Sciences de Gestion",
+      "meta_description": "L'Institut National des Sciences de Gestion forme les futurs cadres et managers du Gabon.",
+      "hero_title": "Formez l’excellence, construisez votre avenir de manager",
+      "hero_text": "L'INSG Gabon prépare les cadres, managers et entrepreneurs qui font la performance des organisations gabonaises."
+    },
+    {
+      "id": 2,
+      "slug": "about",
+      "meta_title": "À propos de l'INSG",
+      "meta_description": "Découvrez l'histoire, la mission et la gouvernance de l'INSG Gabon.",
+      "hero_title": "À propos de l'INSG",
+      "hero_text": "Découvrez notre histoire, notre mission et les femmes et hommes qui portent l'excellence académique au service du Gabon."
+    },
+    {
+      "id": 3,
+      "slug": "formations",
+      "meta_title": "Nos formations | INSG Gabon",
+      "meta_description": "Découvrez les Licences, Masters et parcours professionnels proposés par l'INSG.",
+      "hero_title": "Nos formations",
+      "hero_text": "Découvrez les parcours accessibles selon votre série de baccalauréat et construisez votre projet professionnel."
+    },
+    {
+      "id": 4,
+      "slug": "admissions",
+      "meta_title": "Admissions | INSG Gabon",
+      "meta_description": "Conditions, procédures et formulaire de pré-inscription à l'INSG.",
+      "hero_title": "Admissions à l'INSG",
+      "hero_text": "Toutes les informations utiles pour préparer votre candidature et rejoindre l'INSG."
+    },
+    {
+      "id": 5,
+      "slug": "actualites",
+      "meta_title": "Actualités de l'INSG",
+      "meta_description": "Suivez les actualités académiques, partenariats et événements de l'INSG.",
+      "hero_title": "Actualités de l'INSG",
+      "hero_text": "Admissions, partenariats, événements et vie académique : suivez toute l'actualité de l'institut."
+    },
+    {
+      "id": 6,
+      "slug": "annonces-concours",
+      "meta_title": "Annonces de concours | INSG",
+      "meta_description": "Avis officiels, concours et appels à candidatures de l'INSG.",
+      "hero_title": "Annonces de concours",
+      "hero_text": "Retrouvez les avis officiels de concours, appels à candidatures et procédures de sélection publiés par l'INSG."
+    },
+    {
+      "id": 7,
+      "slug": "vie-etudiante",
+      "meta_title": "Vie étudiante | INSG",
+      "meta_description": "Clubs, événements et activités étudiantes de l'INSG.",
+      "hero_title": "Vie étudiante",
+      "hero_text": "Clubs, associations, sport et culture : la vie à l'INSG ne s'arrête pas aux salles de cours."
+    },
+    {
+      "id": 8,
+      "slug": "entreprises",
+      "meta_title": "Partenaires et entreprises | INSG",
+      "meta_description": "Découvrez les partenaires et opportunités professionnelles de l'INSG.",
+      "hero_title": "Espace Partenaires",
+      "hero_text": "Entreprises, institutions et diplômés : construisons ensemble les compétences dont le Gabon a besoin."
+    },
+    {
+      "id": 9,
+      "slug": "bibliotheque",
+      "meta_title": "Bibliothèque universitaire | INSG",
+      "meta_description": "Ressources documentaires et services de la bibliothèque de l'INSG.",
+      "hero_title": "Bibliothèque universitaire",
+      "hero_text": "Des ressources académiques et professionnelles pour accompagner vos études et vos travaux de recherche."
+    },
+    {
+      "id": 10,
+      "slug": "recherche",
+      "meta_title": "Recherche en Sciences de Gestion | INSG",
+      "meta_description": "Laboratoire, publications et activités scientifiques de l'INSG.",
+      "hero_title": "Recherche en Sciences de Gestion",
+      "hero_text": "Produire des connaissances utiles aux organisations, aux décideurs et au développement du Gabon."
+    },
+    {
+      "id": 11,
+      "slug": "incubateur",
+      "meta_title": "Incubateur de projets | INSG",
+      "meta_description": "Accompagnement entrepreneurial et incubation de projets à l'INSG.",
+      "hero_title": "Incubateur de projets INSG",
+      "hero_text": "Transformez une idée en projet viable grâce à un accompagnement structuré et à un réseau d'experts."
+    },
+    {
+      "id": 12,
+      "slug": "inscription-master",
+      "meta_title": "Candidature en Master | INSG",
+      "meta_description": "Déposez votre candidature en Master à l'INSG.",
+      "hero_title": "Candidature en Master",
+      "hero_text": "Candidatez en ligne à l'une des spécialités de Master de l'INSG. L'admission est fondée sur l'analyse de votre dossier."
+    },
+    {
+      "id": 13,
+      "slug": "contact",
+      "meta_title": "Contactez l'INSG",
+      "meta_description": "Coordonnées et formulaire de contact de l'INSG Gabon.",
+      "hero_title": "Contactez-nous",
+      "hero_text": "Une question sur nos formations, les admissions ou un partenariat ? Notre équipe vous répond."
+    },
+    {
+      "id": 14,
+      "slug": "entrepreneuriat",
+      "meta_title": "Entrepreneuriat et innovation | INSG",
+      "meta_description": "Développez votre esprit d’initiative et transformez les opportunités en projets créateurs de valeur avec l’INSG.",
+      "hero_title": "Entreprendre avec l’INSG",
+      "hero_text": "Développez votre capacité à identifier les opportunités, concevoir des solutions responsables et piloter des projets créateurs de valeur pour le Gabon."
+    },
+    {
+      "id": 15,
+      "slug": "international",
+      "meta_title": "Rayonnement & Coopération Internationale | INSG",
+      "meta_description": "Découvrez la politique internationale, les accords de coopération et la mobilité étudiante de l'INSG Gabon.",
+      "hero_title": "International & Coopération",
+      "hero_text": "Une école ouverte sur l'Afrique et le monde : partenariats académiques, mobilité étudiante et accueil des étudiants internationaux."
+    }
+  ],
+  "sections": [
+    {
+      "page_id": 1,
+      "key": "director-message",
+      "title": "Former des managers responsables et compétitifs",
+      "body": "<p>Depuis sa création, l’Institut National des Sciences de Gestion s’est imposé comme une référence dans la formation des cadres gabonais. Notre ambition associe rigueur académique, ouverture internationale et proximité avec le monde professionnel.</p><p><strong>Pr. Murielle Natacha M’BOUNA</strong><br>Directeur Général, INSG Gabon</p>",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "campus-life",
+      "title": "Un environnement propice à la réussite",
+      "body": "Le campus offre des espaces conçus pour apprendre, collaborer et développer les projets étudiants.",
+      "items": [
+        {
+          "image": "/assets/images/building.png",
+          "icon": "bi-building",
+          "title": "Amphithéâtres",
+          "text": "Des espaces adaptés aux cours, conférences et rencontres académiques."
+        },
+        {
+          "image": "/assets/images/library.png",
+          "icon": "bi-book",
+          "title": "Bibliothèque",
+          "text": "Des ressources documentaires pour les études et la recherche."
+        },
+        {
+          "icon": "bi-wifi",
+          "title": "Services numériques",
+          "text": "Des outils numériques au service de la pédagogie et de la collaboration."
+        }
+      ],
+      "sort_order": 40,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "history",
+      "title": "Un institut historique au service du Gabon",
+      "body": "<p>Fondé en 1973, l’Institut National des Sciences de Gestion (INSG) est un établissement public d’enseignement supérieur et de recherche. Sa mission est de former des cadres compétents dans les différents domaines des sciences de gestion.</p><p>Depuis sa création, l’Institut accompagne les transformations de l’administration, des entreprises et de l’économie gabonaise. Il a contribué à former plusieurs générations de professionnels appelés à exercer des responsabilités dans les secteurs public et privé.</p><p>Fort de plus de cinquante années d’expérience, l’INSG affirme aujourd’hui une identité singulière, à la croisée de l’université publique et de la grande école de management. Cet héritage nourrit un projet pédagogique fondé sur l’exigence académique, l’ouverture et la proximité avec le monde professionnel.</p>",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "values",
+      "title": "Une institution, trois dimensions",
+      "body": "L’INSG réunit les missions de service public, de production scientifique et de préparation aux métiers du management. Trois dimensions complémentaires définissent sa vocation et guident son action.",
+      "items": [
+        {
+          "icon": "bi-building",
+          "title": "Une école nationale",
+          "text": "Acteur de l’intégration sociale, l’INSG accompagne l’État dans sa politique de formation et d’accès à un enseignement supérieur de qualité. Elle contribue à donner aux étudiants les moyens de construire leur avenir et de servir le développement national."
+        },
+        {
+          "icon": "bi-mortarboard",
+          "title": "Une école universitaire",
+          "text": "Ancré dans l’enseignement supérieur gabonais, l’Institut offre un espace d’excellence scientifique consacré au management public et privé. Il encourage la recherche, la coopération académique, le partage des connaissances et la formation des formateurs."
+        },
+        {
+          "icon": "bi-briefcase",
+          "title": "Une école de management",
+          "text": "À la manière d’une <em>Business School</em>, l’INSG rapproche les apprentissages des réalités professionnelles. Ses formations développent les compétences opérationnelles, le leadership, l’employabilité et la capacité à entreprendre."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "leadership",
+      "title": "Une direction engagée pour la réussite",
+      "body": "<p><strong>Pr Murielle Natacha M’BOUNA</strong></p><p>Maître de conférences, agrégée des universités en sciences de gestion.</p><p><strong>Responsabilités académiques</strong><br>Directeur des Études en charge du premier cycle, de la Licence fondamentale, de la Licence professionnelle et du BTS à l’Institut National des Sciences de Gestion (INSG).</p><p><strong>Adresse institutionnelle</strong><br>BP 190 INSG, Gros Bouquet, Libreville.</p><p><strong>Activités de recherche</strong><br>Responsable du Groupe de Recherche en Gestion.<br>Laboratoire CIREGED, Université Omar Bongo, Libreville.</p>",
+      "items": [],
+      "sort_order": 60,
+      "active": 1
+    },
+    {
+      "page_id": 3,
+      "key": "catalogue",
+      "title": "Choisissez le parcours qui correspond à votre projet",
+      "body": "Chaque formation publiée depuis le backend apparaît automatiquement dans ce catalogue.",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 3,
+      "key": "formation-cta",
+      "title": "Prêt à construire votre avenir professionnel ?",
+      "body": "Consultez les conditions d’admission et transmettez votre dossier en ligne.",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 4,
+      "key": "process",
+      "title": "Comment rejoindre l’INSG ?",
+      "body": "L’admission est organisée selon un parcours transparent, de la préparation du dossier à la confirmation définitive.",
+      "items": [
+        {
+          "icon": "bi-search",
+          "title": "Choisir sa formation",
+          "text": "Consultez les parcours et vérifiez les conditions d’accès."
+        },
+        {
+          "icon": "bi-folder-check",
+          "title": "Préparer le dossier",
+          "text": "Rassemblez les pièces académiques et administratives demandées."
+        },
+        {
+          "icon": "bi-send-check",
+          "title": "Déposer la candidature",
+          "text": "Complétez le formulaire et transmettez des documents lisibles."
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 4,
+      "key": "admission-form",
+      "title": "Formulaire de pré-inscription",
+      "body": "Les champs obligatoires permettent au service des admissions d’étudier votre demande.",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 5,
+      "key": "news-list",
+      "title": "Toute l’actualité de l’INSG",
+      "body": "Les publications sont ajoutées, modifiées et retirées directement depuis le backend.",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 6,
+      "key": "announcement-list",
+      "title": "Candidatures et sélections",
+      "body": "Consultez les appels à candidatures, concours et avis officiels publiés par l’administration.",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 6,
+      "key": "announcement-advice",
+      "title": "Bien préparer votre dossier",
+      "body": "Préparez un dossier complet et respectez exclusivement les informations publiées par l’institut.",
+      "items": [
+        {
+          "icon": "bi-shield-check",
+          "title": "Source officielle",
+          "text": "Fiez-vous aux dates et modalités publiées sur le site."
+        },
+        {
+          "icon": "bi-folder-check",
+          "title": "Dossier complet",
+          "text": "Déposez des fichiers lisibles et conformes avant la date limite."
+        },
+        {
+          "icon": "bi-envelope-check",
+          "title": "Confirmation",
+          "text": "Conservez l’accusé de réception transmis après le dépôt."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 7,
+      "key": "student-clubs",
+      "title": "Développez vos talents en dehors des cours",
+      "body": "Les activités associatives développent le leadership, la créativité et l’engagement citoyen.",
+      "items": [
+        {
+          "icon": "bi-graph-up",
+          "title": "Finance et investissement",
+          "text": "Analyses de cas, simulations et rencontres professionnelles."
+        },
+        {
+          "icon": "bi-mic",
+          "title": "Art oratoire et débat",
+          "text": "Ateliers de prise de parole et compétitions inter-écoles."
+        },
+        {
+          "icon": "bi-laptop",
+          "title": "Digital et innovation",
+          "text": "Veille technologique, hackathons et entrepreneuriat numérique."
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 7,
+      "key": "student-events",
+      "title": "Les prochains événements",
+      "body": "Les rendez-vous publiés dans le backend sont affichés automatiquement.",
+      "items": [],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 8,
+      "key": "partner-benefits",
+      "title": "Construisons les compétences de demain",
+      "body": "Les partenariats rapprochent la formation des besoins réels des organisations.",
+      "items": [
+        {
+          "icon": "bi-person-workspace",
+          "title": "Recruter nos talents",
+          "text": "Diffusez vos offres de stage, d’alternance et d’emploi auprès de profils formés à l’excellence."
+        },
+        {
+          "icon": "bi-journal-check",
+          "title": "Projets & Conférences",
+          "text": "Animez des masterclasses, proposez des études de cas réels et participez aux jurys de soutenance."
+        },
+        {
+          "icon": "bi-award",
+          "title": "Taxe d’apprentissage & Soutien",
+          "text": "Investissez dans les équipements pédagogiques et soutenez les chaires de formation professionnelle."
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 8,
+      "key": "partner-list",
+      "title": "Un réseau engagé aux côtés de l’INSG",
+      "body": "Seuls les partenaires actifs dans le backend sont affichés.",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 9,
+      "key": "library-services",
+      "title": "Un espace de travail au cœur du campus",
+      "body": "La bibliothèque soutient les apprentissages, la recherche et la préparation des projets.",
+      "items": [
+        {
+          "icon": "bi-book",
+          "title": "Collections spécialisées",
+          "text": "Ouvrages, mémoires et revues en économie, gestion et management."
+        },
+        {
+          "icon": "bi-laptop",
+          "title": "Ressources numériques",
+          "text": "Accès à des bases documentaires et publications électroniques."
+        },
+        {
+          "icon": "bi-people",
+          "title": "Accompagnement",
+          "text": "Orientation bibliographique et aide à la recherche documentaire."
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 9,
+      "key": "library-access",
+      "title": "Consulter et travailler dans de bonnes conditions",
+      "body": "<p>Les étudiants et enseignants peuvent consulter les ressources sur place selon les horaires communiqués par l’institut. Les services numériques nécessitent une authentification institutionnelle.</p>",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 10,
+      "key": "research-lab",
+      "title": "Produire des connaissances utiles au développement",
+      "body": "<p>Le Laboratoire de Recherche en Sciences de Gestion développe des travaux utiles aux entreprises, aux administrations et aux décideurs publics. Il favorise la diffusion scientifique et les collaborations interdisciplinaires.</p>",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 10,
+      "key": "research-areas",
+      "title": "Domaines de recherche prioritaires",
+      "body": "Les projets scientifiques couvrent les principaux enjeux contemporains des organisations.",
+      "items": [
+        {
+          "icon": "bi-bank",
+          "title": "Finance et gouvernance",
+          "text": "Performance financière, risques et gouvernance des organisations."
+        },
+        {
+          "icon": "bi-people",
+          "title": "Management et RH",
+          "text": "Leadership, compétences et transformation des organisations."
+        },
+        {
+          "icon": "bi-globe-africa",
+          "title": "Développement durable",
+          "text": "Responsabilité sociale, territoires et transitions économiques."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 11,
+      "key": "incubator-purpose",
+      "title": "De l’idée à l’entreprise",
+      "body": "<p>L’incubateur accompagne les étudiants et jeunes diplômés depuis l’idée initiale jusqu’à la validation d’un modèle économique viable. Les porteurs de projet bénéficient de méthodes, de mentorat et d’un réseau professionnel.</p>",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 11,
+      "key": "incubator-program",
+      "title": "Un programme en quatre étapes",
+      "body": "Un accompagnement progressif permet de transformer une intention en projet structuré.",
+      "items": [
+        {
+          "icon": "bi-lightbulb",
+          "title": "Idéation",
+          "text": "Clarifier le besoin, la proposition de valeur et les bénéficiaires."
+        },
+        {
+          "icon": "bi-clipboard-data",
+          "title": "Validation",
+          "text": "Étudier le marché et tester les hypothèses principales."
+        },
+        {
+          "icon": "bi-rocket-takeoff",
+          "title": "Lancement",
+          "text": "Construire le modèle économique et préparer la mise sur le marché."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 11,
+      "key": "incubator-cta",
+      "title": "Osez entreprendre avec l’INSG",
+      "body": "Présentez votre projet, vos motivations et les premiers éléments de validation.",
+      "items": [],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 12,
+      "key": "master-process",
+      "title": "Une sélection attentive de votre parcours",
+      "body": "La commission évalue la cohérence du parcours, les résultats académiques, la motivation et le projet professionnel.",
+      "items": [
+        {
+          "icon": "bi-upload",
+          "title": "Dépôt",
+          "text": "Complétez le formulaire et joignez toutes les pièces demandées."
+        },
+        {
+          "icon": "bi-search",
+          "title": "Vérification",
+          "text": "Le service des admissions contrôle la conformité du dossier."
+        },
+        {
+          "icon": "bi-check2-circle",
+          "title": "Décision",
+          "text": "La décision et les modalités d’inscription sont communiquées par email."
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 12,
+      "key": "master-form",
+      "title": "Déposer une candidature en Master",
+      "body": "Préparez vos diplômes, relevés, CV, lettre de motivation et pièce d’identité avant de commencer.",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 13,
+      "key": "contact-details",
+      "title": "Les moyens de contacter l’INSG",
+      "body": "Notre équipe répond aux demandes relatives aux formations, admissions, partenariats et services.",
+      "items": [
+        {
+          "icon": "bi-geo-alt",
+          "title": "Adresse",
+          "text": "Boulevard Triomphal, Libreville, Gabon"
+        },
+        {
+          "icon": "bi-telephone",
+          "title": "Téléphone",
+          "text": "+241 01 23 45 67"
+        },
+        {
+          "icon": "bi-envelope",
+          "title": "Email",
+          "text": "contact@insg-gabon.ga"
+        }
+      ],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 13,
+      "key": "contact-form",
+      "title": "Envoyer un message",
+      "body": "Décrivez précisément votre demande afin qu’elle soit orientée vers le bon service.",
+      "items": [],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-statistics",
+      "title": "Une institution engagée dans la réussite",
+      "body": "Les indicateurs publiés depuis le backend présentent l’activité et l’impact de l’institut.",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-programs",
+      "title": "Des parcours conçus pour les métiers de demain",
+      "body": "Les formations actives et mises en avant dans le backend sont présentées ici.",
+      "items": [],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-articles",
+      "title": "Les dernières actualités de l’INSG",
+      "body": "Les dernières publications sont affichées automatiquement selon leur date de publication.",
+      "items": [],
+      "sort_order": 50,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-events",
+      "title": "Les prochains rendez-vous",
+      "body": "Retrouvez les prochains rendez-vous publiés par l’administration.",
+      "items": [],
+      "sort_order": 60,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-testimonials",
+      "title": "Des parcours qui inspirent",
+      "body": "Étudiants et diplômés partagent leur expérience de formation et leur parcours.",
+      "items": [],
+      "sort_order": 70,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-partners",
+      "title": "Nos partenaires institutionnels et professionnels",
+      "body": "Les partenaires actifs accompagnent la professionnalisation et l’ouverture de l’institut.",
+      "items": [],
+      "sort_order": 80,
+      "active": 1
+    },
+    {
+      "page_id": 1,
+      "key": "home-cta",
+      "title": "Prêt à rejoindre l’INSG ?",
+      "body": "Découvrez les conditions d’admission et préparez votre dossier.",
+      "items": [],
+      "sort_order": 90,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "vision",
+      "title": "Une référence du management en Afrique",
+      "body": "<p>Notre ambition est de faire de l’INSG une école universitaire de management de référence en Afrique, reconnue pour la qualité de ses formations, la pertinence de sa recherche et la réussite de ses diplômés.</p><p>À l’image des grandes <em>Business Schools</em> internationales, l’Institut œuvre à l’amélioration continue de la qualité académique, au rayonnement scientifique et au renforcement de ses partenariats avec les universités, les entreprises et les institutions publiques.</p><p>Cette vision place l’étudiant au cœur du projet institutionnel. Elle vise à former des femmes et des hommes responsables, capables d’innover, de conduire le changement et de participer activement au développement économique et social du Gabon.</p>",
+      "items": [],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "mission",
+      "title": "Notre mission au quotidien",
+      "body": "<p>L’INSG propose des parcours qui associent connaissances fondamentales, maîtrise des outils de gestion et mise en pratique. Les enseignements, projets, stages et rencontres professionnelles permettent aux apprenants de mieux comprendre les réalités des organisations.</p><p>L’Institut soutient également la production et la diffusion de connaissances utiles à la décision. Il encourage les travaux consacrés aux enjeux du management, de la gouvernance, de l’entrepreneuriat et de la transformation des organisations africaines.</p><p>À travers son organisation administrative et pédagogique, son service de scolarité et l’engagement de ses équipes, l’INSG veille à offrir un accompagnement de qualité tout au long du parcours étudiant.</p>",
+      "items": [],
+      "sort_order": 40,
+      "active": 1
+    },
+    {
+      "page_id": 2,
+      "key": "governance",
+      "title": "Comment l’INSG est organisé",
+      "body": "Une vue d’ensemble claire de la gouvernance, des pôles et des services qui structurent le fonctionnement administratif et pédagogique de l’INSG.",
+      "items": [],
+      "sort_order": 50,
+      "active": 1
+    },
+    {
+      "page_id": 14,
+      "key": "entrepreneurship-vision",
+      "title": "Former des entrepreneurs responsables et audacieux",
+      "body": "<p>À l’INSG, l’entrepreneuriat constitue une compétence essentielle du manager. Il permet de transformer une idée en réponse concrète aux besoins des organisations, des territoires et de la société.</p><p>Notre démarche associe culture de l’innovation, maîtrise des outils de gestion et expérimentation. Elle prépare les étudiants à créer leur activité, à développer un projet au sein d’une organisation ou à accompagner la croissance d’une entreprise existante.</p>",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 14,
+      "key": "entrepreneurship-skills",
+      "title": "De l’opportunité au modèle économique",
+      "body": "Les étudiants acquièrent des méthodes directement mobilisables pour structurer et sécuriser leurs initiatives.",
+      "items": [
+        {
+          "icon": "bi-search-heart",
+          "title": "Identifier une opportunité",
+          "text": "Observer les usages, analyser un besoin réel et formuler une proposition de valeur pertinente."
+        },
+        {
+          "icon": "bi-kanban",
+          "title": "Structurer le projet",
+          "text": "Construire un modèle économique, planifier les ressources et évaluer la faisabilité financière et opérationnelle."
+        },
+        {
+          "icon": "bi-megaphone",
+          "title": "Convaincre et mobiliser",
+          "text": "Présenter son projet, fédérer une équipe et développer des relations durables avec les partenaires et les clients."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 14,
+      "key": "entrepreneurship-path",
+      "title": "Apprendre en construisant un projet réel",
+      "body": "Un apprentissage progressif relie les enseignements, la pratique et l’accompagnement professionnel.",
+      "items": [
+        {
+          "icon": "bi-lightbulb",
+          "title": "Explorer",
+          "text": "Ateliers de créativité, diagnostic des besoins et découverte des enjeux économiques et sociaux."
+        },
+        {
+          "icon": "bi-tools",
+          "title": "Expérimenter",
+          "text": "Études de marché, prototypes, simulations de gestion et confrontation du projet à ses utilisateurs."
+        },
+        {
+          "icon": "bi-graph-up-arrow",
+          "title": "Développer",
+          "text": "Mentorat, préparation du financement, stratégie commerciale et orientation vers les dispositifs d’incubation."
+        }
+      ],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 14,
+      "key": "entrepreneurship-impact",
+      "title": "Créer durablement de la valeur au Gabon",
+      "body": "<p>L’INSG encourage des projets viables, éthiques et attentifs à leur impact. Une attention particulière est portée aux solutions qui contribuent à la diversification économique, à la transformation numérique, à l’emploi des jeunes et au développement durable.</p><p>Les porteurs de projets peuvent s’appuyer sur les enseignants, les professionnels, les entreprises partenaires et l’incubateur de l’Institut pour consolider leur démarche et accéder à un environnement favorable à l’innovation.</p>",
+      "items": [],
+      "sort_order": 40,
+      "active": 1
+    },
+    {
+      "page_id": 14,
+      "key": "entrepreneurship-cta",
+      "title": "Donnez une trajectoire à votre ambition",
+      "body": "Vous avez une idée ou souhaitez développer vos compétences entrepreneuriales ? Échangez avec nos équipes pour identifier l’accompagnement adapté à votre projet.",
+      "items": [],
+      "sort_order": 50,
+      "active": 1
+    },
+    {
+      "page_id": 7,
+      "key": "student-services",
+      "title": "Un cadre de vie équilibré et solidaire",
+      "body": "L’INSG veille au bien-être, à l’épanouissement et à la santé de sa communauté étudiante.",
+      "items": [
+        {
+          "icon": "bi-heart-pulse",
+          "title": "Santé & Écoute",
+          "text": "Orientation médico-sociale, prévention et cellule d’écoute pour accompagner les étudiants."
+        },
+        {
+          "icon": "bi-universal-access",
+          "title": "Inclusion & Handicap",
+          "text": "Aménagements d’études et accessibilité pour garantir l’égalité des chances."
+        },
+        {
+          "icon": "bi-trophy",
+          "title": "Sport & Culture",
+          "text": "Activités sportives universitaires, tournois inter-facultés et événements culturels."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 15,
+      "key": "international-strategy",
+      "title": "Une école ouverte sur le continent et le monde",
+      "body": "<p>L’ouverture internationale est au cœur du modèle de l’INSG. Notre ambition est de former des managers capables d’évoluer dans un environnement économique mondialisé tout en répondant aux défis spécifiques du continent africain.</p><p>L’Institut développe des partenariats stratégiques avec des universités, des instituts de recherche et des écoles de management de référence en Afrique subsaharienne, en Europe et en Amérique du Nord. Ces coopérations favorisent les mobilités croisées, les doubles diplômes et la recherche conjointe.</p>",
+      "items": [],
+      "sort_order": 10,
+      "active": 1
+    },
+    {
+      "page_id": 15,
+      "key": "international-pillars",
+      "title": "Coopérer, accueillir et rayonner",
+      "body": "Quatre axes majeurs structurent la politique d’ouverture et de coopération académique de l’INSG.",
+      "items": [
+        {
+          "icon": "bi-globe-americas",
+          "title": "Accords de coopération",
+          "text": "Conventions bilatérales avec des universités et business schools partenaires pour les échanges académiques."
+        },
+        {
+          "icon": "bi-airplane-engines",
+          "title": "Mobilité étudiante",
+          "text": "Possibilités de semestres académiques à l’étranger, stages internationaux et immersions professionnelles."
+        },
+        {
+          "icon": "bi-people",
+          "title": "Accueil des étudiants étrangers",
+          "text": "Dispositif d’intégration personnalisé pour les apprenants de la zone CEMAC et de l’ensemble du continent."
+        },
+        {
+          "icon": "bi-award",
+          "title": "Harmonisation LMD & CAMES",
+          "text": "Programmes conformes aux standards académiques internationaux et aux reconnaissances officielles du CAMES."
+        }
+      ],
+      "sort_order": 20,
+      "active": 1
+    },
+    {
+      "page_id": 15,
+      "key": "international-incoming",
+      "title": "Rejoindre l’INSG depuis l’étranger",
+      "body": "<p>Chaque année, l’INSG accueille des étudiants originaires de plusieurs pays d’Afrique centrale et de l’Ouest. Notre campus offre un cadre d’études stimulant, sécurisé et convivial à Libreville.</p><p>Le bureau des relations internationales accompagne les candidats internationaux dans leurs démarches administratives, de l’évaluation des équivalences de diplômes jusqu’à l’installation et l’intégration dans la vie étudiante.</p>",
+      "items": [],
+      "sort_order": 30,
+      "active": 1
+    },
+    {
+      "page_id": 15,
+      "key": "international-cta",
+      "title": "Construisez votre carrière internationale avec l’INSG",
+      "body": "Vous résidez hors du Gabon et souhaitez intégrer nos cursus de Licence ou Master ? Découvrez les conditions d’admission internationale.",
+      "items": [],
+      "sort_order": 40,
+      "active": 1
+    }
+  ],
+  "partners": [
+    {
+      "name": "BGFI Bank",
+      "category": "Entreprise",
+      "active": 0
+    },
+    {
+      "name": "UGB",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "CNSS",
+      "category": "Entreprise",
+      "active": 0
+    },
+    {
+      "name": "TotalEnergies",
+      "category": "Entreprise",
+      "active": 0
+    },
+    {
+      "name": "Airtel Gabon",
+      "category": "Entreprise",
+      "active": 0
+    },
+    {
+      "name": "BGFI",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "FINAM",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "BICIG",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "La Régionale d’Épargne et de Crédit du Gabon",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "Olsen Courtage",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "Luxo Finance",
+      "category": "Banque et finance",
+      "active": 1
+    },
+    {
+      "name": "KPMG",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Deloitte",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Ernst & Young",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "IMPROM",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "AC Consulting",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "K.T.A.",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Cabinet Ramses",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Salmane International Trade",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Cabinet Fidicia",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "Metodik Audit & Conseils",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "2AD Consulting",
+      "category": "Audit et conseil",
+      "active": 1
+    },
+    {
+      "name": "SOGAFRIC / SODIM TP / GESPARC",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "Bernabé Gabon",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "EDG SA",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "CAISTAB",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "SEEG",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "PERENCO",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "LABOREX",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "Vocal Centre",
+      "category": "Industrie et services",
+      "active": 1
+    },
+    {
+      "name": "SETRAG",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "BM-Transit",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "DHL",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "ASECNA",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "OCT Owendo",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "Gabon Port Management",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "AVS International",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "Soma Trans International",
+      "category": "Transport et logistique",
+      "active": 1
+    },
+    {
+      "name": "Conseil Gabonais des Chargeurs",
+      "category": "Institutions publiques",
+      "active": 1
+    },
+    {
+      "name": "Ministère de la Santé",
+      "category": "Institutions publiques",
+      "active": 1
+    },
+    {
+      "name": "DGCPT",
+      "category": "Institutions publiques",
+      "active": 1
+    },
+    {
+      "name": "Ministère des Comptes publics",
+      "category": "Institutions publiques",
+      "active": 1
+    }
+  ],
+  "statistics": [
+    {
+      "key": "students_per_year",
+      "label": "Étudiants formés chaque année",
+      "value": 3200,
+      "suffix": "+"
+    },
+    {
+      "key": "programs",
+      "label": "Filières spécialisées",
+      "value": 8,
+      "suffix": null
+    },
+    {
+      "key": "teachers",
+      "label": "Enseignants & experts",
+      "value": 140,
+      "suffix": "+"
+    },
+    {
+      "key": "employment_rate",
+      "label": "Taux d'insertion professionnelle",
+      "value": 92,
+      "suffix": "%"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Mboumba",
+      "role": "Diplômée Finance, promotion 2024",
+      "quote": "L'INSG m'a donné des bases solides et une vraie proximité avec le monde professionnel.",
+      "featured": 1
+    },
+    {
+      "name": "Grâce Obiang",
+      "role": "Étudiante en Master RH",
+      "quote": "Les enseignants nous accompagnent dans des projets concrets et exigeants.",
+      "featured": 1
+    },
+    {
+      "name": "Paul Nzue",
+      "role": "Entrepreneur, promotion 2022",
+      "quote": "L'incubateur a transformé mon idée en une entreprise viable.",
+      "featured": 1
+    }
+  ],
+  "articles": [
+    {
+      "title": "Ouverture des inscriptions pour la rentrée académique 2026-2027",
+      "slug": "ouverture-des-inscriptions-pour-la-rentree-academique-2026-2027",
+      "category": "Admissions",
+      "excerpt": "Les candidatures sont ouvertes pour toutes les filières de licence et de master.",
+      "content": "Les candidatures sont ouvertes pour toutes les filières de licence et de master.",
+      "published_at": "2026-08-15 00:00:00",
+      "featured": 1
+    },
+    {
+      "title": "Signature d'un partenariat stratégique avec BGFI Bank",
+      "slug": "signature-dun-partenariat-strategique-avec-bgfi-bank",
+      "category": "Partenariats",
+      "excerpt": "Ce partenariat renforce l'insertion professionnelle et les stages de nos étudiants.",
+      "content": "Ce partenariat renforce l'insertion professionnelle et les stages de nos étudiants.",
+      "published_at": "2026-08-08 00:00:00",
+      "featured": 1
+    },
+    {
+      "title": "Forum de l'emploi et des stages : plus de 30 entreprises attendues",
+      "slug": "forum-de-lemploi-et-des-stages-plus-de-30-entreprises-attendues",
+      "category": "Vie étudiante",
+      "excerpt": "Étudiants et diplômés rencontreront directement les recruteurs du territoire.",
+      "content": "Étudiants et diplômés rencontreront directement les recruteurs du territoire.",
+      "published_at": "2026-07-29 00:00:00",
+      "featured": 1
+    },
+    {
+      "title": "Les étudiants de Finance remportent le Challenge CEMAC",
+      "slug": "les-etudiants-de-finance-remportent-le-challenge-cemac",
+      "category": "Réussite",
+      "excerpt": "L'équipe INSG s'est distinguée lors de la finale régionale.",
+      "content": "L'équipe INSG s'est distinguée lors de la finale régionale.",
+      "published_at": "2026-07-18 00:00:00",
+      "featured": 0
+    },
+    {
+      "title": "Une nouvelle salle numérique pour la pédagogie active",
+      "slug": "une-nouvelle-salle-numerique-pour-la-pedagogie-active",
+      "category": "Campus",
+      "excerpt": "Le nouvel espace offre des équipements collaboratifs de dernière génération.",
+      "content": "Le nouvel espace offre des équipements collaboratifs de dernière génération.",
+      "published_at": "2026-07-05 00:00:00",
+      "featured": 0
+    },
+    {
+      "title": "Conférence sur la finance durable en Afrique centrale",
+      "slug": "conference-sur-la-finance-durable-en-afrique-centrale",
+      "category": "Recherche",
+      "excerpt": "Chercheurs et professionnels ont partagé leurs perspectives sur la transition.",
+      "content": "Chercheurs et professionnels ont partagé leurs perspectives sur la transition.",
+      "published_at": "2026-06-20 00:00:00",
+      "featured": 0
+    }
+  ],
+  "events": [
+    {
+      "title": "Journée Portes Ouvertes 2026",
+      "location": "Campus INSG, Libreville",
+      "starts_at": "2026-09-05 09:00:00",
+      "ends_at": "2026-09-05 16:00:00"
+    },
+    {
+      "title": "Conférence « Finance durable en Afrique Centrale »",
+      "location": "Amphithéâtre A",
+      "starts_at": "2026-09-14 14:00:00",
+      "ends_at": "2026-09-14 17:00:00"
+    },
+    {
+      "title": "Forum de l'emploi et des stages",
+      "location": "Grande cour INSG",
+      "starts_at": "2026-09-22 08:30:00",
+      "ends_at": "2026-09-22 17:30:00"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Concours d’entrée en Licence 1 — Session 2026",
+      "type": "Concours",
+      "description": "Les inscriptions au concours sont ouvertes aux titulaires du baccalauréat.",
+      "published_at": "2026-08-01 00:00:00",
+      "deadline_at": "2026-09-10 00:00:00",
+      "status": "open"
+    },
+    {
+      "title": "Recrutement de vacataires — Département Finance",
+      "type": "Recrutement",
+      "description": "Appel à candidatures pour des enseignements spécialisés en finance.",
+      "published_at": "2026-08-10 00:00:00",
+      "deadline_at": "2026-09-02 00:00:00",
+      "status": "open"
+    },
+    {
+      "title": "Résultats du concours Master professionnel",
+      "type": "Résultats",
+      "description": "La liste des candidats admis est disponible auprès de la scolarité.",
+      "published_at": "2026-08-12 00:00:00",
+      "deadline_at": null,
+      "status": "published"
+    }
+  ],
+  "settings": [
+    {
+      "key": "institution_name",
+      "value": "Institut National des Sciences de Gestion"
+    },
+    {
+      "key": "institution_short_name",
+      "value": "INSG"
+    },
+    {
+      "key": "footer_description",
+      "value": "L’Institut National des Sciences de Gestion forme les cadres et managers qui contribuent à la performance des organisations gabonaises."
+    },
+    {
+      "key": "address",
+      "value": "Boulevard Triomphal, Libreville, Gabon"
+    },
+    {
+      "key": "phone",
+      "value": "+241 01 23 45 67"
+    },
+    {
+      "key": "email",
+      "value": "contact@insg-gabon.ga"
+    },
+    {
+      "key": "copyright",
+      "value": "Institut National des Sciences de Gestion — Tous droits réservés."
+    }
+  ],
+  "programs": [
+    {
+      "name": "Finance",
+      "category": "finance",
+      "description": "Analyse financière, ingénierie financière et gestion de portefeuille.",
+      "opportunities": "[\"Analyste financier\",\"Tr\\u00e9sorier\",\"Gestionnaire de portefeuille\"]",
+      "curriculum": "[\"Math\\u00e9matiques financi\\u00e8res\",\"March\\u00e9s financiers\",\"Gestion des risques\"]"
+    },
+    {
+      "name": "Comptabilité",
+      "category": "comptabilite",
+      "description": "Comptabilité générale, fiscalité et contrôle de gestion appliqués.",
+      "opportunities": "[\"Chef comptable\",\"Contr\\u00f4leur de gestion\",\"Expert-comptable\"]",
+      "curriculum": "[\"SYSCOHADA\",\"Fiscalit\\u00e9\",\"Audit comptable\"]"
+    },
+    {
+      "name": "Marketing",
+      "category": "marketing",
+      "description": "Stratégie de marque, communication et marketing digital.",
+      "opportunities": "[\"Chef de produit\",\"Responsable marketing\",\"Community manager\"]",
+      "curriculum": "[\"\\u00c9tudes de march\\u00e9\",\"Marketing digital\",\"Communication\"]"
+    },
+    {
+      "name": "Ressources Humaines",
+      "category": "rh",
+      "description": "Gestion des talents, droit social et développement organisationnel.",
+      "opportunities": "[\"Responsable RH\",\"Charg\\u00e9 de recrutement\",\"Gestionnaire de paie\"]",
+      "curriculum": "[\"Droit social\",\"Gestion des talents\",\"Paie\"]"
+    },
+    {
+      "name": "Management",
+      "category": "management",
+      "description": "Pilotage stratégique et opérationnel des organisations.",
+      "opportunities": "[\"Manager\",\"Consultant\",\"Entrepreneur\"]",
+      "curriculum": "[\"Strat\\u00e9gie\",\"Leadership\",\"Gestion de projet\"]"
+    },
+    {
+      "name": "Banque",
+      "category": "banque",
+      "description": "Métiers bancaires, crédit, conformité et relation clientèle.",
+      "opportunities": "[\"Charg\\u00e9 de client\\u00e8le\",\"Analyste cr\\u00e9dit\",\"Responsable conformit\\u00e9\"]",
+      "curriculum": "[\"Techniques bancaires\",\"Cr\\u00e9dit\",\"Conformit\\u00e9\"]"
+    },
+    {
+      "name": "Audit & Contrôle",
+      "category": "audit",
+      "description": "Audit interne, contrôle des comptes et maîtrise des risques.",
+      "opportunities": "[\"Auditeur\",\"Contr\\u00f4leur interne\",\"Risk manager\"]",
+      "curriculum": "[\"Audit interne\",\"Contr\\u00f4le de gestion\",\"Gestion des risques\"]"
+    },
+    {
+      "name": "Informatique de Gestion",
+      "category": "informatique",
+      "description": "Systèmes d'information, ERP et transformation digitale.",
+      "opportunities": "[\"Chef de projet SI\",\"Consultant ERP\",\"Data analyst\"]",
+      "curriculum": "[\"Bases de donn\\u00e9es\",\"ERP\",\"Gestion de projet SI\"]"
+    }
+  ],
+  "formation_notes": "<p>Dans une perspective de diversification de son offre et de renforcement de la qualité scientifique, l’INSG développe plusieurs formations avec des partenaires académiques et institutionnels.</p><p>Le Master Recherche en Sciences de Gestion est proposé en partenariat avec l’Université Omar Bongo. La Licence Gestion Économie Mines et Pétrole (GEMP) résulte d’un partenariat académique et financier avec l’Université des Sciences et Techniques de Masuku (USTM) et l’Agence Nationale des Bourses et Stages (ANBG).</p><p>La Licence GEMP et la Licence Informatique de Gestion sont notamment accessibles aux titulaires d’un baccalauréat scientifique.</p>",
+  "catalogue": [
+    {
+      "key": "bts-initial",
+      "level": "BTS",
+      "mode": "Formation initiale",
+      "courses": [
+        "Comptabilité et Gestion des Organisations (CGO)",
+        "Action Commerciale (AC)",
+        "Commerce International (CI)",
+        "Négoce et Commerce du Bois",
+        "Délégué Médical"
+      ]
+    },
+    {
+      "key": "licence-fondamentale",
+      "level": "Licence en science de gestion",
+      "mode": "Formation initiale",
+      "courses": [
+        "Sciences de Gestion (LSG)",
+        "Finance Comptabilité (FC)",
+        "Marketing Commerce International (MCI)"
+      ]
+    },
+    {
+      "key": "licence-professionnelle",
+      "level": "Licence professionnelle",
+      "mode": "Formation initiale",
+      "courses": [
+        "Comptabilité Contrôle Audit (CCA)",
+        "Banque Finance (BF)",
+        "Assistant Ressources Humaines (ARH)",
+        "Gestion Touristique et Environnementale (GTE)",
+        "Gestion des Ressources",
+        "Management et Communication Commerciale (MCC)",
+        "Management des Opérations Internationales (MOI)",
+        "Informatique de Gestion (IG)",
+        "Gestion Économie Mines et Pétrole (GEMP)",
+        "Économie et Gestion des Structures Aéroportuaires",
+        "Management et Entrepreneuriat en Agro-industrie",
+        "Achat Logistique Transport"
+      ]
+    },
+    {
+      "key": "master-professionnel",
+      "level": "Master professionnel",
+      "mode": "Formation initiale",
+      "courses": [
+        "Finance (FI)",
+        "Comptabilité Contrôle Audit (CCA)",
+        "Management des Affaires Internationales (MIA)",
+        "Management des Stratégies Commerciales (MSC)",
+        "Informatique et Gestion (IC)"
+      ]
+    },
+    {
+      "key": "master-recherche",
+      "level": "Master recherche",
+      "mode": "Formation initiale",
+      "courses": [
+        "Sciences de Gestion (MRSG)"
+      ]
+    },
+    {
+      "key": "bts-continu",
+      "level": "BTS",
+      "mode": "Formation continue",
+      "courses": [
+        "Comptabilité et Gestion des Organisations (CGO)",
+        "Action Commerciale (AC)",
+        "Commerce International (CI)"
+      ]
+    },
+    {
+      "key": "licence-pro-continue",
+      "level": "Licence professionnelle",
+      "mode": "Formation continue",
+      "courses": [
+        "Logistique et Gestion Commerciale (LGM)",
+        "Gestion Financière et Comptable (GFC)"
+      ]
+    },
+    {
+      "key": "master-pro-continu",
+      "level": "Master professionnel",
+      "mode": "Formation continue",
+      "courses": [
+        "Finance et Actuariat (FA)",
+        "Gouvernance et Management Public (GOMAP)",
+        "Audit et Contrôle de Gestion (ACG)",
+        "Gestion des Entreprises (GE)",
+        "Management des Ressources Humaines (MRH)",
+        "Management Environnemental et Développement Durable (MEDD)"
+      ]
+    }
+  ]
+}

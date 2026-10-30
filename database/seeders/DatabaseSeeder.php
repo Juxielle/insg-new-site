@@ -290,6 +290,7 @@ class DatabaseSeeder extends Seeder
             TemoignageSeeder::class,
             GouvernanceSeeder::class,
             InfrastructureSeeder::class,
+            InsgSourceContentSeeder::class,
         ]);
     }
 }

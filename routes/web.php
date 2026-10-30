@@ -107,9 +107,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
 // 301 Redirect for any legacy .html requests to clean route
 Route::get('/{page}.html', function ($page) {
-    return redirect('/' . $page, 301);
-})->where('page', '[a-zA-Z0-9_\-]+');
+    return redirect('/' . (config('legacy_page_urls')[$page] ?? $page), 301);
+})->where('page', '[\p{L}0-9_\-]+');
 
 // Catch-all route for any submenu or secondary template page
-Route::get('/{page}', [PageController::class, 'renderStaticPage'])->name('page.show')->where('page', '[a-zA-Z0-9_\-]+');
+Route::get('/{page}', [PageController::class, 'renderStaticPage'])->name('page.show')->where('page', '[\p{L}0-9_\-]+');
 

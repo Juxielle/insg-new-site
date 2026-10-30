@@ -130,7 +130,7 @@
                 <li><a href="{{ route('admin.login') }}" style="color: #cbd5e1; font-weight: 600;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 3px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>Administration</a></li>
                 <li>
                     <a href="{{ route('home') }}" title="Enseignement Supérieur Gabonais">
-                        <img src="{{ asset('assets/images/universite-de-lyon_1512060602002-png.png') }}" alt="Enseignement Supérieur Gabonais"/>
+                        <img src="{{ asset('assets/images/insg-logo.png') }}" alt="Enseignement Supérieur Gabonais"/>
                     </a>
                 </li>
                 <li>

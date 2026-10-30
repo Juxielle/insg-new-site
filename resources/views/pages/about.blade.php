@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'L\'Institut National des Sciences de Gestion (INSG Gabon) - Présentation')
-@section('meta_description', 'Fondé en 1973 à Libreville, l\'INSG est l\'établissement public d\'enseignement supérieur de référence au Gabon et dans la zone CEMAC pour les sciences managériales.')
-
+@section('title', 'À propos de l\'INSG')
+@section('meta_description', 'Découvrez l\'histoire, la mission et la gouvernance de l\'INSG Gabon.')
 @section('content')
 <main id="page">
     <div id="page_deco">
@@ -14,9 +13,11 @@
 
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
-                        <p class="chapo"><strong>Fondé en 1973 à Libreville</strong>, l'<strong>Institut National des Sciences de Gestion (INSG)</strong> est l'établissement public d'enseignement supérieur de référence au Gabon et dans la sous-région CEMAC. Fort de plus de 50 années d'excellence académique, l'INSG forme les cadres, gestionnaires, auditeurs et dirigeants qui pilotent l'économie et les entreprises gabonaises.</p>
-                        <p>L'Institut National des Sciences de Gestion conjugue la rigueur scientifique de l'institut public avec le professionnalisme des grandes écoles de management. Il propose des formations professionnalisantes du Bac+2 (BTS) au Master Professionnel (Bac+5), en formation initiale comme en formation continue, au sein de ses filières spécialisées en <strong>Finance, Comptabilité, Marketing, Ressources Humaines, Management, Banque, Audit et Informatique de Gestion</strong>.</p>
-                    </div><!-- .paragraphe__contenu--0 .toolbox -->
+<h2>Un institut historique au service du Gabon</h2><p>Fondé en 1973, l’Institut National des Sciences de Gestion (INSG) est un établissement public d’enseignement supérieur et de recherche. Sa mission est de former des cadres compétents dans les différents domaines des sciences de gestion.</p><p>Depuis sa création, l’Institut accompagne les transformations de l’administration, des entreprises et de l’économie gabonaise. Il a contribué à former plusieurs générations de professionnels appelés à exercer des responsabilités dans les secteurs public et privé.</p><p>Fort de plus de cinquante années d’expérience, l’INSG affirme aujourd’hui une identité singulière, à la croisée de l’université publique et de la grande école de management. Cet héritage nourrit un projet pédagogique fondé sur l’exigence académique, l’ouverture et la proximité avec le monde professionnel.</p>
+<h2>Une institution, trois dimensions</h2><p>L’INSG réunit les missions de service public, de production scientifique et de préparation aux métiers du management. Trois dimensions complémentaires définissent sa vocation et guident son action.</p><ul><li><strong>Une école nationale :</strong> Acteur de l’intégration sociale, l’INSG accompagne l’État dans sa politique de formation et d’accès à un enseignement supérieur de qualité. Elle contribue à donner aux étudiants les moyens de construire leur avenir et de servir le développement national.</li><li><strong>Une école universitaire :</strong> Ancré dans l’enseignement supérieur gabonais, l’Institut offre un espace d’excellence scientifique consacré au management public et privé. Il encourage la recherche, la coopération académique, le partage des connaissances et la formation des formateurs.</li><li><strong>Une école de management :</strong> À la manière d’une <em>Business School</em>, l’INSG rapproche les apprentissages des réalités professionnelles. Ses formations développent les compétences opérationnelles, le leadership, l’employabilité et la capacité à entreprendre.</li></ul>
+<h2>Une référence du management en Afrique</h2><p>Notre ambition est de faire de l’INSG une école universitaire de management de référence en Afrique, reconnue pour la qualité de ses formations, la pertinence de sa recherche et la réussite de ses diplômés.</p><p>À l’image des grandes <em>Business Schools</em> internationales, l’Institut œuvre à l’amélioration continue de la qualité académique, au rayonnement scientifique et au renforcement de ses partenariats avec les universités, les entreprises et les institutions publiques.</p><p>Cette vision place l’étudiant au cœur du projet institutionnel. Elle vise à former des femmes et des hommes responsables, capables d’innover, de conduire le changement et de participer activement au développement économique et social du Gabon.</p>
+<h2>Notre mission au quotidien</h2><p>L’INSG propose des parcours qui associent connaissances fondamentales, maîtrise des outils de gestion et mise en pratique. Les enseignements, projets, stages et rencontres professionnelles permettent aux apprenants de mieux comprendre les réalités des organisations.</p><p>L’Institut soutient également la production et la diffusion de connaissances utiles à la décision. Il encourage les travaux consacrés aux enjeux du management, de la gouvernance, de l’entrepreneuriat et de la transformation des organisations africaines.</p><p>À travers son organisation administrative et pédagogique, son service de scolarité et l’engagement de ses équipes, l’INSG veille à offrir un accompagnement de qualité tout au long du parcours étudiant.</p>
+</div><!-- .paragraphe__contenu--0 .toolbox -->
                     </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
@@ -42,23 +43,8 @@
                     <div class="colonne_deco"><div class="paragraphe--4">
                         <h2 class="paragraphe__titre--4">Organisation &amp; Pôles d'Excellence</h2>
                         <div class="paragraphe__contenu--4 toolbox">
-                            <p>L'Institut National des Sciences de Gestion est structuré autour de directions opérationnelles et de comités scientifiques garantissant la fluidité du parcours académique et l'insertion professionnelle :</p>
-                            @if(isset($gouvernances) && $gouvernances->isNotEmpty())
-                                <ul>
-                                    @foreach($gouvernances as $gov)
-                                        <li>
-                                            <strong>{{ $gov->division ?? $gov->role }} :</strong> {{ $gov->name }} &ndash; <em>{{ $gov->bio ?? $gov->role }}</em>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            @else
-                                <ul>
-                                    <li><strong>Direction Générale :</strong> Pilotage stratégique, gouvernance institutionnelle, partenariats nationaux et sous-régionaux.</li>
-                                    <li><strong>Direction des Affaires Académiques :</strong> Coordination pédagogique, gestion des examens, encadrement des corps professoraux et stages.</li>
-                                    <li><strong>Secrétariat Général :</strong> Ressources humaines, gestion financière, logistique, sécurité et entretien des infrastructures du campus.</li>
-                                    <li><strong>Direction de la Recherche :</strong> Animation des équipes de recherche CERME, CRDG et CERGIC.</li>
-                                </ul>
-                            @endif
+                            <p>Une vue d’ensemble claire de la gouvernance, des pôles et des services qui structurent le fonctionnement administratif et pédagogique de l’INSG.</p>
+                            <ul><li><strong>Une école nationale :</strong> Acteur de l’intégration sociale, l’INSG accompagne l’État dans sa politique de formation et d’accès à un enseignement supérieur de qualité. Elle contribue à donner aux étudiants les moyens de construire leur avenir et de servir le développement national.</li><li><strong>Une école universitaire :</strong> Ancré dans l’enseignement supérieur gabonais, l’Institut offre un espace d’excellence scientifique consacré au management public et privé. Il encourage la recherche, la coopération académique, le partage des connaissances et la formation des formateurs.</li><li><strong>Une école de management :</strong> À la manière d’une <em>Business School</em>, l’INSG rapproche les apprentissages des réalités professionnelles. Ses formations développent les compétences opérationnelles, le leadership, l’employabilité et la capacité à entreprendre.</li></ul>
                             <p>► <a href="/gouvernance" class="lien_interne"><strong>Consulter la gouvernance complète et l'organigramme</strong></a><br>
                                ► <a href="/chiffres-cles" class="lien_interne"><strong>Consulter les chiffres clés de l'INSG</strong></a><br>
                                ► <a href="{{ route('campus') }}" class="lien_interne"><strong>Découvrir le campus de Libreville</strong></a></p>

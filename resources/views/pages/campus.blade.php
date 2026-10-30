@@ -14,7 +14,7 @@
 
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
-                        <p class="chapo">Situé au cœur de la capitale gabonaise sur le <strong>Boulevard Triomphal</strong> Omar BONGO, le campus de l'Institut National des Sciences de Gestion offre à ses 3 200 étudiants un environnement d'études exceptionnel, alliant modernité des équipements et convivialité des espaces de vie.</p>
+                        <p class="chapo">Le campus offre des espaces conçus pour apprendre, collaborer et développer les projets étudiants.</p>
                         
                         <figure class="photo" style="margin: 1.5em 0;">
                             <img src="{{ asset('assets/images/insg-back-11.jpeg') }}" alt="Campus INSG Libreville" />
@@ -64,8 +64,8 @@
                     <h2 class="encadre__titre--2">Informations pratiques</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <p><strong>Campus Principal :</strong><br>
-                        Boulevard Triomphal Omar BONGO<br>
-                        BP 403 Libreville, Gabon</p>
+                        Boulevard Triomphal<br>
+                        Libreville, Gabon</p>
                         <p><strong>Horaires d'ouverture :</strong><br>
                         Du lundi au vendredi : 07h30 &ndash; 18h30<br>
                         Samedi : 08h00 &ndash; 13h00</p>

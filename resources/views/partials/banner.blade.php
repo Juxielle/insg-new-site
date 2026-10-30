@@ -39,7 +39,7 @@
             @elseif($rubric === 'formations')
                 <li class="{{ Route::is('formations.index') ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index') }}" class="type_rubrique_0001">Nos formations</a></li>
                 <li class="{{ Route::is('admissions') || $currentPath === 'admissions' || $currentPath === 'candidater-et-s-inscrire' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('admissions') }}" class="type_rubrique_0001">Candidater et s'inscrire</a></li>
-                <li class="{{ $currentPath === 'iut-jean-moulin' ? 'menu_secondaire-actif' : '' }}"><a href="/iut-jean-moulin" class="type_rubrique_0001">Cycle BTS Professionnalisant</a></li>
+                <li class="{{ $currentPath === 'cycle-bts' ? 'menu_secondaire-actif' : '' }}"><a href="/cycle-bts" class="type_rubrique_0001">Cycle BTS Professionnalisant</a></li>
                 <li class="{{ request('level') === 'Licence' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index', ['level' => 'Licence']) }}" class="type_rubrique_0001">Licences Professionnelles</a></li>
                 <li class="{{ request('level') === 'Master' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index', ['level' => 'Master']) }}" class="type_rubrique_0001">Masters Professionnels & MBA</a></li>
                 <li class="{{ $currentPath === 'alternance' ? 'menu_secondaire-actif' : '' }}"><a href="/alternance" class="type_rubrique_0001">Formation Continue & Alternance</a></li>

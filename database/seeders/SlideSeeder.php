@@ -59,7 +59,7 @@ class SlideSeeder extends Seeder
 
         foreach ($slides as $slide) {
             Slide::updateOrCreate(
-                ['title' => $slide['title']],
+                ['order' => $slide['order']],
                 $slide
             );
         }

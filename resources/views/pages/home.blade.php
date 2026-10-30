@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Institut National des Sciences de Gestion - INSG Gabon | Libreville')
-@section('meta_description', 'L\'INSG Gabon est l\'établissement public d\'enseignement supérieur de référence en sciences managériales, finance, comptabilité et marketing à Libreville.')
-
+@section('title', 'INSG Gabon — Institut National des Sciences de Gestion')
+@section('meta_description', 'L\'Institut National des Sciences de Gestion forme les futurs cadres et managers du Gabon.')
 @section('content')
 <main id="page">
     <div id="page_deco">
@@ -83,8 +82,8 @@
                                                         <div class="carousellyon3__item" style="background-image:url('{{ asset('assets/images/1759791578740.jpg.jpeg') }}');">
                                                             <span class="item_content">
                                                                 <a href="{{ route('formations.index') }}">
-                                                                    <h2>Cérémonie de Remise des Diplômes</h2>
-                                                                    <p>L'Institut National des Sciences de Gestion célèbre ses diplômés de Licence et Master professionnel.</p>
+                                                                    <h2>Formez l’excellence, construisez votre avenir de manager</h2>
+                                                                    <p>L'INSG Gabon prépare les cadres, managers et entrepreneurs qui font la performance des organisations gabonaises.</p>
                                                                 </a>
                                                                 <a class="en_savoir_plus" href="{{ route('formations.index') }}">Découvrir nos filières</a>
                                                             </span>
@@ -155,10 +154,10 @@
                                                 @empty
                                                     <li>
                                                         <a href="{{ route('evenements.index') }}" class="card_evnt">
-                                                            <span class="day">15</span>
-                                                            <span class="month">octobre</span>
+                                                            <span class="day">—</span>
+                                                            <span class="month">Agenda</span>
                                                         </a>
-                                                        <h3><a href="{{ route('evenements.index') }}">Journée Portes Ouvertes 2026 – Campus INSG Libreville</a></h3>
+                                                        <h3><a href="{{ route('evenements.index') }}">Les prochains rendez-vous seront annoncés ici</a></h3>
                                                     </li>
                                                 @endforelse
                                             </ul>
@@ -314,8 +313,8 @@
                                                     <span>entreprises partenaires</span>
                                                 </a>
                                                 <a href="{{ route('about') }}">
-                                                    <strong>4</strong>
-                                                    <span>laboratoires &amp; chaires</span>
+                                                    <strong>1973</strong>
+                                                    <span>année de fondation</span>
                                                     <img class="no-filter" src="{{ asset('assets/images/immeuble_1516878533295-png.png') }}" alt="Laboratoires" />
                                                 </a>
                                             </div>
@@ -336,8 +335,8 @@
                                         <div class="galerie_bloc bloc12 couleur_couleur2">
                                             <div class="galerie_bloc_wrapper">
                                                 <a href="{{ route('vie-associative') }}">
-                                                    <strong>{{ $stats['associations'] ?? '15+' }}</strong>
-                                                    <span>clubs &amp; associations étudiantes</span>
+                                                    <strong>50+</strong>
+                                                    <span>années d’expérience</span>
                                                     <img class="no-filter" src="{{ asset('assets/images/associations_1516897081704-png.png') }}" alt="Associations" />
                                                 </a>
                                             </div>
