@@ -8,12 +8,13 @@ const mode = process.argv[2] || 'before';
 const all = process.argv.includes('--all');
 const mobile = process.argv.includes('--mobile');
 const references = process.argv.includes('--reference');
-const port = mobile ? 9345 : 9344;
+const selectedPages = process.argv.find(arg=>arg.startsWith('--pages='))?.slice(8).split(',');
+const port = mobile ? 9355 : 9354;
 const retry = process.argv.includes('--retry');
 const reportFile = `scratch/submenu-layout-${mode}${mobile?'-mobile':''}${references?'-reference':''}.json`;
 const previous = retry ? JSON.parse(fs.readFileSync(reportFile, 'utf8')) : [];
 (async () => {
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--disable-gpu', '--no-first-run', '--remote-debugging-port='+port, `--user-data-dir=${path.resolve('storage/app/chrome-submenus'+(mobile?'-mobile':''))}`, 'about:blank'], {windowsHide: true, stdio: 'ignore'});
+  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--disable-gpu', '--no-first-run', '--remote-debugging-port='+port, `--user-data-dir=${path.resolve('storage/app/chrome-submenus-'+mode+(mobile?'-mobile':''))}`, 'about:blank'], {windowsHide: true, stdio: 'ignore'});
   let target;
   for(let n=0;n<75;n++) {
     try {target=(await (await fetch('http://127.0.0.1:'+port+'/json')).json()).find(t=>t.type==='page'); if(target) break;} catch {}
@@ -23,8 +24,9 @@ const previous = retry ? JSON.parse(fs.readFileSync(reportFile, 'utf8')) : [];
   const socket = new WebSocket(target.webSocketDebuggerUrl);
   await new Promise(r=>socket.onopen=r);
   let id=0;
+  let scriptErrors=[];
   const pending=new Map();
-  socket.onmessage=e=>{const m=JSON.parse(e.data);if(pending.has(m.id)){pending.get(m.id)(m);pending.delete(m.id);}};
+  socket.onmessage=e=>{const m=JSON.parse(e.data);if(m.method==='Runtime.exceptionThrown')scriptErrors.push(m.params.exceptionDetails.exception?.description||m.params.exceptionDetails.text);if(pending.has(m.id)){pending.get(m.id)(m);pending.delete(m.id);}};
   function send(method,params={}) {return new Promise((resolve,reject)=>{
     const next=++id;
     const timer=setTimeout(()=>{pending.delete(next);reject(Error(method+' timed out'));},20000);
@@ -33,13 +35,15 @@ const previous = retry ? JSON.parse(fs.readFileSync(reportFile, 'utf8')) : [];
   });}
   await send('Page.enable');
   await send('Network.enable');
+  await send('Runtime.enable');
   if(retry) await send('Network.setCacheDisabled',{cacheDisabled:true});
   await send('Emulation.setDeviceMetricsOverride',{width:mobile?390:1440,height:1000,deviceScaleFactor:1,mobile});
-  const pages=retry?previous.filter(p=>!p.areas.some(a=>a.id==='page_deco')).map(p=>p.slug):references?['https://facdedroit.univ-lyon3.fr/','https://www.univ-lyon3.fr/faculte-de-philosophie','https://www.univ-lyon3.fr/finance-controle-audit-comptabilite','https://www.univ-lyon3.fr/histoire']:all?fs.readdirSync('html_static').filter(f=>f.endsWith('.html')).map(f=>f.slice(0,-5)):samples;
+  const pages=selectedPages|| (retry?previous.filter(p=>!p.areas.some(a=>a.id==='page_deco')).map(p=>p.slug):references?['https://facdedroit.univ-lyon3.fr/','https://www.univ-lyon3.fr/faculte-de-philosophie','https://www.univ-lyon3.fr/finance-controle-audit-comptabilite','https://www.univ-lyon3.fr/histoire']:all?fs.readdirSync('html_static').filter(f=>f.endsWith('.html')).map(f=>f.slice(0,-5)):samples);
   const report=[];
   try {
     for(let n=0;n<pages.length;n++) {
       const slug=pages[n];
+      scriptErrors=[];
       await send('Page.navigate',{url:references?slug:'http://insg-gabon2.test/'+encodeURI(slug)});
       for(let attempt=0;attempt<60;attempt++) {
         await sleep(references?250:50);
@@ -53,16 +57,19 @@ const previous = retry ? JSON.parse(fs.readFileSync(reportFile, 'utf8')) : [];
         const areas=[...document.querySelectorAll('#page_deco,#contenu-encadres,.contenu,#encadres,.layout__simple-grid__row')].map(measure);
         const overflow=[...document.querySelectorAll('#page .colonne_deco,#page .paragraphe--0,#page .paragraphe--4,#page .vignette_deco,#page iframe,#page .layout__slot')].filter(e=>e.getBoundingClientRect().width>0).map(measure).filter(r=>r.x<-2||r.x+r.w>innerWidth+2);
         const columns=[...document.querySelectorAll('#page [class^="colonne_"]')].filter(e=>e.className!=='colonne_deco'&&e.getBoundingClientRect().width>0).map(measure);
-        return {title:document.title,url:location.href,viewport:innerWidth,height:document.documentElement.scrollHeight,areas,overflow,columns};
+        const brokenImages=[...document.querySelectorAll('#page img')].filter(e=>e.complete&&e.naturalWidth===0&&e.getAttribute('src')).map(e=>({src:e.getAttribute('src'),alt:e.alt,...measure(e)}));
+        const brokenAnchors=[...document.querySelectorAll('#page a[href^="#"]')].filter(e=>{const h=e.getAttribute('href');return h.length>1&&!document.getElementById(h.slice(1))&&!document.getElementsByName(h.slice(1)).length;}).map(e=>e.getAttribute('href'));
+        const carousel=document.querySelector('.carousellyon3Card');
+        return {title:document.title,url:location.href,viewport:innerWidth,height:document.documentElement.scrollHeight,areas,overflow,columns,brokenImages,brokenAnchors,carousel:carousel?{initialized:carousel.dataset.carouselInit==='true',slides:carousel.querySelectorAll('.carousellyon3__item__wrapper').length,active:carousel.querySelectorAll('.carousellyon3__item__wrapper.active').length}:null};
       })())`,returnByValue:true});
-      report.push({slug,...JSON.parse(data.result.value)});
+      report.push({slug,...JSON.parse(data.result.value),scriptErrors});
       if(!all||samples.includes(slug)) {
         const metrics=await send('Page.getLayoutMetrics');
         const screenshot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width:mobile?390:1440,height:Math.min(metrics.cssContentSize.height,2600),scale:1}});
         const label=references?`reference-${n}`:slug;
         fs.writeFileSync(`scratch/submenu-${label}-${mode}${mobile?'-mobile':''}.png`,Buffer.from(screenshot.data,'base64'));
       }
-      if(n%25===0)console.log(`Reviewed ${n+1}/${pages.length}`);
+      if(n%25===0){fs.writeFileSync(reportFile,JSON.stringify(report,null,2));console.log(`Reviewed ${n+1}/${pages.length}`);}
     }
   } finally {
     if(retry) {
