@@ -1,3 +1,13 @@
+/* Reviewed initial education catalogue inside the existing department portals. */
+.insg-initial-catalogue { padding: 2rem 0; }
+.insg-initial-catalogue > .layout__simple-grid__row_wrapper { display: block; max-width: 960px; margin: 0 auto; }
+.insg-initial-catalogue .insg-catalogue-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.insg-initial-catalogue h4 { font-size: 1.1em; font-weight: bold; border-bottom: 3px solid #252750; padding-bottom: .6em; }
+@media screen and (max-width: 49.99em) {
+    .insg-initial-catalogue { padding: 1.5rem 1rem; }
+    .insg-initial-catalogue .insg-catalogue-groups { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* Imported submenu pages: preserve the original content/sidebar proportions. */
 .insg-static-page:not(.insg-portal-page) #contenu-encadres {
     display: grid;

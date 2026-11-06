@@ -45,6 +45,9 @@ class InsgSourceContentSeeder extends Seeder
             ];
             Formation::whereIn('slug', $legacySlugs)->update(['is_active' => false]);
             foreach ($source['catalogue'] as $group) {
+                if ($group['mode'] === 'Formation initiale') {
+                    continue; // The reviewed departmental catalogue replaces this older snapshot.
+                }
                 $level = match ($group['level']) {
                     'Licence professionnelle' => 'Licence Pro',
                     'Licence en science de gestion' => 'Licence',
@@ -59,6 +62,7 @@ class InsgSourceContentSeeder extends Seeder
                         'title' => $course,
                         'level' => $level,
                         'department' => $group['mode'],
+                        'study_mode' => $group['mode'],
                         // No duration or admission rule is invented from a title.
                         'duration' => '',
                         'summary' => $group['level'].' — '.$group['mode'],
@@ -75,6 +79,8 @@ class InsgSourceContentSeeder extends Seeder
                     $record->save();
                 }
             }
+
+            \App\Support\InitialFormationCatalogue::sync();
 
             $keys = ['students_per_year' => 'etudiants', 'programs' => 'filieres', 'teachers' => 'enseignants', 'employment_rate' => 'insertion'];
             foreach ($source['statistics'] as $stat) {

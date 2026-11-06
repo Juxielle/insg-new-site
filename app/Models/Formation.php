@@ -14,6 +14,7 @@ class Formation extends Model
         'slug',
         'level',
         'department',
+        'study_mode',
         'duration',
         'summary',
         'description',

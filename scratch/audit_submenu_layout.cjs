@@ -66,7 +66,7 @@ const previous = retry ? JSON.parse(fs.readFileSync(reportFile, 'utf8')) : [];
       if(!all||samples.includes(slug)) {
         const metrics=await send('Page.getLayoutMetrics');
         const screenshot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width:mobile?390:1440,height:Math.min(metrics.cssContentSize.height,2600),scale:1}});
-        const label=references?`reference-${n}`:slug;
+        const label=references?`reference-${n}`:slug.replace(/[\\/]/g, '-');
         fs.writeFileSync(`scratch/submenu-${label}-${mode}${mobile?'-mobile':''}.png`,Buffer.from(screenshot.data,'base64'));
       }
       if(n%25===0){fs.writeFileSync(reportFile,JSON.stringify(report,null,2));console.log(`Reviewed ${n+1}/${pages.length}`);}

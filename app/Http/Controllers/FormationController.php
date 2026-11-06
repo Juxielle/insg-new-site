@@ -41,8 +41,12 @@ class FormationController extends Controller
     public function show($slug)
     {
         $formation = Formation::where('slug', $slug)->firstOrFail();
+        if (! $formation->is_active) {
+            return redirect()->route('formations.index', [], 301);
+        }
 
         $relatedFormations = Formation::active()
+            ->where('study_mode', $formation->study_mode)
             ->where('id', '!=', $formation->id)
             ->where(function ($q) use ($formation) {
                 $q->where('level', $formation->level)

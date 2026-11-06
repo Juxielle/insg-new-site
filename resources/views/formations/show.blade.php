@@ -18,7 +18,8 @@
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
                         <p class="chapo">
-                            <strong>{{ $formation->level }}</strong> &ndash; {{ $formation->department }}
+                            <strong>{{ $formation->level }}</strong> &ndash; {{ $formation->study_mode }}
+                            @if($formation->department && !in_array($formation->department, ['Formation initiale', 'Formation continue'])) &ndash; {{ $formation->department }} @endif
                             @if($formation->duration) &bull; Durée : {{ $formation->duration }} @endif
                         </p>
 
@@ -64,7 +65,7 @@
                                             </div>
                                             <div class="vignette_deco2">
                                                 <strong><a href="{{ route('formations.show', $rf->slug) }}" class="lien_interne">{{ $rf->title }}</a></strong>
-                                                <div class="date"><span class="date--debut">{{ $rf->level }} &bull; {{ $rf->department }}</span></div>
+                                                <div class="date"><span class="date--debut">{{ $rf->summary }}</span></div>
                                             </div>
                                         </li>
                                     @endforeach
@@ -82,11 +83,13 @@
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <ul>
                             <li><strong>Niveau :</strong> {{ $formation->level }}</li>
+                            @if($formation->department && !in_array($formation->department, ['Formation initiale', 'Formation continue']))
                             <li><strong>Département :</strong> {{ $formation->department }}</li>
-                            <li><strong>Durée :</strong> {{ $formation->duration ?? '3 ans' }}</li>
-                            <li><strong>Régime :</strong> Formation Initiale / Continue</li>
+                            @endif
+                            @if($formation->duration)<li><strong>Durée :</strong> {{ $formation->duration }}</li>@endif
+                            @if($formation->study_mode)<li><strong>Régime :</strong> {{ $formation->study_mode }}</li>@endif
                             <li><strong>Campus :</strong> Libreville</li>
-                            <li><strong>Validation :</strong> Diplôme National d'État (CAMES)</li>
+
                         </ul>
                         <p>
                             <a href="{{ route('admissions') }}" class="button"><span>Candidater à cette filière</span></a>

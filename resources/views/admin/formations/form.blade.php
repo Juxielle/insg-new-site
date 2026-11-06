@@ -45,27 +45,35 @@
                             <option value="BTS" {{ old('level', $formation->level) == 'BTS' ? 'selected' : '' }}>BTS (Bac+2)</option>
                             <option value="Licence Pro" {{ old('level', $formation->level) == 'Licence Pro' ? 'selected' : '' }}>Licence Professionnelle (Bac+3)</option>
                             <option value="Master Pro" {{ old('level', $formation->level) == 'Master Pro' ? 'selected' : '' }}>Master Professionnel (Bac+5)</option>
+                            <option value="Licence" @selected(old('level', $formation->level) === 'Licence')>Licence Fondamentale</option>
+                            <option value="Master Recherche" @selected(old('level', $formation->level) === 'Master Recherche')>Master Recherche</option>
                             <option value="Doctorat" {{ old('level', $formation->level) == 'Doctorat' ? 'selected' : '' }}>Doctorat / Recherche</option>
                             <option value="Formation Continue" {{ old('level', $formation->level) == 'Formation Continue' ? 'selected' : '' }}>Formation Continue / Certifiante</option>
                         </select>
                     </div>
 
                     <div class="insg-form-group">
-                        <label class="insg-label" for="department">Département académique de rattachement <span class="required">*</span></label>
-                        <input type="text" id="department" name="department" value="{{ old('department', $formation->department) }}" required class="insg-input" placeholder="Ex: Finance & Comptabilité, Marketing & Commerce..." list="dep-suggestions" />
+                        <label class="insg-label" for="study_mode">Régime de formation</label>
+                        <select id="study_mode" name="study_mode" class="insg-select">
+                            <option value="">À préciser</option>
+                            @foreach(['Formation initiale', 'Formation continue'] as $mode)
+                                <option value="{{ $mode }}" @selected(old('study_mode', $formation->study_mode) === $mode)>{{ $mode }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="insg-form-group">
+                        <label class="insg-label" for="department">Département académique de rattachement </label>
+                        <input type="text" id="department" name="department" value="{{ old('department', in_array($formation->department, ['Formation initiale', 'Formation continue']) ? '' : $formation->department) }}" class="insg-input" placeholder="Gestion Appliquée (GA), Marketing et Affaires Internationales (MAI)" list="dep-suggestions" />
                         <datalist id="dep-suggestions">
-                            <option value="Finance & Comptabilité">
-                            <option value="Marketing & Commerce">
-                            <option value="Management & RH">
-                            <option value="Logistique & Transport">
-                            <option value="Management & Stratégie">
-                            <option value="Informatique de Gestion">
+                            <option value="Gestion Appliquée (GA)">
+                            <option value="Marketing et Affaires Internationales (MAI)">
                         </datalist>
                     </div>
 
                     <div class="insg-form-group">
                         <label class="insg-label" for="duration">Durée des études <span class="required">*</span></label>
-                        <input type="text" id="duration" name="duration" value="{{ old('duration', $formation->duration ?? '3 ans (6 semestres)') }}" required class="insg-input" placeholder="Ex: 2 ans (4 semestres)" />
+                        <input type="text" id="duration" name="duration" value="{{ old('duration', $formation->duration) }}" class="insg-input" placeholder="Ex: 2 ans (4 semestres)" />
                     </div>
 
                     <div class="insg-form-group">

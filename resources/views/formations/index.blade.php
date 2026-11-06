@@ -18,37 +18,58 @@
                     </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_1 -->
 
-                <div class="ligne_2"><div class="colonne_1">
-                    <div class="colonne_deco"><div class="paragraphe--4">
-                        <h2 class="paragraphe__titre--4">1. Cycle BTS (Bac+2)</h2>
-                        <div class="paragraphe__contenu--4 toolbox">
-<h3>Formation initiale — BTS</h3><ul><li><strong>Comptabilité et Gestion des Organisations (CGO)</strong></li><li><strong>Action Commerciale (AC)</strong></li><li><strong>Commerce International (CI)</strong></li><li><strong>Négoce et Commerce du Bois</strong></li><li><strong>Délégué Médical</strong></li></ul><h3>Formation continue — BTS</h3><ul><li><strong>Comptabilité et Gestion des Organisations (CGO)</strong></li><li><strong>Action Commerciale (AC)</strong></li><li><strong>Commerce International (CI)</strong></li></ul>
-</div><!-- .paragraphe__contenu--4 .toolbox -->
-                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
-                </div><!-- .colonne_1 --><div class="colonne_2">
-                    <div class="colonne_deco"><div class="paragraphe--4">
-                        <h2 class="paragraphe__titre--4">2. Licences en sciences de gestion et professionnelles</h2>
-                        <div class="paragraphe__contenu--4 toolbox">
-<h3>Formation initiale — Licence en science de gestion</h3><ul><li><strong>Sciences de Gestion (LSG)</strong></li><li><strong>Finance Comptabilité (FC)</strong></li><li><strong>Marketing Commerce International (MCI)</strong></li></ul><h3>Formation initiale — Licence professionnelle</h3><ul><li><strong>Comptabilité Contrôle Audit (CCA)</strong></li><li><strong>Banque Finance (BF)</strong></li><li><strong>Assistant Ressources Humaines (ARH)</strong></li><li><strong>Gestion Touristique et Environnementale (GTE)</strong></li><li><strong>Gestion des Ressources</strong></li><li><strong>Management et Communication Commerciale (MCC)</strong></li><li><strong>Management des Opérations Internationales (MOI)</strong></li><li><strong>Informatique de Gestion (IG)</strong></li><li><strong>Gestion Économie Mines et Pétrole (GEMP)</strong></li><li><strong>Économie et Gestion des Structures Aéroportuaires</strong></li><li><strong>Management et Entrepreneuriat en Agro-industrie</strong></li><li><strong>Achat Logistique Transport</strong></li></ul><h3>Formation continue — Licence professionnelle</h3><ul><li><strong>Logistique et Gestion Commerciale (LGM)</strong></li><li><strong>Gestion Financière et Comptable (GFC)</strong></li></ul>
-</div><!-- .paragraphe__contenu--4 .toolbox -->
-                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
-                </div><!-- .colonne_2 --></div><!-- .ligne_2 -->
+                @php($initialGroups = collect(\App\Support\InitialFormationCatalogue::data()['groups']))
+                <div class="ligne_2">
+                    @foreach(['Gestion Appliquée (GA)', 'Marketing et Affaires Internationales (MAI)'] as $department)
+                    <div class="colonne_{{ $loop->iteration }}">
+                        <div class="colonne_deco"><div class="paragraphe--4">
+                            <h2 class="paragraphe__titre--4">Département {{ $department }}</h2>
+                            <div class="paragraphe__contenu--4 toolbox">
+                                <p class="chapo">Formation initiale</p>
+                                @foreach($initialGroups->where('department', $department) as $group)
+                                    <h3>{{ $group['label'] }}</h3>
+                                    <ul>
+                                        @foreach($group['courses'] as $course)
+                                            <li><a class="lien_interne" href="{{ route('formations.show', $course['slug']) }}">{{ $course['title'] }}</a></li>
+                                        @endforeach
+                                    </ul>
+                                @endforeach
+                            </div>
+                        </div></div>
+                    </div>
+                    @endforeach
+                </div>
 
                 <div class="ligne_3"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--4">
-                        <h2 class="paragraphe__titre--4">3. Masters professionnels et recherche</h2>
+                        <h2 class="paragraphe__titre--4">Master Recherche et partenariats</h2>
                         <div class="paragraphe__contenu--4 toolbox">
-<h3>Formation initiale — Master professionnel</h3><ul><li><strong>Finance (FI)</strong></li><li><strong>Comptabilité Contrôle Audit (CCA)</strong></li><li><strong>Management des Affaires Internationales (MIA)</strong></li><li><strong>Management des Stratégies Commerciales (MSC)</strong></li><li><strong>Informatique et Gestion (IC)</strong></li></ul><h3>Formation initiale — Master recherche</h3><ul><li><strong>Sciences de Gestion (MRSG)</strong></li></ul><h3>Formation continue — Master professionnel</h3><ul><li><strong>Finance et Actuariat (FA)</strong></li><li><strong>Gouvernance et Management Public (GOMAP)</strong></li><li><strong>Audit et Contrôle de Gestion (ACG)</strong></li><li><strong>Gestion des Entreprises (GE)</strong></li><li><strong>Management des Ressources Humaines (MRH)</strong></li><li><strong>Management Environnemental et Développement Durable (MEDD)</strong></li></ul>
-</div><!-- .paragraphe__contenu--4 .toolbox -->
-                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
-                </div><!-- .colonne_1 --><div class="colonne_2">
+                            <h3>Formation initiale — Master Recherche</h3>
+                            @foreach($initialGroups->where('department', '') as $group)
+                                @foreach($group['courses'] as $course)
+                                    <p><a class="lien_interne" href="{{ route('formations.show', $course['slug']) }}">{{ $course['title'] }}</a>, en partenariat avec l’Université Omar Bongo (UOB).</p>
+                                @endforeach
+                            @endforeach
+                            <p>La Licence Gestion Économie Mines et Pétrole (GEMP) résulte d’un partenariat académique et financier avec l’Université des Sciences et Techniques de Masuku (USTM) et l’Agence Nationale des Bourses et Stages (ANBG).</p>
+                            <p>La Licence GEMP et la Licence Informatique de Gestion sont notamment accessibles aux titulaires d’un baccalauréat scientifique.</p>
+                        </div>
+                    </div></div>
+                </div><div class="colonne_2">
                     <div class="colonne_deco"><div class="paragraphe--4">
-                        <h2 class="paragraphe__titre--4">Des formations développées en partenariat</h2>
+                        <h2 class="paragraphe__titre--4">Formation continue</h2>
                         <div class="paragraphe__contenu--4 toolbox">
-<p>Dans une perspective de diversification de son offre et de renforcement de la qualité scientifique, l’INSG développe plusieurs formations avec des partenaires académiques et institutionnels.</p><p>Le Master Recherche en Sciences de Gestion est proposé en partenariat avec l’Université Omar Bongo. La Licence Gestion Économie Mines et Pétrole (GEMP) résulte d’un partenariat académique et financier avec l’Université des Sciences et Techniques de Masuku (USTM) et l’Agence Nationale des Bourses et Stages (ANBG).</p><p>La Licence GEMP et la Licence Informatique de Gestion sont notamment accessibles aux titulaires d’un baccalauréat scientifique.</p>
-                        </div><!-- .paragraphe__contenu--4 .toolbox -->
-                    </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
-                </div><!-- .colonne_2 --></div><!-- .ligne_3 -->
+                            @foreach(collect(json_decode(file_get_contents(resource_path('content/insg-source.json')), true)['catalogue'])->where('mode', 'Formation continue') as $group)
+                                <h3>{{ $group['level'] }}</h3>
+                                <ul>
+                                    @foreach($group['courses'] as $course)
+                                        <li>{{ $course }}</li>
+                                    @endforeach
+                                </ul>
+                            @endforeach
+                            <p><a class="lien_interne" href="/alternance">En savoir plus sur la formation continue</a></p>
+                        </div>
+                    </div></div>
+                </div></div>
 
             </div><!-- #avec_nav_avec_encadres .contenu -->
 
@@ -63,14 +84,16 @@
                 </div><!-- .encadre -->
 
                 <div class="encadre encadre_fiche encadre--2">
-                    <h2 class="encadre__titre--2">Chiffres clés</h2>
+                    <h2 class="encadre__titre--2">Formation initiale en chiffres</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         <ul>
-                            <li><strong>3</strong> filières de BTS</li>
-                            <li><strong>8</strong> parcours de Licence professionnelle</li>
-                            <li><strong>8</strong> spécialités de Master &amp; MBA</li>
-                            <li>Diplômes homologués et reconnus CAMES</li>
-                            <li>Partenariats actifs avec le secteur bancaire et pétrolier</li>
+                            <li><strong>2</strong> départements en formation initiale</li>
+                            <li><strong>5</strong> filières de BTS</li>
+                            <li><strong>6</strong> Licences professionnelles classiques</li>
+                            <li><strong>6</strong> Licences professionnelles double compétence</li>
+                            <li><strong>3</strong> parcours de Licence fondamentale</li>
+                            <li><strong>5</strong> Masters professionnels</li>
+                            <li><strong>1</strong> Master Recherche en partenariat avec l’UOB</li>
                         </ul>
                     </div><!-- .encadre_contenu -->
                 </div><!-- .encadre -->

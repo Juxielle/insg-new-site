@@ -1,0 +1,167 @@
+{
+  "groups": [
+    {
+      "department": "Gestion Appliquée (GA)",
+      "label": "Brevet de Technicien Supérieur (BTS)",
+      "level": "BTS",
+      "courses": [
+        {
+          "title": "Comptabilité Gestion des Organisations (CGO)",
+          "slug": "bts-initial-comptabilite-et-gestion-des-organisations-cgo"
+        },
+        {
+          "title": "Négoce et Commerce du Bois (NCB)",
+          "slug": "bts-initial-negoce-et-commerce-du-bois"
+        },
+        {
+          "title": "Délégué Médical (DM)",
+          "slug": "bts-initial-delegue-medical"
+        }
+      ]
+    },
+    {
+      "department": "Gestion Appliquée (GA)",
+      "label": "Licence Professionnelle Classique",
+      "level": "Licence Pro",
+      "courses": [
+        {
+          "title": "Banque-Finance (BF)",
+          "slug": "licence-professionnelle-banque-finance-bf"
+        },
+        {
+          "title": "Comptabilité Contrôle Audit (CCA)",
+          "slug": "licence-professionnelle-comptabilite-controle-audit-cca"
+        },
+        {
+          "title": "Gestion des Ressources Humaines (GRH)",
+          "slug": "licence-professionnelle-assistant-ressources-humaines-arh"
+        },
+        {
+          "title": "Gestion Touristique et Environnementale (GTE)",
+          "slug": "licence-professionnelle-gestion-touristique-et-environnementale-gte"
+        },
+        {
+          "title": "Management Commercial et Communication (MCC)",
+          "slug": "licence-professionnelle-management-et-communication-commerciale-mcc"
+        },
+        {
+          "title": "Management des Opérations Internationales (MOI)",
+          "slug": "licence-professionnelle-management-des-operations-internationales-moi"
+        }
+      ]
+    },
+    {
+      "department": "Gestion Appliquée (GA)",
+      "label": "Licence Professionnelle Double Compétence",
+      "level": "Licence Pro",
+      "courses": [
+        {
+          "title": "Achat Logistique et Transport (ALT)",
+          "slug": "licence-professionnelle-achat-logistique-transport"
+        },
+        {
+          "title": "Economie Gestion des Structures Aéroportuaire (EGSA)",
+          "slug": "licence-professionnelle-economie-et-gestion-des-structures-aeroportuaires"
+        },
+        {
+          "title": "Gestion Économie Mines et Pétrole (GEMP)",
+          "slug": "licence-professionnelle-gestion-economie-mines-et-petrole-gemp"
+        },
+        {
+          "title": "Informatique de Gestion (IG)",
+          "slug": "licence-professionnelle-informatique-de-gestion-ig"
+        },
+        {
+          "title": "Management et Entrepreneuriat en Agro-industrie (MEA)",
+          "slug": "licence-professionnelle-management-et-entrepreneuriat-en-agro-industrie"
+        },
+        {
+          "title": "Statistique Informatique en Économie Gestion (SIEGe)",
+          "slug": "licence-professionnelle-statistique-informatique-en-economie-gestion-siege"
+        }
+      ]
+    },
+    {
+      "department": "Gestion Appliquée (GA)",
+      "label": "Master Professionnel",
+      "level": "Master Pro",
+      "courses": [
+        {
+          "title": "Comptabilité Contrôle Audit (CCA)",
+          "slug": "master-professionnel-comptabilite-controle-audit-cca"
+        },
+        {
+          "title": "Finance (Fi)",
+          "slug": "master-professionnel-finance-fi"
+        },
+        {
+          "title": "Informatique de Gestion (IG)",
+          "slug": "master-professionnel-informatique-et-gestion-ic"
+        }
+      ]
+    },
+    {
+      "department": "Marketing et Affaires Internationales (MAI)",
+      "label": "Brevet de Technicien Supérieur (BTS)",
+      "level": "BTS",
+      "courses": [
+        {
+          "title": "Action Commerciale (AC)",
+          "slug": "bts-initial-action-commerciale-ac"
+        },
+        {
+          "title": "Commerce Internationale (CI)",
+          "slug": "bts-initial-commerce-international-ci"
+        }
+      ]
+    },
+    {
+      "department": "Marketing et Affaires Internationales (MAI)",
+      "label": "Licence Fondamentale",
+      "level": "Licence",
+      "courses": [
+        {
+          "title": "Licence en Sciences de Gestion (Tronc Commun)",
+          "slug": "licence-fondamentale-sciences-de-gestion-lsg"
+        },
+        {
+          "title": "Finance-Comptabilité (FC)",
+          "slug": "licence-fondamentale-finance-comptabilite-fc"
+        },
+        {
+          "title": "Marketing et Commerce International (MCI)",
+          "slug": "licence-fondamentale-marketing-commerce-international-mci"
+        }
+      ]
+    },
+    {
+      "department": "Marketing et Affaires Internationales (MAI)",
+      "label": "Master Professionnel",
+      "level": "Master Pro",
+      "courses": [
+        {
+          "title": "Marketing et Affaires Internationales (MAI)",
+          "slug": "master-professionnel-management-des-affaires-internationales-mia"
+        },
+        {
+          "title": "Marketing et Stratégies Commerciales (MSC)",
+          "slug": "master-professionnel-management-des-strategies-commerciales-msc"
+        }
+      ]
+    },
+    {
+      "department": "",
+      "label": "Master Recherche",
+      "level": "Master Recherche",
+      "courses": [
+        {
+          "title": "Master Recherche en Sciences de Gestion (MRSG)",
+          "slug": "master-recherche-sciences-de-gestion-mrsg"
+        }
+      ]
+    }
+  ],
+  "retired_slugs": [
+    "licence-professionnelle-gestion-des-ressources"
+  ]
+}

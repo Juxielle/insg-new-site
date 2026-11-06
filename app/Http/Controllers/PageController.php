@@ -86,7 +86,7 @@ class PageController extends Controller
         if (in_array($cleanSlug, ['entreprises', 'partenaires', 'entreprises-et-partenaires', 'partenaires-et-entreprises'])) {
             return redirect()->route('entreprises', [], 301);
         }
-        if (in_array($cleanSlug, ['formations', 'formation-initiale'])) {
+        if (in_array($cleanSlug, ['formations', 'formation-initiale', 'formation', 'nos-formations'])) {
             return redirect()->route('formations.index', [], 301);
         }
         if (in_array($cleanSlug, ['actualites', 'toute-l-actu', 'toute-l-actu-1', 'actualites-2'])) {
@@ -120,7 +120,7 @@ class PageController extends Controller
                 }
 
                 $layout = StaticPageLayout::extract($rawHtml);
-                $bodyContent = $layout['html'];
+                $bodyContent = \App\Support\FormationPortalContent::apply($layout['html'], $cleanSlug);
 
                 // Ensure separateur is present before </main>
                 if (!str_contains($bodyContent, 'class="separateur"')) {

@@ -2,6 +2,10 @@
 
 // Historical addresses remain redirectable; public links use INSG addresses.
 return [
+    'faculte-de-droit' => 'departement-gestion-appliquee',
+    'faculte-de-philosophie' => 'departement-marketing-affaires-internationales',
+    'faculte-des-humanites-lettres-et-societes-1' => 'departement-gestion-appliquee',
+    'faculte-des-langues' => 'departement-gestion-appliquee',
     'associations-lyon-3' => 'associations-etudiantes',
     'centre-lyonnais-d-histoire-du-droit-et-de-la-pensee-politique' => 'recherche-management-gouvernance',
     'equipe-lyonnaise-en-information-et-communication' => 'recherche-information-communication',

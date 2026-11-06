@@ -257,7 +257,7 @@
                                                     <span>enseignants et experts professionnels</span>
                                                 </a>
                                                 <a href="{{ route('formations.index') }}">
-                                                    <strong>{{ $stats['filieres'] ?? '8' }}</strong>
+                                                    <strong>{{ $stats['filieres'] ?? '26' }}</strong>
                                                     <span>filières d'excellence</span>
                                                     <img class="no-filter" src="{{ asset('assets/images/cartable_1516879221174-png.png') }}" alt="Filières" />
                                                 </a>

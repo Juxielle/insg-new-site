@@ -41,7 +41,7 @@
                 <li class="{{ Route::is('admissions') || $currentPath === 'admissions' || $currentPath === 'candidater-et-s-inscrire' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('admissions') }}" class="type_rubrique_0001">Candidater et s'inscrire</a></li>
                 <li class="{{ $currentPath === 'cycle-bts' ? 'menu_secondaire-actif' : '' }}"><a href="/cycle-bts" class="type_rubrique_0001">Cycle BTS Professionnalisant</a></li>
                 <li class="{{ request('level') === 'Licence' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index', ['level' => 'Licence']) }}" class="type_rubrique_0001">Licences Professionnelles</a></li>
-                <li class="{{ request('level') === 'Master' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index', ['level' => 'Master']) }}" class="type_rubrique_0001">Masters Professionnels & MBA</a></li>
+                <li class="{{ request('level') === 'Master' ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('formations.index', ['level' => 'Master']) }}" class="type_rubrique_0001">Masters Professionnels et Recherche</a></li>
                 <li class="{{ $currentPath === 'alternance' ? 'menu_secondaire-actif' : '' }}"><a href="/alternance" class="type_rubrique_0001">Formation Continue & Alternance</a></li>
                 <li class="{{ $currentPath === 'orientation-insertion-professionnelle' ? 'menu_secondaire-actif' : '' }}"><a href="/orientation-insertion-professionnelle" class="type_rubrique_0001">Orientation & Insertion</a></li>
             @elseif($rubric === 'campus')

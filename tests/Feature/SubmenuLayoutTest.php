@@ -20,7 +20,7 @@ class SubmenuLayoutTest extends TestCase
 
     public function test_department_and_cycle_portals_activate_their_existing_widgets(): void
     {
-        foreach (['faculte-de-droit', 'faculte-de-philosophie', 'cycle-master', 'cycle-bts', 'bibliotheques-universitaires-3'] as $page) {
+        foreach (['departement-gestion-appliquee', 'departement-marketing-affaires-internationales', 'cycle-master', 'cycle-bts', 'bibliotheques-universitaires-3'] as $page) {
             $response = $this->get('/'.$page);
             $response->assertOk();
             $xpath = $this->document($response->getContent());

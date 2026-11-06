@@ -43,19 +43,15 @@
 													<span class="item_level1">Départements & Cycles</span>
 													<ul class="menu_level2_list">
 														<li class="menu_level2_item">
-															<a href="/faculte-de-droit" class="type_rubrique_0004 item_level2">Département Finance & Comptabilité</a>
+															<a href="/departement-gestion-appliquee" class="type_rubrique_0004 item_level2">Département Gestion Appliquée (GA)</a>
 														</li>
 														<li class="menu_level2_item">
-															<a href="/faculte-de-philosophie" class="type_rubrique_0004 item_level2">Département Marketing & Commerce</a>
+															<a href="/departement-marketing-affaires-internationales" class="type_rubrique_0004 item_level2">Département Marketing et Affaires Internationales (MAI)</a>
 														</li>
+
+
 														<li class="menu_level2_item">
-															<a href="/faculte-des-humanites-lettres-et-societes-1" class="type_rubrique_0004 item_level2">Département Management & RH</a>
-														</li>
-														<li class="menu_level2_item">
-															<a href="/faculte-des-langues" class="type_rubrique_0004 item_level2">Département Informatique de Gestion</a>
-														</li>
-														<li class="menu_level2_item">
-															<a href="/cycle-master" class="type_rubrique_0004 item_level2">Cycle Master Professionnel & MBA</a>
+															<a href="/cycle-master" class="type_rubrique_0004 item_level2">Cycle Master Professionnel et Recherche</a>
 														</li>
 														<li class="menu_level2_item">
 															<a href="/cycle-bts" class="type_rubrique_0004 item_level2">Cycle BTS Professionnalisant</a>
@@ -5230,11 +5226,11 @@ le podcast de l'Institut</a>
             <div class="menu__level  menu__level--2 " data-toggle-id="1507110067981" >
                 <div>
                     <ul><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-de-droit">Département Finance & Comptabilité</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-de-philosophie">Département Marketing & Commerce</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-humanites-lettres-et-societes-1">Département Management & RH</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/faculte-des-langues">Département Informatique de Gestion</a></li><!--
-        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/cycle-master">Cycle Master Professionnel & MBA</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/departement-gestion-appliquee">Département Gestion Appliquée (GA)</a></li><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/departement-marketing-affaires-internationales">Département Marketing et Affaires Internationales (MAI)</a></li><!--
+        --><!--
+        --><!--
+        --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/cycle-master">Cycle Master Professionnel et Recherche</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/cycle-bts">Cycle BTS Professionnalisant</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/laboratoire-de-recherche-historique-rhone-alpes"><strong>CERME</strong> - Management & Économie</a></li><!--
         --><li class="menu__level__item item__level--2 menu__level__item--first-column"><a class="libelle link type_rubrique_0004" href="/recherche-management-gouvernance"><strong>CRDG</strong> - Droit & Gouvernance</a></li><!--

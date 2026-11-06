@@ -49,8 +49,9 @@ class FormationController extends Controller
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:formations,slug',
             'level' => 'required|string|max:50',
-            'department' => 'required|string|max:100',
-            'duration' => 'required|string|max:50',
+            'department' => 'nullable|string|max:100',
+            'study_mode' => 'nullable|in:Formation initiale,Formation continue',
+            'duration' => 'nullable|string|max:50',
             'summary' => 'required|string',
             'description' => 'required|string',
             'admission_requirements' => 'nullable|string',
@@ -60,6 +61,9 @@ class FormationController extends Controller
             'image_file' => 'nullable|image|max:5120',
             'is_active' => 'nullable|boolean',
         ]);
+
+        $data['department'] = $data['department'] ?? '';
+        $data['duration'] = $data['duration'] ?? '';
 
         if (empty($data['slug'])) {
             $data['slug'] = Str::slug($data['title']);
@@ -85,8 +89,9 @@ class FormationController extends Controller
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:formations,slug,' . $formation->id,
             'level' => 'required|string|max:50',
-            'department' => 'required|string|max:100',
-            'duration' => 'required|string|max:50',
+            'department' => 'nullable|string|max:100',
+            'study_mode' => 'nullable|in:Formation initiale,Formation continue',
+            'duration' => 'nullable|string|max:50',
             'summary' => 'required|string',
             'description' => 'required|string',
             'admission_requirements' => 'nullable|string',
@@ -96,6 +101,9 @@ class FormationController extends Controller
             'image_file' => 'nullable|image|max:5120',
             'is_active' => 'nullable|boolean',
         ]);
+
+        $data['department'] = $data['department'] ?? '';
+        $data['duration'] = $data['duration'] ?? '';
 
         if (empty($data['slug'])) {
             $data['slug'] = Str::slug($data['title']);

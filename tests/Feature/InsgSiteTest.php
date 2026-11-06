@@ -80,7 +80,7 @@ class InsgSiteTest extends TestCase
 
     public function test_formations_show_page_loads(): void
     {
-        $formation = Formation::first();
+        $formation = Formation::active()->first();
         $this->assertNotNull($formation);
 
         $response = $this->get(route('formations.show', $formation->slug));
@@ -197,8 +197,8 @@ class InsgSiteTest extends TestCase
             '/gouvernance.html' => '/gouvernance',
             '/organisation.html' => '/organisation',
             '/histoire.html' => '/histoire',
-            '/faculte-de-droit.html' => '/faculte-de-droit',
-            '/faculte-de-philosophie.html' => '/faculte-de-philosophie',
+            '/faculte-de-droit.html' => '/departement-gestion-appliquee',
+            '/faculte-de-philosophie.html' => '/departement-marketing-affaires-internationales',
             '/chiffres-cles.html' => '/chiffres-cles',
         ];
 
@@ -215,8 +215,8 @@ class InsgSiteTest extends TestCase
             '/gouvernance',
             '/organisation',
             '/histoire',
-            '/faculte-de-droit',
-            '/faculte-de-philosophie',
+            '/departement-gestion-appliquee',
+            '/departement-marketing-affaires-internationales',
             '/chiffres-cles',
         ];
 
