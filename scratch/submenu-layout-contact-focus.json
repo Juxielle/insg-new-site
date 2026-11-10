@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "",
+    "contact": [
+      {
+        "id": "",
+        "class": "insg-home-contact toolbox",
+        "x": 233,
+        "y": 2729,
+        "w": 960,
+        "h": 248,
+        "display": "block",
+        "width": "960px",
+        "margin": "28px 166px",
+        "padding": "28px"
+      },
+      {
+        "id": "",
+        "class": "insg-home-contact__details",
+        "x": 261,
+        "y": 2821,
+        "w": 904,
+        "h": 88,
+        "display": "grid",
+        "width": "904px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "title": "INSG Gabon — Institut National des Sciences de Gestion",
+    "url": "http://insg-gabon2.test/",
+    "viewport": 1440,
+    "height": 4072,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "sans_nav_sans_encadres",
+        "class": "contenu",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-0 scrollable-section",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 642,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-2 scrollable-section",
+        "x": 233,
+        "y": 776,
+        "w": 960,
+        "h": 216,
+        "display": "block",
+        "width": "959.953px",
+        "margin": "0px 166.031px 0px 166.016px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-4 scrollable-section",
+        "x": 233,
+        "y": 992,
+        "w": 960,
+        "h": 712,
+        "display": "block",
+        "width": "959.953px",
+        "margin": "0px 166.031px 0px 166.016px",
+        "padding": "0px 0px 78.12px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-6 scrollable-section",
+        "x": 67,
+        "y": 1703,
+        "w": 1292,
+        "h": 998,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": {
+      "initialized": true,
+      "slides": 5,
+      "active": 1
+    },
+    "scriptErrors": []
+  }
+]

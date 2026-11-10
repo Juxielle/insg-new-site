@@ -3336,7 +3336,8 @@ Ouverte à tout public sans condition d'âge ni de diplôme
             
         
 
-        --><li class="menu__level__item item__level--0    menu__level__item--first-column"><!--
+        -->@include('partials.incubator-menu')
+        <li class="menu__level__item item__level--0    menu__level__item--first-column"><!--
 
         
             

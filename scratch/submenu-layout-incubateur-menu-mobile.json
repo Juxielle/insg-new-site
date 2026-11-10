@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "incubateur/projets",
+    "incubator": {
+      "active": true,
+      "links": [
+        {
+          "text": "Laboratoire LARSG & Recherche",
+          "id": "",
+          "class": "libelle link type_rubrique_0001",
+          "x": -280,
+          "y": 290,
+          "w": 280,
+          "h": 39,
+          "display": "block",
+          "width": "280px",
+          "margin": "0px",
+          "padding": "11.2px 48px 11.2px 17.5px"
+        },
+        {
+          "text": "Incubateur de projets",
+          "id": "",
+          "class": "libelle link type_rubrique_0001",
+          "x": -280,
+          "y": 330,
+          "w": 280,
+          "h": 39,
+          "display": "block",
+          "width": "280px",
+          "margin": "0px",
+          "padding": "11.2px 48px 11.2px 17.5px"
+        },
+        {
+          "text": "Entrepreneuriat étudiant",
+          "id": "",
+          "class": "libelle link type_rubrique_0001",
+          "x": -280,
+          "y": 369,
+          "w": 280,
+          "h": 39,
+          "display": "block",
+          "width": "280px",
+          "margin": "0px",
+          "padding": "11.2px 48px 11.2px 17.5px"
+        }
+      ],
+      "navigation": [
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 69,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 126,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 183,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 240,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 415,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 472,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 529,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 586,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        },
+        {
+          "id": "",
+          "class": "libelle",
+          "x": -280,
+          "y": 643,
+          "w": 232,
+          "h": 45,
+          "display": "flex",
+          "width": "232px",
+          "margin": "0px",
+          "padding": "13.3px 17.5px"
+        }
+      ]
+    },
+    "title": "Incubateur de projets | INSG Gabon",
+    "url": "http://insg-gabon2.test/incubateur/projets",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 1388,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1319,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1056,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1181,
+        "w": 376,
+        "h": 263,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 927,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

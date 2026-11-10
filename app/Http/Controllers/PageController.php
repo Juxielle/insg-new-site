@@ -11,6 +11,14 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function incubateur(string $page)
+    {
+        $pages = json_decode(file_get_contents(resource_path('content/incubateur.json')), true, 512, JSON_THROW_ON_ERROR);
+        abort_unless(isset($pages[$page]), 404);
+
+        return view('pages.incubateur', ['page' => $pages[$page], 'pages' => $pages, 'currentPage' => $page]);
+    }
+
     public function about()
     {
         $director = Gouvernance::where('role', 'like', '%Directeur Général%')->first();

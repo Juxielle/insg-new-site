@@ -350,6 +350,25 @@
                     </div>
                 </div>
 
+                <section class="insg-home-contact toolbox" aria-labelledby="home-contact-title">
+                    <h2 id="home-contact-title">Nous contacter</h2>
+                    <div class="insg-home-contact__details">
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Boulevard Triomphal, Libreville, Gabon</p>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+24101234567">+241 01 23 45 67</a></p>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@insg-gabon.ga">contact@insg-gabon.ga</a></p>
+                        </div>
+                    </div>
+                    <p><a class="lien_interne" href="{{ route('contact') }}">Accéder au formulaire de contact</a></p>
+                </section>
+
                 <div class="date-miseajour">Mise &agrave; jour :&nbsp;{{ date('d F Y') }}</div>
                 <div id="redacteur-date-impression"></div>
             </div>

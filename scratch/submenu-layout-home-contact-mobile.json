@@ -1,0 +1,105 @@
+[
+  {
+    "slug": "",
+    "title": "INSG Gabon — Institut National des Sciences de Gestion",
+    "url": "http://insg-gabon2.test/",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3816,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3816,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "sans_nav_sans_encadres",
+        "class": "contenu",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3816,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-0 scrollable-section",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 573,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-2 scrollable-section",
+        "x": 0,
+        "y": 629,
+        "w": 390,
+        "h": 255,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-4 scrollable-section",
+        "x": 0,
+        "y": 884,
+        "w": 390,
+        "h": 1090,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-6 scrollable-section",
+        "x": 0,
+        "y": 1974,
+        "w": 390,
+        "h": 1432,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": {
+      "initialized": true,
+      "slides": 5,
+      "active": 1
+    },
+    "scriptErrors": []
+  }
+]

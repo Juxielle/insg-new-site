@@ -4,7 +4,9 @@
 
     // Determine current rubric / section
     $rubric = 'general';
-    if (Route::is('about') || in_array($currentPath, ['a-propos', 'histoire', 'gouvernance', 'organisation', 'chiffres-cles', 'grands-projets', 'fondation', 'textes-statutaires', 'conseils', 'arretes', 'equipe-presidentielle'])) {
+    if (Route::is('incubateur.*')) {
+        $rubric = 'incubateur';
+    } elseif (Route::is('about') || in_array($currentPath, ['a-propos', 'histoire', 'gouvernance', 'organisation', 'chiffres-cles', 'grands-projets', 'fondation', 'textes-statutaires', 'conseils', 'arretes', 'equipe-presidentielle'])) {
         $rubric = 'institut';
     } elseif (Route::is('formations.*') || Route::is('admissions') || in_array($currentPath, ['formations', 'admissions', 'candidater-et-s-inscrire', 'alternance', 'orientation-insertion-professionnelle'])) {
         $rubric = 'formations';
@@ -21,7 +23,11 @@
     <div id="menu_secondaire" class="menu_toggle">
         <button class="toggle__menu_secondaire" data-toggle="[data-toggle-id='menusecondaire']" type="button" aria-label="Menu secondaire"></button>
         <ul data-toggle-id="menusecondaire" class="menu_toggle__menu menu__lvl1" data-toggle-target>
-            @if($rubric === 'institut')
+            @if($rubric === 'incubateur')
+                @foreach(json_decode(file_get_contents(resource_path('content/incubateur.json')), true) as $slug => $entry)
+                    <li class="{{ request()->route('page') === $slug ? 'menu_secondaire-actif' : '' }}"><a href="{{ route('incubateur.page', $slug) }}" class="type_rubrique_0001">{{ $entry['label'] }}</a></li>
+                @endforeach
+            @elseif($rubric === 'institut')
                 <li class="{{ Route::is('about') || $currentPath === 'a-propos' ? 'menu_secondaire-actif' : '' }}">
                     <a href="{{ route('about') }}" class="type_rubrique_0001">L'Institut National des Sciences de Gestion</a>
                     <ul class="menu__lvl2">

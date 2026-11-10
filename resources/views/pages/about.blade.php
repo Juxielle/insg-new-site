@@ -52,6 +52,21 @@
                     </div><!-- paragraphe--4 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_3 -->
 
+                <div class="ligne_4" id="organigramme"><div class="colonne_1">
+                    <div class="colonne_deco"><div class="paragraphe--4">
+                        <h2 class="paragraphe__titre--4">Organigramme de l’INSG</h2>
+                        <div class="paragraphe__contenu--4 toolbox">
+                            <figure style="margin: 0;">
+                                <a href="{{ asset('assets/images/organigramme-insg.jpeg') }}" target="_blank" rel="noopener" aria-label="Agrandir l’organigramme de l’INSG (nouvel onglet)">
+                                    <img src="{{ asset('assets/images/organigramme-insg.jpeg') }}" alt="Organigramme de l’INSG : conseil d’administration, direction générale, pôle pédagogique et pôle administratif et fonctionnel." width="1376" height="768" loading="lazy" style="display: block; width: 100%; height: auto;" />
+                                </a>
+                                <figcaption>Organisation institutionnelle de l’INSG.</figcaption>
+                            </figure>
+                            <p><a href="{{ asset('assets/images/organigramme-insg.jpeg') }}" target="_blank" rel="noopener" class="lien_interne">Voir l’organigramme en grand (nouvel onglet)</a></p>
+                        </div>
+                    </div></div>
+                </div></div>
+
             </div><!-- #avec_nav_sans_encadres .contenu -->
         </div><!-- #contenu-encadres -->
 

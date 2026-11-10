@@ -28,6 +28,10 @@ Route::get('/entreprises-et-partenaires', [PageController::class, 'entreprises']
 Route::get('/entreprises', function () { return redirect()->route('entreprises', [], 301); });
 Route::get('/partenaires', function () { return redirect()->route('entreprises', [], 301); });
 
+// Incubateur
+Route::get('/incubateur', fn () => redirect()->route('incubateur.page', 'projets'))->name('incubateur.index');
+Route::get('/incubateur/{page}', [PageController::class, 'incubateur'])->name('incubateur.page');
+
 // Formations (BTS, Licences, Masters)
 Route::prefix('formations')->name('formations.')->group(function () {
     Route::get('/', [FormationController::class, 'index'])->name('index');
