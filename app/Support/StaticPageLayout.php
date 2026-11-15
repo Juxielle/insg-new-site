@@ -24,7 +24,13 @@ class StaticPageLayout
         $standard = $page && $xpath->query('.//*[@id="page_deco"]', $page)->length;
 
         if ($standard) {
-            $body = '<main id="page">'.self::children($document, $page).'</main>';
+            // Some imported documents include their site footer inside main.
+            // The application layout already renders the shared footer.
+            foreach (iterator_to_array($xpath->query('.//footer | .//*[@id="pied_page"] | .//*[@id="retour_haut_page"]', $page)) as $extra) {
+                $extra->parentNode?->removeChild($extra);
+            }
+            $pageClass = htmlspecialchars($page->getAttribute('class'), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $body = '<main id="page"'.($pageClass !== '' ? ' class="'.$pageClass.'"' : '').'>'.self::children($document, $page).'</main>';
         } else {
             // External templates use other structures; keep their content, not
             // a second document, header, navigation or footer inside our page.

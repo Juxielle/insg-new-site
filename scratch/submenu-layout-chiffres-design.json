@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "chiffres-cles",
+    "title": "Chiffres Clés de l'INSG Gabon | Libreville - INSG Gabon",
+    "url": "http://insg-gabon2.test/chiffres-cles",
+    "viewport": 1440,
+    "height": 2741,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1258,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1232,
+        "display": "grid",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1232,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 960,
+        "h": 59,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 590,
+        "w": 317,
+        "h": 1023,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

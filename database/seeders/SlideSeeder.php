@@ -13,7 +13,7 @@ class SlideSeeder extends Seeder
             [
                 'title' => 'Cérémonie de Remise des Diplômes',
                 'subtitle' => 'L\'Institut National des Sciences de Gestion célèbre ses diplômés de Licence et Master professionnel, prêts à intégrer le monde de l\'entreprise avec excellence et éthique.',
-                'image' => 'assets/images/1759791578740.jpg.jpeg',
+                'image' => 'assets/images/campus-insg-accueil.webp',
                 'link_url' => '/formations',
                 'link_text' => 'Découvrir nos filières',
                 'order' => 1,

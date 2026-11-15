@@ -291,6 +291,7 @@ class DatabaseSeeder extends Seeder
             GouvernanceSeeder::class,
             InfrastructureSeeder::class,
             InsgSourceContentSeeder::class,
+            PhotoAssignmentSeeder::class,
         ]);
     }
 }

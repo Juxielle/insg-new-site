@@ -156,6 +156,8 @@ class PageController extends Controller
                 $bodyContent = preg_replace('/(src|href)=[\'"]assets\//i', '$1="/assets/', $bodyContent);
                 $bodyContent = preg_replace('/(src|href)=[\'"]medias\//i', '$1="/medias/', $bodyContent);
 
+                $bodyContent = \App\Support\PhotoLibrary::replaceLegacyPhotos($bodyContent, $cleanSlug);
+
                 return view('pages.static-page', [
                     'title' => $title,
                     'bodyContent' => $bodyContent,

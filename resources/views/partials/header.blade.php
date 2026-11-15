@@ -6042,6 +6042,6 @@ le podcast de l'Institut</a>
 	 --></div><!--
  --></div>
     @if(!Route::is('home') && empty($isLandingPage))
-        <div id="bandeau" style="@yield('bandeau_style', 'background-image: url(' . asset('assets/images/insg-back-2.jpeg') . '); background-color: #1f234b;')"></div>
+        <div id="bandeau" style="@yield('bandeau_style', 'background-image: url(' . asset(\App\Support\PhotoLibrary::forContext(request()->path())) . '); background-color: #1f234b;')"></div>
     @endif
 </header>

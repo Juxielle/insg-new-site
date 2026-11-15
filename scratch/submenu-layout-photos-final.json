@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "entreprises-et-partenaires",
+    "title": "Partenaires et entreprises | INSG",
+    "url": "http://insg-gabon2.test/entreprises-et-partenaires",
+    "viewport": 1440,
+    "height": 3117,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1634,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1608,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 655,
+        "h": 1608,
+        "display": "block",
+        "width": "654.531px",
+        "margin": "0px -654.545px 0px 0px",
+        "padding": "0px 42px 0px 0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 305,
+        "h": 463,
+        "display": "block",
+        "width": "305.453px",
+        "margin": "0px -959px 0px 654.545px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 613,
+        "h": 764,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1295,
+        "w": 613,
+        "h": 694,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "formations/master-professionnel-informatique-et-gestion-ic",
+    "title": "Informatique de Gestion (IG) - Formations INSG Gabon",
+    "url": "http://insg-gabon2.test/formations/master-professionnel-informatique-et-gestion-ic",
+    "viewport": 1440,
+    "height": 3177,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1694,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1668,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 655,
+        "h": 1668,
+        "display": "block",
+        "width": "654.531px",
+        "margin": "0px -654.545px 0px 0px",
+        "padding": "0px 42px 0px 0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 305,
+        "h": 562,
+        "display": "block",
+        "width": "305.453px",
+        "margin": "0px -959px 0px 654.545px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 613,
+        "h": 759,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1290,
+        "w": 613,
+        "h": 758,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "formations/licence-professionnelle-management-et-entrepreneuriat-en-agro-industrie",
+    "title": "Management et Entrepreneuriat en Agro-industrie (MEA) - Formations INSG Gabon",
+    "url": "http://insg-gabon2.test/formations/licence-professionnelle-management-et-entrepreneuriat-en-agro-industrie",
+    "viewport": 1440,
+    "height": 3219,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1736,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1710,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 655,
+        "h": 1710,
+        "display": "block",
+        "width": "654.531px",
+        "margin": "0px -654.545px 0px 0px",
+        "padding": "0px 42px 0px 0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 305,
+        "h": 562,
+        "display": "block",
+        "width": "305.453px",
+        "margin": "0px -959px 0px 654.545px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 531,
+        "w": 613,
+        "h": 759,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1332,
+        "w": 613,
+        "h": 758,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "slug": "gouvernance",
+    "title": "Gouvernance de l’INSG — INSG Gabon - INSG Gabon",
+    "url": "http://insg-gabon2.test/gouvernance",
+    "viewport": 1440,
+    "height": 2438,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 955,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 929,
+        "display": "grid",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 929,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 960,
+        "h": 119,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 650,
+        "w": 480,
+        "h": 455,
+        "display": "block",
+        "width": "480px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1146,
+        "w": 480,
+        "h": 164,
+        "display": "block",
+        "width": "480px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "sport-1",
+    "title": "Sport et culture à l’INSG — INSG Gabon - INSG Gabon",
+    "url": "http://insg-gabon2.test/sport-1",
+    "viewport": 1440,
+    "height": 3066,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1583,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1557,
+        "display": "grid",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 612,
+        "h": 1557,
+        "display": "block",
+        "width": "612px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 306,
+        "h": 1256,
+        "display": "block",
+        "width": "306px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 612,
+        "h": 280,
+        "display": "block",
+        "width": "612px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 811,
+        "w": 612,
+        "h": 196,
+        "display": "block",
+        "width": "612px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1049,
+        "w": 306,
+        "h": 185,
+        "display": "block",
+        "width": "306px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 539,
+        "y": 1049,
+        "w": 306,
+        "h": 204,
+        "display": "block",
+        "width": "306px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1274,
+        "w": 306,
+        "h": 307,
+        "display": "block",
+        "width": "306px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 539,
+        "y": 1274,
+        "w": 306,
+        "h": 344,
+        "display": "block",
+        "width": "306px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1639,
+        "w": 612,
+        "h": 299,
+        "display": "block",
+        "width": "612px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

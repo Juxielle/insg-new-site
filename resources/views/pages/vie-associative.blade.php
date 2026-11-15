@@ -13,7 +13,9 @@
 
                 <div class="ligne_1"><div class="colonne_1">
                     <div class="colonne_deco"><div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
-<p class="chapo">Clubs, associations, sport et culture : la vie à l'INSG ne s'arrête pas aux salles de cours.</p><h2>Développez vos talents en dehors des cours</h2><p>Les activités associatives développent le leadership, la créativité et l’engagement citoyen.</p><ul><li><strong>Finance et investissement :</strong> Analyses de cas, simulations et rencontres professionnelles.</li><li><strong>Art oratoire et débat :</strong> Ateliers de prise de parole et compétitions inter-écoles.</li><li><strong>Digital et innovation :</strong> Veille technologique, hackathons et entrepreneuriat numérique.</li></ul>
+<p class="chapo">Clubs, associations, sport et culture : la vie à l'INSG ne s'arrête pas aux salles de cours.</p>
+@include('partials.editorial-photo', ['theme' => 'vie-etudiante', 'caption' => 'Journée d’intégration 2025-2026 de l’INSG.'])
+<h2>Développez vos talents en dehors des cours</h2><p>Les activités associatives développent le leadership, la créativité et l’engagement citoyen.</p><ul><li><strong>Finance et investissement :</strong> Analyses de cas, simulations et rencontres professionnelles.</li><li><strong>Art oratoire et débat :</strong> Ateliers de prise de parole et compétitions inter-écoles.</li><li><strong>Digital et innovation :</strong> Veille technologique, hackathons et entrepreneuriat numérique.</li></ul>
 </div><!-- .paragraphe__contenu--0 .toolbox -->
                     </div><!-- paragraphe--0 --></div><!-- colonne_deco -->
                 </div><!-- .colonne_1 --></div><!-- .ligne_1 -->

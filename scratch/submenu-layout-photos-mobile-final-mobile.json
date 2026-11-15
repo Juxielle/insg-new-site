@@ -1,0 +1,614 @@
+[
+  {
+    "slug": "formations",
+    "title": "Nos formations | INSG Gabon",
+    "url": "http://insg-gabon2.test/formations",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3493,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3405,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 2880,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 3005,
+        "w": 376,
+        "h": 525,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 115,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 397,
+        "w": 376,
+        "h": 965,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": 1383,
+        "w": 376,
+        "h": 540,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 1951,
+        "w": 376,
+        "h": 383,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": 2355,
+        "w": 376,
+        "h": 650,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "entreprises-et-partenaires",
+    "title": "Partenaires et entreprises | INSG",
+    "url": "http://insg-gabon2.test/entreprises-et-partenaires",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 1922,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1834,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1390,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1515,
+        "w": 376,
+        "h": 444,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 831,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 1085,
+        "w": 376,
+        "h": 409,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "vie-associative",
+    "title": "Vie étudiante | INSG",
+    "url": "http://insg-gabon2.test/vie-associative",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 2290,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 2202,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1777,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1902,
+        "w": 376,
+        "h": 425,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 617,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 871,
+        "w": 376,
+        "h": 1009,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "campus",
+    "title": "Le Campus INSG Libreville - Infrastructures & Vie de Campus",
+    "url": "http://insg-gabon2.test/campus",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 2434,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 2346,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1804,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1929,
+        "w": 376,
+        "h": 543,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 1226,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 1480,
+        "w": 376,
+        "h": 428,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "incubateur/projets",
+    "title": "Incubateur de projets | INSG Gabon",
+    "url": "http://insg-gabon2.test/incubateur/projets",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 1691,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1622,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1359,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1484,
+        "w": 376,
+        "h": 263,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 1230,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "sport-1",
+    "title": "Sport et culture à l’INSG — INSG Gabon - INSG Gabon",
+    "url": "http://insg-gabon2.test/sport-1",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 4440,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3272,
+        "display": "grid",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 2001,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 2154,
+        "w": 376,
+        "h": 1243,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 191,
+        "w": 376,
+        "h": 375,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 587,
+        "w": 376,
+        "h": 196,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 804,
+        "w": 376,
+        "h": 164,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": 989,
+        "w": 376,
+        "h": 164,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 1174,
+        "w": 376,
+        "h": 286,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": 1480,
+        "w": 376,
+        "h": 286,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 1787,
+        "w": 376,
+        "h": 318,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

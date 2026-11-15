@@ -1,0 +1,108 @@
+[
+  {
+    "slug": "a-propos",
+    "language": {
+      "open": true,
+      "color": "rgb(37, 39, 80)",
+      "background": "rgb(255, 255, 255)",
+      "arrow": "block"
+    },
+    "title": "À propos de l'INSG",
+    "url": "http://insg-gabon2.test/a-propos",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3770,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3682,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3682,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 275,
+        "w": 376,
+        "h": 2021,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 2317,
+        "w": 376,
+        "h": 374,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 2712,
+        "w": 376,
+        "h": 720,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 3452,
+        "w": 376,
+        "h": 334,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

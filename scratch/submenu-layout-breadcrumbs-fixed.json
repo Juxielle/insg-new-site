@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "actualites",
+    "breadcrumb": {
+      "text": "Accueil\n                                                        Actualités",
+      "items": 2,
+      "explicitSeparators": 0,
+      "visibleChevrons": 1
+    },
+    "title": "Actualités de l'INSG",
+    "url": "http://insg-gabon2.test/actualites",
+    "viewport": 1440,
+    "height": 2704,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1221,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1195,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 655,
+        "h": 1195,
+        "display": "block",
+        "width": "654.531px",
+        "margin": "0px -654.545px 0px 0px",
+        "padding": "0px 42px 0px 0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 305,
+        "h": 568,
+        "display": "block",
+        "width": "305.453px",
+        "margin": "0px -959px 0px 654.545px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 613,
+        "h": 126,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 657,
+        "w": 613,
+        "h": 919,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "incubateur/projets",
+    "breadcrumb": {
+      "text": "Accueil\n                                                        Incubateur\n                                                                Incubateur de projets",
+      "items": 3,
+      "explicitSeparators": 0,
+      "visibleChevrons": 2
+    },
+    "title": "Incubateur de projets | INSG Gabon",
+    "url": "http://insg-gabon2.test/incubateur/projets",
+    "viewport": 1440,
+    "height": 2859,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1376,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 1369,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 655,
+        "h": 1369,
+        "display": "block",
+        "width": "654.531px",
+        "margin": "0px -654.545px 0px 0px",
+        "padding": "0px 42px 0px 0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 887,
+        "y": 423,
+        "w": 305,
+        "h": 284,
+        "display": "block",
+        "width": "305.453px",
+        "margin": "0px -959px 0px 654.545px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 613,
+        "h": 1261,
+        "display": "block",
+        "width": "612.531px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "histoire",
+    "breadcrumb": {
+      "text": "AccueilInstitutL'Institut National des Sciences de GestionHistoire",
+      "items": 4,
+      "explicitSeparators": 0,
+      "visibleChevrons": 3
+    },
+    "title": "Notre histoire — Depuis 1973 — INSG Gabon - INSG Gabon",
+    "url": "http://insg-gabon2.test/histoire",
+    "viewport": 1440,
+    "height": 3308,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1825,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 881,
+        "display": "grid",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 881,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 960,
+        "h": 255,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 786,
+        "w": 960,
+        "h": 82,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 910,
+        "w": 576,
+        "h": 249,
+        "display": "block",
+        "width": "576px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 809,
+        "y": 910,
+        "w": 384,
+        "h": 141,
+        "display": "block",
+        "width": "384px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1180,
+        "w": 960,
+        "h": 82,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

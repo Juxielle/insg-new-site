@@ -1,0 +1,470 @@
+{
+  "institution": [
+    {
+      "path": "assets/images/reportages/institution-01.webp",
+      "source_folder": "Rentrée Solennelle 2024-2025",
+      "source_file": "1G4A9818.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 242742
+    },
+    {
+      "path": "assets/images/reportages/institution-02.webp",
+      "source_folder": "Rentrée Solennelle 2024-2025",
+      "source_file": "1G4A9640.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 320828
+    },
+    {
+      "path": "assets/images/reportages/institution-03.webp",
+      "source_folder": "Rentrée Solennelle 2024-2025",
+      "source_file": "1G4A9693.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 221056
+    },
+    {
+      "path": "assets/images/reportages/institution-04.webp",
+      "source_folder": "Rentrée Solennelle 2024-2025",
+      "source_file": "1G4A9812.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 242196
+    }
+  ],
+  "diplomes": [
+    {
+      "path": "assets/images/reportages/diplomes-01.webp",
+      "source_folder": "Cérémonies de remise des diplômes",
+      "source_file": "P1126667.jpg",
+      "width": 1920,
+      "height": 1128,
+      "bytes": 477720
+    },
+    {
+      "path": "assets/images/reportages/diplomes-02.webp",
+      "source_folder": "Cérémonies de remise des diplômes",
+      "source_file": "P1126628.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 360194
+    },
+    {
+      "path": "assets/images/reportages/diplomes-03.webp",
+      "source_folder": "Cérémonies de remise des diplômes",
+      "source_file": "P1333234.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 95438
+    },
+    {
+      "path": "assets/images/reportages/diplomes-04.webp",
+      "source_folder": "Cérémonies de remise des diplômes",
+      "source_file": "P1333449.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 177572
+    },
+    {
+      "path": "assets/images/reportages/diplomes-05.webp",
+      "source_folder": "Cérémonies de remise des diplômes",
+      "source_file": "_B1A7031.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 259518
+    }
+  ],
+  "orientation": [
+    {
+      "path": "assets/images/reportages/orientation-01.webp",
+      "source_folder": "Salons National de l_Orientation (SNO)",
+      "source_file": "IMG-20240516-WA0026.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 188998
+    },
+    {
+      "path": "assets/images/reportages/orientation-02.webp",
+      "source_folder": "Salons National de l_Orientation (SNO)",
+      "source_file": "0Y9A3896.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 393222
+    },
+    {
+      "path": "assets/images/reportages/orientation-03.webp",
+      "source_folder": "Salons National de l_Orientation (SNO)",
+      "source_file": "IMG-20240516-WA0031.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 198024
+    },
+    {
+      "path": "assets/images/reportages/orientation-04.webp",
+      "source_folder": "Salons National de l_Orientation (SNO)",
+      "source_file": "IMG-20240516-WA0056.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 371614
+    }
+  ],
+  "entreprises": [
+    {
+      "path": "assets/images/reportages/entreprises-01.webp",
+      "source_folder": "Brunch Enetreprises 2026",
+      "source_file": "DSC09700.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 249366
+    },
+    {
+      "path": "assets/images/reportages/entreprises-02.webp",
+      "source_folder": "Brunch Enetreprises 2026",
+      "source_file": "DSC09568.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 158512
+    },
+    {
+      "path": "assets/images/reportages/entreprises-03.webp",
+      "source_folder": "Brunch Enetreprises 2026",
+      "source_file": "DSC09760.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 169120
+    },
+    {
+      "path": "assets/images/reportages/entreprises-04.webp",
+      "source_folder": "Brunch Entreprises 2025",
+      "source_file": "_W1A0603.jpg",
+      "width": 1920,
+      "height": 1271,
+      "bytes": 245928
+    },
+    {
+      "path": "assets/images/reportages/entreprises-05.webp",
+      "source_folder": "Brunch Entreprises 2025",
+      "source_file": "_W1A0825.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 295926
+    },
+    {
+      "path": "assets/images/reportages/entreprises-06.webp",
+      "source_folder": "Brunch Entreprises 2025",
+      "source_file": "_W1A0889.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 228796
+    }
+  ],
+  "partenariat-magt": [
+    {
+      "path": "assets/images/reportages/partenariat-magt-01.webp",
+      "source_folder": "Signature de partenariat avec MAGT",
+      "source_file": "208A9222.jpg",
+      "width": 1920,
+      "height": 1150,
+      "bytes": 146428
+    },
+    {
+      "path": "assets/images/reportages/partenariat-magt-02.webp",
+      "source_folder": "Signature de partenariat avec MAGT",
+      "source_file": "208A9210.jpg",
+      "width": 1920,
+      "height": 1214,
+      "bytes": 112436
+    },
+    {
+      "path": "assets/images/reportages/partenariat-magt-03.webp",
+      "source_folder": "Signature de partenariat avec MAGT",
+      "source_file": "208A9289.jpg",
+      "width": 1920,
+      "height": 1110,
+      "bytes": 168046
+    }
+  ],
+  "recherche": [
+    {
+      "path": "assets/images/reportages/recherche-01.webp",
+      "source_folder": "Colloque Intern. Gabon PME 2025",
+      "source_file": "_65A5435.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 482682
+    },
+    {
+      "path": "assets/images/reportages/recherche-02.webp",
+      "source_folder": "Colloque Intern. Gabon PME 2025",
+      "source_file": "HOQM3474.JPG",
+      "width": 1920,
+      "height": 1134,
+      "bytes": 462960
+    },
+    {
+      "path": "assets/images/reportages/recherche-03.webp",
+      "source_folder": "Colloque Intern. Gabon PME 2025",
+      "source_file": "IMG_3577.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 308194
+    },
+    {
+      "path": "assets/images/reportages/recherche-04.webp",
+      "source_folder": "Colloque Intern. Gabon PME 2025",
+      "source_file": "IMG_3549.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 551038
+    }
+  ],
+  "conferences": [
+    {
+      "path": "assets/images/reportages/conferences-01.webp",
+      "source_folder": "Cycle de Conférences",
+      "source_file": "image00005.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 139556
+    },
+    {
+      "path": "assets/images/reportages/conferences-02.webp",
+      "source_folder": "Cycle de Conférences",
+      "source_file": "image00052.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 95864
+    },
+    {
+      "path": "assets/images/reportages/conferences-03.webp",
+      "source_folder": "Cycle de Conférences",
+      "source_file": "image00082.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 147388
+    },
+    {
+      "path": "assets/images/reportages/conferences-04.webp",
+      "source_folder": "Cycle de Conférences",
+      "source_file": "image00027.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 121340
+    }
+  ],
+  "intelligence-artificielle": [
+    {
+      "path": "assets/images/reportages/intelligence-artificielle-01.webp",
+      "source_folder": "Conférence-Formation sur l’IA",
+      "source_file": "IMG_5082.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 419018
+    },
+    {
+      "path": "assets/images/reportages/intelligence-artificielle-02.webp",
+      "source_folder": "Conférence-Formation sur l’IA",
+      "source_file": "IMG_5080.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 253384
+    },
+    {
+      "path": "assets/images/reportages/intelligence-artificielle-03.webp",
+      "source_folder": "Conférence-Formation sur l’IA",
+      "source_file": "IMG_5097.heic",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 162692
+    }
+  ],
+  "agroalimentaire": [
+    {
+      "path": "assets/images/reportages/agroalimentaire-01.webp",
+      "source_folder": "Formation sur l’agroalimentaire",
+      "source_file": "IMG_8656.heic",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 229926
+    },
+    {
+      "path": "assets/images/reportages/agroalimentaire-02.webp",
+      "source_folder": "Formation sur l’agroalimentaire",
+      "source_file": "IMG_8711.heic",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 324908
+    },
+    {
+      "path": "assets/images/reportages/agroalimentaire-03.webp",
+      "source_folder": "Formation sur l’agroalimentaire",
+      "source_file": "IMG_8746.heic",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 290954
+    }
+  ],
+  "incubateur": [
+    {
+      "path": "assets/images/reportages/incubateur-01.webp",
+      "source_folder": "Incubateur HCO et sa 1ère cuvée",
+      "source_file": "IMG_8837.JPG",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 428304
+    },
+    {
+      "path": "assets/images/reportages/incubateur-02.webp",
+      "source_folder": "Incubateur HCO et sa 1ère cuvée",
+      "source_file": "IMG_8849.JPG",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 102586
+    },
+    {
+      "path": "assets/images/reportages/incubateur-03.webp",
+      "source_folder": "Incubateur HCO et sa 1ère cuvée",
+      "source_file": "IMG_8852.JPG",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 108196
+    }
+  ],
+  "laboratoire": [
+    {
+      "path": "assets/images/reportages/laboratoire-01.webp",
+      "source_folder": "Inhauguration Labo",
+      "source_file": "IMG_9700.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 122252
+    },
+    {
+      "path": "assets/images/reportages/laboratoire-02.webp",
+      "source_folder": "Inhauguration Labo",
+      "source_file": "IMG_9702.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 104218
+    },
+    {
+      "path": "assets/images/reportages/laboratoire-03.webp",
+      "source_folder": "Inhauguration Labo",
+      "source_file": "IMG_9698.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 214748
+    },
+    {
+      "path": "assets/images/reportages/laboratoire-04.webp",
+      "source_folder": "Inhauguration Labo",
+      "source_file": "IMG_9686.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 180068
+    }
+  ],
+  "vie-etudiante": [
+    {
+      "path": "assets/images/reportages/vie-etudiante-01.webp",
+      "source_folder": "Journée d_intégration 2025-2026",
+      "source_file": "IMG_4043.JPG",
+      "width": 1920,
+      "height": 1154,
+      "bytes": 328608
+    },
+    {
+      "path": "assets/images/reportages/vie-etudiante-02.webp",
+      "source_folder": "Journée d_intégration 2025-2026",
+      "source_file": "IMG_4046.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 240200
+    },
+    {
+      "path": "assets/images/reportages/vie-etudiante-03.webp",
+      "source_folder": "Journée d_intégration 2025-2026",
+      "source_file": "IMG_4073.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 336586
+    },
+    {
+      "path": "assets/images/reportages/vie-etudiante-04.webp",
+      "source_folder": "Journée d_intégration 2024-2025",
+      "source_file": "0Y9A4606.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 463146
+    },
+    {
+      "path": "assets/images/reportages/vie-etudiante-05.webp",
+      "source_folder": "Journée d_intégration 2024-2025",
+      "source_file": "0Y9A4585.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 295058
+    }
+  ],
+  "sport": [
+    {
+      "path": "assets/images/reportages/sport-01.webp",
+      "source_folder": "Sport",
+      "source_file": "32.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 187832
+    },
+    {
+      "path": "assets/images/reportages/sport-02.webp",
+      "source_folder": "Sport",
+      "source_file": "IMG_7437.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 406128
+    },
+    {
+      "path": "assets/images/reportages/sport-03.webp",
+      "source_folder": "Sport",
+      "source_file": "IMG_3672.JPG",
+      "width": 1920,
+      "height": 1281,
+      "bytes": 256326
+    },
+    {
+      "path": "assets/images/reportages/sport-04.webp",
+      "source_folder": "Sport",
+      "source_file": "_I6A2190.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 178636
+    }
+  ],
+  "campus": [
+    {
+      "path": "assets/images/reportages/campus-01.webp",
+      "source_folder": "res-old",
+      "source_file": "insg-back-2.jpeg",
+      "width": 1920,
+      "height": 1281,
+      "bytes": 193638
+    },
+    {
+      "path": "assets/images/reportages/campus-02.webp",
+      "source_folder": "res-old",
+      "source_file": "insg-back-4.jpeg",
+      "width": 1920,
+      "height": 1281,
+      "bytes": 140882
+    },
+    {
+      "path": "assets/images/reportages/campus-03.webp",
+      "source_folder": "Inhauguration Labo",
+      "source_file": "IMG_9695.JPG",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 295314
+    }
+  ]
+}

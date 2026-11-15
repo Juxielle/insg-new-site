@@ -12,6 +12,11 @@
                 <div class="ligne_1"><div class="colonne_1"><div class="colonne_deco">
                     <div class="paragraphe--0"><div class="paragraphe__contenu--0 toolbox">
                         <p class="chapo">{{ $page['intro'] }}</p>
+                        @include('partials.editorial-photo', [
+                            'theme' => $currentPage === 'recherche' ? 'recherche' : 'incubateur',
+                            'photoIndex' => $currentPage === 'entrepreneuriat-etudiant' ? 1 : 0,
+                            'caption' => $currentPage === 'recherche' ? 'Colloque international Gabon PME 2025.' : 'Accompagnement des porteurs de projets de l’incubateur HCO.',
+                        ])
                         @foreach($page['blocks'] as $block)
                             @switch($block['type'])
                                 @case('heading')

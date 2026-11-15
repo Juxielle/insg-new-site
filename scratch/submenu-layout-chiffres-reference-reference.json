@@ -1,0 +1,186 @@
+[
+  {
+    "slug": "https://www.univ-lyon3.fr/chiffres-cles",
+    "title": "L'Université Jean Moulin Lyon 3 en chiffres - Université Jean Moulin Lyon 3",
+    "url": "https://www.univ-lyon3.fr/chiffres-cles",
+    "viewport": 1440,
+    "height": 2461,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 1001,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 428,
+        "w": 960,
+        "h": 0,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 428,
+        "w": 960,
+        "h": 970,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px -959px 0px 0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 494,
+        "w": 960,
+        "h": 78,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 571,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 549,
+        "y": 571,
+        "w": 317,
+        "h": 203,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_3",
+        "x": 866,
+        "y": 571,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 775,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 549,
+        "y": 775,
+        "w": 317,
+        "h": 203,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_3",
+        "x": 866,
+        "y": 775,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 979,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 549,
+        "y": 979,
+        "w": 317,
+        "h": 203,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_3",
+        "x": 866,
+        "y": 979,
+        "w": 317,
+        "h": 204,
+        "display": "block",
+        "width": "316.797px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 1183,
+        "w": 480,
+        "h": 215,
+        "display": "block",
+        "width": "480px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

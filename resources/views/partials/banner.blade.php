@@ -86,7 +86,6 @@
         <a href="{{ route('home') }}">Accueil</a>
         @if(isset($breadcrumbs) && is_array($breadcrumbs))
             @foreach($breadcrumbs as $label => $link)
-                <span class="separateur">&gt;</span>
                 @if(!$loop->last && $link)
                     <a href="{{ $link }}">{{ $label }}</a>
                 @else

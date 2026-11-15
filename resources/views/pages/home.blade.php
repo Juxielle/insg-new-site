@@ -79,7 +79,7 @@
                                                     </div>
                                                 @empty
                                                     <div class="carousellyon3__item__wrapper active">
-                                                        <div class="carousellyon3__item" style="background-image:url('{{ asset('assets/images/1759791578740.jpg.jpeg') }}');">
+                                                        <div class="carousellyon3__item" style="background-image:url('{{ asset('assets/images/campus-insg-accueil.webp') }}');">
                                                             <span class="item_content">
                                                                 <a href="{{ route('formations.index') }}">
                                                                     <h2>Formez l’excellence, construisez votre avenir de manager</h2>
@@ -265,7 +265,7 @@
                                         </div>
 
                                         <div class="galerie_bloc bloc2 photo">
-                                            <video autoplay loop muted playsinline poster="{{ asset('assets/images/insg-back-1.jpeg') }}" style="width:100%;height:100%;object-fit:cover;">
+                                            <video autoplay loop muted playsinline poster="{{ asset(\App\Support\PhotoLibrary::photo('vie-etudiante', 0)['path']) }}" style="width:100%;height:100%;object-fit:cover;">
                                                 <source src="{{ asset('assets/videos/insg-institutionnelle-40s.mp4') }}" type="video/mp4">
                                             </video>
                                         </div>
@@ -280,7 +280,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="galerie_bloc bloc4 photo" style="background-image:url('{{ asset('assets/images/insg-back-3.jpeg') }}')"></div>
+                                        <div class="galerie_bloc bloc4 photo" style="background-image:url('{{ asset(\App\Support\PhotoLibrary::photo('conferences', 0)['path']) }}')"></div>
 
                                         <div class="galerie_bloc bloc5 couleur_couleur2">
                                             <div class="galerie_bloc_wrapper">
@@ -292,7 +292,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="galerie_bloc bloc6 photo" style="background-image:url('{{ asset('assets/images/insg-back-5.jpeg') }}')"></div>
+                                        <div class="galerie_bloc bloc6 photo" style="background-image:url('{{ asset(\App\Support\PhotoLibrary::photo('laboratoire', 1)['path']) }}')"></div>
 
                                         <div class="galerie_bloc bloc7 couleur_couleur3">
                                             <div class="galerie_bloc_wrapper">
@@ -304,7 +304,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="galerie_bloc bloc8 photo" style="background-image:url('{{ asset('assets/images/insg-back-6.jpeg') }}')"></div>
+                                        <div class="galerie_bloc bloc8 photo" style="background-image:url('{{ asset(\App\Support\PhotoLibrary::photo('entreprises', 0)['path']) }}')"></div>
 
                                         <div class="galerie_bloc bloc9 couleur_couleur1">
                                             <div class="galerie_bloc_wrapper">
@@ -342,7 +342,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="galerie_bloc bloc13 photo" style="background-image:url('{{ asset('assets/images/insg-back-9.jpeg') }}')"></div>
+                                        <div class="galerie_bloc bloc13 photo" style="background-image:url('{{ asset(\App\Support\PhotoLibrary::photo('sport', 0)['path']) }}')"></div>
                                     </div>
                                 </div><!--
                             --></div>

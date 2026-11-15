@@ -17,7 +17,7 @@
                         <p class="chapo">Le campus offre des espaces conçus pour apprendre, collaborer et développer les projets étudiants.</p>
                         
                         <figure class="photo" style="margin: 1.5em 0;">
-                            <img src="{{ asset('assets/images/insg-back-11.jpeg') }}" alt="Campus INSG Libreville" />
+                            <img src="{{ asset(\App\Support\PhotoLibrary::photo('campus', 2)['path']) }}" alt="Campus INSG Libreville" />
                             <figcaption class="legende">Le campus universitaire de l'INSG &ndash; Boulevard Triomphal, Libreville</figcaption>
                         </figure>
 

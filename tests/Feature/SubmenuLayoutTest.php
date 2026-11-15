@@ -40,6 +40,18 @@ class SubmenuLayoutTest extends TestCase
         $this->assertStringNotContainsString('insg-portal-page', $this->document($html)->query('//body')->item(0)->getAttribute('class'));
     }
 
+    public function test_imported_pages_keep_only_the_shared_site_footer(): void
+    {
+        foreach (['gouvernance', 'organisation', 'sport-1', 'histoire', 'departement-gestion-appliquee'] as $page) {
+            $response = $this->get('/'.$page)->assertOk();
+            $xpath = $this->document($response->getContent());
+            $this->assertSame(1, $xpath->query('//footer')->length, $page);
+            $this->assertSame(1, $xpath->query('//*[@id="pied_page"]')->length, $page);
+            $this->assertSame(1, $xpath->query('//*[@id="retour_haut_page"]')->length, $page);
+            $this->assertSame(0, $xpath->query('//main//footer | //main//*[@id="pied_page"]')->length, $page);
+        }
+    }
+
     public function test_external_templates_do_not_embed_another_document_or_site_header(): void
     {
         foreach (['plateforme-pedagogique', 'histoire-et-sources-des-mondes-antiques', 'centre-interuniversitaire-histoire-archeologie-litteratures-des-mondes-chretiens-et-musulmans-medievaux'] as $page) {
