@@ -2085,6 +2085,14 @@ body.site_secondaire .banniere__titre_site {
 }
 
 /* Full Width Carousel Container */
+.ficheaccueil #page {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
 .ficheaccueil .layout__simple-grid__row-0,
 .ficheaccueil .layout__simple-grid__row-0 .layout__simple-grid__row_wrapper,
 .ficheaccueil .layout__slot--0x0,

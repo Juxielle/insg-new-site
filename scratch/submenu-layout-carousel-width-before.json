@@ -1,0 +1,251 @@
+[
+  {
+    "slug": "",
+    "carouselAncestors": [
+      {
+        "id": "",
+        "class": "card carousellyon3Card",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 607,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px 0px 35px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__slot layout__slot--filled layout__gridSlot layout__slot--columnspan4 layout__slot--0x0 js-layout__slot",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 642,
+        "display": "inline-block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row_wrapper clearfix",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 642,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-0 scrollable-section",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 642,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout layout__simple-grid layout__simple-grid--siteCom js-layout",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2567,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2567,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "sans_nav_sans_encadres",
+        "class": "contenu",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "page",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px 66.5px",
+        "padding": "0px"
+      },
+      {
+        "id": "body",
+        "class": "fiche ficheaccueil accueil   site_principal",
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 4072,
+        "display": "block",
+        "width": "1425px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "js html",
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 4072,
+        "display": "block",
+        "width": "1425px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "title": "INSG Gabon — Institut National des Sciences de Gestion",
+    "url": "http://insg-gabon2.test/",
+    "viewport": 1440,
+    "height": 4072,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "sans_nav_sans_encadres",
+        "class": "contenu",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 2871,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-0 scrollable-section",
+        "x": 67,
+        "y": 134,
+        "w": 1292,
+        "h": 642,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-2 scrollable-section",
+        "x": 233,
+        "y": 776,
+        "w": 960,
+        "h": 216,
+        "display": "block",
+        "width": "959.953px",
+        "margin": "0px 166.031px 0px 166.016px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-4 scrollable-section",
+        "x": 233,
+        "y": 992,
+        "w": 960,
+        "h": 712,
+        "display": "block",
+        "width": "959.953px",
+        "margin": "0px 166.031px 0px 166.016px",
+        "padding": "0px 0px 78.12px"
+      },
+      {
+        "id": "",
+        "class": "layout__simple-grid__row layout__simple-grid__row-6 scrollable-section",
+        "x": 67,
+        "y": 1703,
+        "w": 1292,
+        "h": 998,
+        "display": "block",
+        "width": "1292px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": {
+      "initialized": true,
+      "slides": 5,
+      "active": 1
+    },
+    "scriptErrors": []
+  }
+]
