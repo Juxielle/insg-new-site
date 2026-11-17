@@ -59,7 +59,9 @@ class PhotoLibraryTest extends TestCase
     public function test_public_sections_display_the_selected_photographs(): void
     {
         $this->seed(DatabaseSeeder::class);
-        foreach (['/' => 'diplomes-', '/entreprises-et-partenaires' => 'partenariat-magt-', '/vie-associative' => 'vie-etudiante-', '/incubateur/projets' => 'incubateur-', '/incubateur/recherche' => 'recherche-', '/sport-1' => 'sport-', '/formations' => 'conferences-'] as $url => $name) {
+        $this->get('/')->assertOk()->assertSee('assets/images/campus-insg-accueil.webp', false);
+        $this->get('/incubateur/projets')->assertOk()->assertSee('assets/images/incubateur-hco-batiment.webp', false);
+        foreach (['/entreprises-et-partenaires' => 'partenariat-magt-', '/vie-associative' => 'vie-etudiante-', '/incubateur/recherche' => 'recherche-', '/sport-1' => 'sport-', '/formations' => 'conferences-'] as $url => $name) {
             $this->get($url)->assertOk()->assertSee('assets/images/reportages/'.$name, false);
         }
     }

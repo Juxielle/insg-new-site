@@ -5,36 +5,7 @@
     <div id="pied_page" role="contentinfo">
         <div class="footer_ligne footer_ligne1">
             <div class="footer_ligne1__col1">
-                <div class="reseaux-sociaux">
-                    <h2>Suivez-nous</h2>
-                    <ul class="reseaux-sociaux__liste">
-                        <li class="reseaux-sociaux__item">
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="reseaux-sociaux__type-rubrique_0004" title="Facebook">
-                                <img src="{{ asset('assets/images/facebook22x32_1512477766977-png.png') }}" alt="picto-Facebook" />
-                            </a>
-                        </li>
-                        <li class="reseaux-sociaux__item">
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="reseaux-sociaux__type-rubrique_0004" title="Instagram">
-                                <img src="{{ asset('assets/images/instagram_1511884156826-png.png') }}" alt="picto-Instagram" />
-                            </a>
-                        </li>
-                        <li class="reseaux-sociaux__item">
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="reseaux-sociaux__type-rubrique_0004" title="LinkedIn">
-                                <img src="{{ asset('assets/images/linkedin_1511883384553-png.png') }}" alt="picto-LinkedIn" />
-                            </a>
-                        </li>
-                        <li class="reseaux-sociaux__item">
-                            <a href="https://www.youtube.com" target="_blank" rel="noopener" class="reseaux-sociaux__type-rubrique_0004" title="Youtube">
-                                <img src="{{ asset('assets/images/youtube_1511883439147-png.png') }}" alt="picto-Youtube" />
-                            </a>
-                        </li>
-                        <li class="reseaux-sociaux__item">
-                            <a href="{{ route('contact') }}" class="reseaux-sociaux__type-rubrique_0001" title="Nous contacter">
-                                <img src="{{ asset('assets/images/plus-de-reseaux_1581068539286-png.png') }}" alt="picto-Tous les réseaux sociaux" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                @include('partials.social-links')
 
                 <ul id="menu_pied_page">
                     <li><a href="{{ route('campus') }}">Campus Principal (Libreville)</a></li>

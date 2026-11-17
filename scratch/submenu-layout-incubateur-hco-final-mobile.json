@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "incubateur/projets",
+    "title": "Incubateur de projets | INSG Gabon",
+    "url": "http://insg-gabon2.test/incubateur/projets",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 2503,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 2434,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 1859,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 1984,
+        "w": 376,
+        "h": 575,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 1730,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  },
+  {
+    "slug": "incubateur/entrepreneuriat-etudiant",
+    "title": "Entrepreneuriat étudiant | INSG Gabon",
+    "url": "http://insg-gabon2.test/incubateur/entrepreneuriat-etudiant",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": 56,
+        "w": 390,
+        "h": 3736,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3667,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": 125,
+        "w": 376,
+        "h": 3092,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": 3217,
+        "w": 376,
+        "h": 575,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": 233,
+        "w": 376,
+        "h": 2963,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

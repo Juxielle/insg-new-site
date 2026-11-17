@@ -65,6 +65,14 @@ class PageController extends Controller
 
         $cleanSlug = $slug;
 
+        $socialKey = $cleanSlug === 'twitter' ? 'x' : $cleanSlug;
+        if (isset(config('social_networks')[$socialKey])) {
+            return redirect()->away(config('social_networks')[$socialKey]['url']);
+        }
+        if ($cleanSlug === 'tous-les-reseaux-sociaux') {
+            return view('pages.social-networks');
+        }
+
         $legacyUrls = config('legacy_page_urls', []);
         if (isset($legacyUrls[$cleanSlug])) {
             return redirect('/'.$legacyUrls[$cleanSlug], 301);
@@ -157,6 +165,7 @@ class PageController extends Controller
                 $bodyContent = preg_replace('/(src|href)=[\'"]medias\//i', '$1="/medias/', $bodyContent);
 
                 $bodyContent = \App\Support\PhotoLibrary::replaceLegacyPhotos($bodyContent, $cleanSlug);
+                $bodyContent = \App\Support\OfficialSocialLinks::normalize($bodyContent);
 
                 return view('pages.static-page', [
                     'title' => $title,

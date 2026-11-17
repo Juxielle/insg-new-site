@@ -56,9 +56,30 @@
   },
   "projets": {
     "label": "Incubateur de projets",
-    "title": "Incubateur de projets INSG",
-    "intro": "Transformez une idée en projet viable grâce à un accompagnement structuré et à un réseau d'experts.",
+    "title": "Incubateur des Métiers de la Gestion HCO",
+    "intro": "Un espace de promotion, de formation et d’accompagnement à l’entrepreneuriat, offert par la Fondation BGFIBank à la jeunesse gabonaise.",
     "blocks": [
+      {
+        "type": "heading",
+        "text": "Un don de la Fondation BGFIBank à la jeunesse gabonaise"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inauguré le 20 décembre 2023, l’incubateur des Métiers de la Gestion HCO est un don de la Fondation BGFIBank à la jeunesse gabonaise. Il est dédié à la promotion, à la formation et à l’accompagnement à l’entrepreneuriat."
+      },
+      {
+        "type": "heading",
+        "text": "Une première rentrée le 29 novembre 2024"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le 29 novembre 2024, l’incubateur organise sa première rentrée et accueille une première cuvée de 15 incubés issus de plusieurs établissements. Au cours de l’année académique 2024-2025, ces incubés ont participé à plusieurs formations et conférences."
+      },
+      {
+        "type": "photo",
+        "text": "L’incubateur des Métiers de la Gestion HCO, don de la Fondation BGFIBank à la jeunesse gabonaise.",
+        "path": "assets/images/incubateur-hco-batiment.webp"
+      },
       {
         "type": "eyebrow",
         "text": "Entrepreneuriat"
@@ -77,7 +98,7 @@
       },
       {
         "type": "heading",
-        "text": "Un programme en quatre étapes"
+        "text": "Un accompagnement progressif"
       },
       {
         "type": "paragraph",
@@ -142,6 +163,22 @@
       {
         "type": "paragraph",
         "text": "Notre démarche associe culture de l’innovation, maîtrise des outils de gestion et expérimentation. Elle prépare les étudiants à créer leur activité, à développer un projet au sein d’une organisation ou à accompagner la croissance d’une entreprise existante."
+      },
+      {
+        "type": "heading",
+        "text": "L’incubateur HCO, un appui à l’entrepreneuriat"
+      },
+      {
+        "type": "paragraph",
+        "text": "Don de la Fondation BGFIBank à la jeunesse gabonaise, l’incubateur des Métiers de la Gestion HCO a été inauguré le 20 décembre 2023. Il offre un espace de promotion, de formation et d’accompagnement à l’entrepreneuriat."
+      },
+      {
+        "type": "subheading",
+        "text": "15 incubés dans la première cuvée"
+      },
+      {
+        "type": "paragraph",
+        "text": "Lors de sa première rentrée, le 29 novembre 2024, l’incubateur a accueilli 15 incubés issus de plusieurs établissements. Leur parcours au cours de l’année académique 2024-2025 a été ponctué de formations et de conférences."
       },
       {
         "type": "eyebrow",

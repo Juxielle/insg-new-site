@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "tous-les-reseaux-sociaux",
+    "title": "Réseaux sociaux officiels de l’INSG",
+    "url": "http://insg-gabon2.test/tous-les-reseaux-sociaux",
+    "viewport": 1440,
+    "height": 1840,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 233,
+        "y": 416,
+        "w": 960,
+        "h": 357,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px 166px",
+        "padding": "0px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 350,
+        "display": "block",
+        "width": "960px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_sans_encadres",
+        "class": "contenu",
+        "x": 233,
+        "y": 423,
+        "w": 960,
+        "h": 350,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px -959px 0px 0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 233,
+        "y": 489,
+        "w": 960,
+        "h": 194,
+        "display": "block",
+        "width": "960px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]

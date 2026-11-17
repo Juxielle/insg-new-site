@@ -26,6 +26,12 @@ class IncubatorPagesTest extends TestCase
             $response->assertDontSee('data-cms-section')->assertDontSee('http://127.0.0.1:8000');
         }
         $this->get('/incubateur')->assertRedirect('/incubateur/projets');
+        foreach (['projets', 'entrepreneuriat-etudiant'] as $slug) {
+            $this->get('/incubateur/'.$slug)->assertOk()
+                ->assertSee('20 décembre 2023')->assertSee('29 novembre 2024')
+                ->assertSee('15 incubés')->assertSee('2024-2025')->assertSee('Fondation BGFIBank');
+        }
+        $this->get('/campus-de-bourg-en-bresse')->assertRedirect('/incubateur/projets');
         $this->get('/incubateur/inconnu')->assertNotFound();
     }
 

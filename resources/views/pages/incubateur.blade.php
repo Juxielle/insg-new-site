@@ -19,6 +19,12 @@
                         ])
                         @foreach($page['blocks'] as $block)
                             @switch($block['type'])
+                                @case('photo')
+                                    <figure class="photo" style="margin: 1.5em 0;">
+                                        <img src="{{ asset($block['path']) }}" alt="{{ $block['text'] }}" width="1600" height="1348" loading="lazy" style="display: block; width: 100%; height: auto;" />
+                                        <figcaption class="legende">{{ $block['text'] }}</figcaption>
+                                    </figure>
+                                    @break
                                 @case('heading')
                                     <h2>{{ $block['text'] }}</h2>
                                     @break
@@ -48,6 +54,17 @@
                             @endforeach
                         </ul>
                         <p><a class="lien_interne" href="{{ route('contact') }}">Nous contacter</a></p>
+                    </div>
+                </div>
+                <div class="encadre encadre_fiche encadre--2">
+                    <h2 class="encadre__titre--2">Repères HCO</h2>
+                    <div class="encadre_contenu encadre__contenu--2 toolbox">
+                        <ul>
+                            <li><strong>20 décembre 2023 :</strong> inauguration de l’incubateur.</li>
+                            <li><strong>29 novembre 2024 :</strong> première rentrée.</li>
+                            <li><strong>15 incubés</strong> issus de plusieurs établissements dans la première cuvée.</li>
+                            <li><strong>2024-2025 :</strong> formations et conférences pour cette première cuvée.</li>
+                        </ul>
                     </div>
                 </div>
             </aside>

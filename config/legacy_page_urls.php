@@ -2,6 +2,12 @@
 
 // Historical addresses remain redirectable; public links use INSG addresses.
 return [
+    'campus-de-bourg-en-bresse' => 'incubateur/projets',
+    'campus-de-bourg-en-bresse-1' => 'incubateur/projets',
+    'campus-de-bourg-en-bresse-2' => 'incubateur/projets',
+    'campus-de-libreville' => 'incubateur/projets',
+    'campus-de-libreville-1' => 'incubateur/projets',
+    'campus-de-libreville-2' => 'incubateur/projets',
     'faculte-de-droit' => 'departement-gestion-appliquee',
     'faculte-de-philosophie' => 'departement-marketing-affaires-internationales',
     'faculte-des-humanites-lettres-et-societes-1' => 'departement-gestion-appliquee',

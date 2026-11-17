@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "formations",
+    "title": "Nos formations | INSG Gabon",
+    "url": "http://insg-gabon2.test/formations",
+    "viewport": 390,
+    "height": 1000,
+    "areas": [
+      {
+        "id": "page_deco",
+        "class": "",
+        "x": 0,
+        "y": -3552,
+        "w": 390,
+        "h": 3493,
+        "display": "block",
+        "width": "390px",
+        "margin": "0px",
+        "padding": "0px 7px"
+      },
+      {
+        "id": "contenu-encadres",
+        "class": "",
+        "x": 7,
+        "y": -3483,
+        "w": 376,
+        "h": 3405,
+        "display": "block",
+        "width": "376px",
+        "margin": "7px 0px 0px",
+        "padding": "0px"
+      },
+      {
+        "id": "avec_nav_avec_encadres",
+        "class": "contenu",
+        "x": 7,
+        "y": -3483,
+        "w": 376,
+        "h": 2880,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "encadres",
+        "class": "",
+        "x": 7,
+        "y": -603,
+        "w": 376,
+        "h": 525,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "overflow": [],
+    "columns": [
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": -3375,
+        "w": 376,
+        "h": 115,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": -3211,
+        "w": 376,
+        "h": 965,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": -2225,
+        "w": 376,
+        "h": 540,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_1",
+        "x": 7,
+        "y": -1657,
+        "w": 376,
+        "h": 383,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      },
+      {
+        "id": "",
+        "class": "colonne_2",
+        "x": 7,
+        "y": -1253,
+        "w": 376,
+        "h": 650,
+        "display": "block",
+        "width": "376px",
+        "margin": "0px",
+        "padding": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "brokenAnchors": [],
+    "carousel": null,
+    "scriptErrors": []
+  }
+]
