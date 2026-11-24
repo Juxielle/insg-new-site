@@ -25,9 +25,8 @@ class ActualiteController extends Controller
         }
 
         $actualites = $query->paginate(4)->withQueryString();
-        $categories = Actualite::select('category')->distinct()->pluck('category');
 
-        return view('actualites.index', compact('actualites', 'categories'));
+        return view('actualites.index', compact('actualites'));
     }
 
     public function show($slug)

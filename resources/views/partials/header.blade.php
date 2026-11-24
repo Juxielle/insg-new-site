@@ -1,4 +1,4 @@
-<header class="{{ Route::is('home') || !empty($isLandingPage) ? '' : 'has_bandeau' }} scrollable-section" data-section-title="Haut de page">
+<header class="{{ Route::is('home') ? '' : 'has_bandeau' }} scrollable-section" data-section-title="Haut de page">
    <div class="header_cols clearfix"><!--
 	   --><div class="header_col1">
 	    	
@@ -6041,7 +6041,7 @@ le podcast de l'Institut</a>
 	    --></div><!--
 	 --></div><!--
  --></div>
-    @if(!Route::is('home') && empty($isLandingPage))
+    @if(!Route::is('home'))
         <div id="bandeau" style="@yield('bandeau_style', 'background-image: url(' . asset(\App\Support\PhotoLibrary::forContext(request()->path())) . '); background-color: #1f234b;')"></div>
     @endif
 </header>

@@ -61,19 +61,6 @@
 
             <aside id="encadres" role="complementary">
                 <div class="encadre encadre_fiche encadre--2">
-                    <h2 class="encadre__titre--2">Informations pratiques</h2>
-                    <div class="encadre_contenu encadre__contenu--2 toolbox">
-                        <p><strong>Campus Principal :</strong><br>
-                        Boulevard Triomphal<br>
-                        Libreville, Gabon</p>
-                        <p><strong>Horaires d'ouverture :</strong><br>
-                        Du lundi au vendredi : 07h30 &ndash; 18h30<br>
-                        Samedi : 08h00 &ndash; 13h00</p>
-                        <p><a href="{{ route('contact') }}" class="button"><span>Nous contacter</span></a></p>
-                    </div><!-- .encadre_contenu -->
-                </div><!-- .encadre -->
-
-                <div class="encadre encadre_fiche encadre--2">
                     <h2 class="encadre__titre--2">Services aux étudiants</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         ► <a href="{{ route('vie-associative') }}" class="lien_interne">Vie associative &amp; BDE</a><br>

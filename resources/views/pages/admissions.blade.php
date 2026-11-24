@@ -31,14 +31,6 @@
 
             <aside id="encadres" role="complementary">
                 <div class="encadre encadre_fiche encadre--2">
-                    <h2 class="encadre__titre--2">Candidatures 2026-2027</h2>
-                    <div class="encadre_contenu encadre__contenu--2 toolbox">
-                        <p>Consultez les avis officiels de l’Institut pour connaître les dates et modalités de candidature.</p>
-                        <p><a href="{{ route('contact') }}" class="button"><span>Nous contacter</span></a></p>
-                    </div><!-- .encadre_contenu -->
-                </div><!-- .encadre -->
-
-                <div class="encadre encadre_fiche encadre--2">
                     <h2 class="encadre__titre--2">À consulter</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">
                         ► <a href="{{ route('formations.index') }}" class="lien_interne">Toutes les offres de formations</a><br>

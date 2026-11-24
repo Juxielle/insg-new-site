@@ -48,21 +48,6 @@
             @endif
         </div>
 
-        {{-- Menu déroulant de pagination (Sélecteur de page direct) --}}
-        <div class="search-pagination__dropdown-wrapper">
-            <label for="pagination-select-{{ $paginator->getPageName() }}" class="search-pagination__dropdown-label">
-                Aller &agrave; la page&nbsp;:
-            </label>
-            <span class="select_style select_style--pagination">
-                <select id="pagination-select-{{ $paginator->getPageName() }}" onchange="if(this.value) window.location.href=this.value;" aria-label="Sélectionner une page">
-                    @for ($i = 1; $i <= $paginator->lastPage(); $i++)
-                        <option value="{{ $paginator->url($i) }}" {{ $i == $paginator->currentPage() ? 'selected' : '' }}>
-                            Page {{ $i }} sur {{ $paginator->lastPage() }}
-                        </option>
-                    @endfor
-                </select>
-            </span>
-        </div>
     </nav>
 @endif
 

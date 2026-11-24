@@ -61,37 +61,6 @@
             </div><!-- #avec_nav_avec_encadres .contenu -->
 
             <aside id="encadres" role="complementary">
-                <div class="encadre encadre_recherche encadre--2">
-                    <h2 class="encadre__titre--2">Rechercher une actualité</h2>
-                    <div class="encadre_contenu encadre__contenu--2 toolbox">
-                        <form action="{{ route('actualites.index') }}" method="get">
-                            <p>
-                                <label for="actu-q">Mot-clé :</label><br>
-                                <input type="text" name="q" id="actu-q" value="{{ request('q') }}" style="width:100%; box-sizing:border-box;">
-                            </p>
-                            <p>
-                                <label for="actu-cat">Catégorie :</label><br>
-                                <span class="select_style" style="width:100%;">
-                                    <select name="categorie" id="actu-cat" style="width:100%;">
-                                        <option value="">Toutes les catégories</option>
-                                        @foreach($categories as $cat)
-                                            @if($cat)
-                                                <option value="{{ $cat }}" {{ request('categorie') == $cat ? 'selected' : '' }}>{{ $cat }}</option>
-                                            @endif
-                                        @endforeach
-                                    </select>
-                                </span>
-                            </p>
-                            <p>
-                                <button type="submit" class="button"><span>Rechercher</span></button>
-                                @if(request('q') || request('categorie'))
-                                    <a href="{{ route('actualites.index') }}" class="lien_interne" style="margin-left: 8px;">Réinitialiser</a>
-                                @endif
-                            </p>
-                        </form>
-                    </div><!-- .encadre_contenu -->
-                </div><!-- .encadre -->
-
                 <div class="encadre encadre_fiche encadre--2">
                     <h2 class="encadre__titre--2">Agenda</h2>
                     <div class="encadre_contenu encadre__contenu--2 toolbox">

@@ -241,7 +241,7 @@ body > header {
     }
 
     /* Subpages with bandeau: authentic Lyon 3 banner header (expands to showcase hero image) */
-    body:not(.ficheaccueil) > header.has_bandeau {
+    body > header.has_bandeau {
         position: relative !important;
         min-height: 15em !important;
         height: auto !important;
@@ -255,7 +255,7 @@ body > header {
     }
 
     /* Hero photo banner fills behind Row 2 down to the bottom of the header */
-    body:not(.ficheaccueil) > header.has_bandeau #bandeau {
+    body > header.has_bandeau #bandeau {
         display: block !important;
         position: absolute !important;
         top: 49px !important;
@@ -863,7 +863,7 @@ body > header {
     /* Submenu level 1 items in Desktop Mega-Menu */
     #menu_principal > li > .menu__level .menu__level__items > ul > li,
     #menu_principal > li > .menu__level .menu__level__accroche > ul > li {
-        margin-bottom: 0.85rem !important;
+        margin-bottom: 1.5rem !important;
         position: relative !important;
     }
 
@@ -949,8 +949,9 @@ body > header {
     #menu_principal > li > .menu__level .menu__level__items > ul > li ul li > a,
     #menu_principal > li > .menu__level .menu__level__accroche > ul > li ul li > a {
         padding: 0 !important;
-        font-family: "gothambook", sans-serif !important;
+        font-family: "gotham", sans-serif !important;
         font-size: 13.5px !important;
+        line-height: 1.45 !important;
         color: #e0e0e0 !important;
         text-decoration: none !important;
         display: block !important;
@@ -1112,15 +1113,19 @@ body > header {
         overflow: visible !important;
     }
 
-    body:not(.ficheaccueil):not(.site_secondaire) > header.has_bandeau {
-        min-height: 56px !important;
-        max-height: 56px !important;
-        height: 56px !important;
-        padding: 0 !important;
+    body > header.has_bandeau {
+        height: calc(56px + clamp(8rem, 30vw, 14rem)) !important;
+        max-height: none !important;
     }
 
-    body > header #bandeau {
-        display: none !important;
+    body > header.has_bandeau #bandeau {
+        display: block !important;
+        position: absolute;
+        inset: 56px 0 0;
+        max-height: none;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
     }
 
     body > header .header_cols {
@@ -1584,8 +1589,9 @@ body > header {
         padding: 0.8rem 1.25rem !important;
         padding-right: 48px !important;
         color: #ffffff !important;
-        font-family: "gothambook", sans-serif !important;
+        font-family: "gotham", sans-serif !important;
         font-size: 13.5px !important;
+        line-height: 1.45 !important;
         text-decoration: none !important;
         border: none !important;
         background: transparent !important;
@@ -1626,7 +1632,9 @@ body > header {
         display: block !important;
         padding: 0.6rem 1.25rem 0.6rem 2.25rem !important;
         color: #d0d0d0 !important;
-        font-size: 12.5px !important;
+        font-family: "gotham", sans-serif !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
         text-decoration: none !important;
     }
 
@@ -2672,6 +2680,16 @@ section.scroller ul.autoslider li a img {
 /* ==========================================================================
    7. FOOTER PARTENAIRES BAR
    ========================================================================== */
+#pied_page .plan-site_col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1.5rem;
+}
+
+#pied_page .plan-site_col > li {
+    width: auto;
+}
+
 .footer_ligne2 {
     background: #ffffff !important;
     padding: 1.5em 1.5em 0.8em 1.5em !important;
@@ -3184,42 +3202,4 @@ select:not([multiple]):focus {
     border-color: transparent !important;
     color: #999999 !important;
     background: transparent !important;
-}
-
-/* Pagination Dropdown Menu - Sleek direct page selector */
-.search-pagination__dropdown-wrapper {
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.6rem !important;
-    margin-left: auto !important;
-}
-
-.search-pagination__dropdown-label {
-    font-size: 0.9rem !important;
-    font-weight: 500 !important;
-    color: #555555 !important;
-    white-space: nowrap !important;
-    margin: 0 !important;
-}
-
-.select_style--pagination {
-    height: 36px !important;
-    min-height: 36px !important;
-    border-radius: 20px !important;
-    border: 1px solid var(--uas-couleur-principale, #1f234b) !important;
-    background: #ffffff !important;
-}
-
-.select_style--pagination select {
-    height: 34px !important;
-    padding: 0 38px 0 0.9rem !important;
-    font-size: 0.88rem !important;
-    font-weight: 600 !important;
-}
-
-.select_style--pagination::before {
-    width: 26px !important;
-    height: 26px !important;
-    right: 0.25em !important;
-    background-size: 10px !important;
 }
